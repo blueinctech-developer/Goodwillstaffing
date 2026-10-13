@@ -1,0 +1,4 @@
+/* Several sections intentionally bleed past the viewport edge. */
+.page {
+  overflow: hidden;
+}

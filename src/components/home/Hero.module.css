@@ -1,0 +1,375 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-height: 100rem;
+}
+
+.banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  width: 100%;
+  height: 40vw;
+  background-color: var(--pink-100);
+}
+
+@media (min-width: 1024px) {
+  .banner {
+    min-height: 37.5rem;
+  }
+}
+
+@media (max-width: 1199px) {
+  .banner {
+    grid-template-columns: 1fr;
+    height: 100%;
+  }
+}
+
+.copyColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5.625rem 1.25rem 0;
+}
+
+@media (max-width: 1199px) {
+  .copyColumn {
+    margin: 0;
+    padding: 3.4375rem 1.25rem;
+  }
+}
+
+@media (max-width: 479px) {
+  .copyColumn {
+    align-items: flex-start;
+  }
+}
+
+.copy {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  align-self: flex-start;
+  max-width: 37.5rem;
+  margin: 0;
+  color: var(--green-900);
+  font-family: var(--font-serif);
+  font-size: 3.125rem;
+  font-weight: 600;
+  line-height: 1.42;
+}
+
+@media (max-width: 767px) {
+  .title {
+    font-size: 2rem;
+    line-height: 1.25;
+  }
+}
+
+.italic {
+  font-style: italic;
+}
+
+/* The original inserts hard breaks on small screens to control the rag. */
+.breakMobile,
+.breakMobileWide {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .breakMobile {
+    display: inline;
+  }
+}
+
+@media (min-width: 356px) and (max-width: 767px) {
+  .breakMobileWide {
+    display: inline;
+  }
+}
+
+.subtitle {
+  max-width: 30.625rem;
+  margin: 1.25rem 0 3.75rem;
+  color: var(--neutral-900);
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 767px) {
+  .subtitle {
+    margin: 1.25rem 0 2.125rem;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
+
+.actions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+@media (max-width: 1199px) {
+  .actions {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1200px) {
+  .cta {
+    max-width: 22.5rem;
+  }
+}
+
+/* Video */
+
+.media {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  min-height: 25rem;
+  object-fit: cover;
+}
+
+.videoControls {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 0.5rem;
+  border-radius: 1.5625rem;
+  background: #fff;
+  color: var(--green-800);
+  opacity: 0.8;
+}
+
+@media (max-width: 479px) {
+  .videoControls {
+    top: unset;
+    right: unset;
+    bottom: 5.625rem;
+    left: 2.5rem;
+  }
+}
+
+.playButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  border: 0.0625rem solid var(--green-900);
+  border-radius: 50%;
+  background: var(--green-900);
+  cursor: pointer;
+}
+
+.playButton:hover {
+  background: var(--green-700);
+  border-color: var(--green-700);
+}
+
+.playButton:active {
+  background: var(--green-900);
+  border-color: var(--green-900);
+}
+
+.playButton svg {
+  width: 1rem;
+  min-width: 1rem;
+  height: 1rem;
+}
+
+.fullVideoButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  background: none;
+  color: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+.playButton:focus-visible,
+.fullVideoButton:focus-visible {
+  outline: 0.125rem solid var(--green-800);
+  outline-offset: 0.25rem;
+}
+
+.fullVideoChevron {
+  transition: transform 0.3s ease-in-out;
+}
+
+.fullVideoButton:hover .fullVideoChevron {
+  transform: translateX(0.375rem);
+}
+
+/* Full-video modal */
+
+.dialog {
+  width: 48rem;
+  max-width: 100%;
+  min-height: 30rem;
+  max-height: min(100vh, 75rem);
+  padding: 0;
+  overflow: hidden;
+  border: none;
+  border-radius: 1.5rem;
+  background: var(--neutral-1100);
+  box-shadow: 0 0.25rem 0.5rem #0000002e, 0 0 0 0.0625rem #00000014;
+}
+
+.dialog[open] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: dialogIn 0.3s cubic-bezier(0.8, 0, 0.2, 1);
+}
+
+.dialog::backdrop {
+  background: #00000080;
+  animation: fadeIn 0.3s cubic-bezier(0.8, 0, 0.2, 1);
+}
+
+@media (max-width: 767px) {
+  .dialog {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
+
+.dialogBody {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.fullVideo {
+  width: 100%;
+  max-height: 100vh;
+  object-fit: contain;
+}
+
+.dialogClose {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  padding: 0.4375rem;
+  border: none;
+  border-radius: 0.75rem;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+.dialogClose:hover {
+  background: #ffffff26;
+}
+
+.dialogClose:focus-visible {
+  outline: 0.125rem solid #fff;
+}
+
+@keyframes dialogIn {
+  from {
+    opacity: 0;
+    transform: translateY(1.5rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Job-type cards overlapping the bottom edge of the banner */
+
+.cards {
+  position: relative;
+  bottom: 4.375rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.125rem;
+  width: 80%;
+  min-width: 61.875rem;
+  max-width: 70.9375rem;
+  padding: 0.9375rem;
+  border-radius: 1.5625rem;
+  background-color: #fff;
+}
+
+@media (max-width: 1199px) {
+  .cards {
+    grid-template-columns: repeat(6, 1fr);
+    min-width: 47.8125rem;
+  }
+
+  .card:nth-child(n) {
+    grid-column: span 2;
+  }
+
+  /* Centre a trailing row of two cards. */
+  .card:nth-last-child(2):nth-child(3n + 1) {
+    grid-column-end: 4;
+  }
+
+  .card:last-child:nth-child(3n - 1) {
+    grid-column-end: -2;
+  }
+}
+
+@media (max-width: 767px) {
+  .cards {
+    grid-template-columns: 1fr;
+    min-width: 0;
+    max-width: 18.75rem;
+    margin: 0 2.5rem;
+  }
+
+  .card:nth-child(n) {
+    grid-column: auto;
+  }
+
+  .card:nth-last-child(2):nth-child(3n + 1),
+  .card:last-child:nth-child(3n - 1) {
+    grid-column-end: auto;
+  }
+}
+
+@media (max-width: 479px) {
+  .cards {
+    max-width: unset;
+    width: calc(100% - 5rem);
+  }
+}

@@ -1,0 +1,304 @@
+.footer {
+  padding: 4.0625rem 10.3125rem;
+  background-color: var(--cream);
+  color: var(--neutral-900);
+}
+
+@media (max-width: 1199px) {
+  .footer {
+    padding: 4.0625rem 6.25rem;
+  }
+}
+
+@media (max-width: 1023px) {
+  .footer {
+    padding: 3.75rem 1.25rem;
+  }
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  max-width: 106.25rem;
+}
+
+/* Brand block */
+
+.brand {
+  flex-basis: 18.75rem;
+  flex-shrink: 0;
+  margin-right: 2.375rem;
+}
+
+@media (max-width: 1023px) {
+  .brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: auto;
+    margin: 5.125rem 0 3.625rem;
+  }
+}
+
+.logoLink {
+  --focusRingOffset: -0.1875rem;
+  --focusRingRadius: 999rem;
+  display: inline-block;
+  width: 2.1875rem;
+  height: 2.1875rem;
+  margin-bottom: 3.125rem;
+  color: var(--green-900);
+}
+
+.mark {
+  display: inline-block;
+}
+
+.wordmark {
+  display: none;
+  width: 7.125rem;
+  height: auto;
+}
+
+@media (max-width: 1023px) {
+  .logoLink {
+    --focusRingRadius: 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    margin-bottom: 2.25rem;
+  }
+
+  .mark {
+    display: none;
+  }
+
+  .wordmark {
+    display: block;
+  }
+}
+
+.address {
+  margin-bottom: 4rem;
+  color: var(--neutral-900);
+  font-size: 0.875rem;
+  font-style: normal;
+  line-height: 1.43;
+}
+
+@media (max-width: 1023px) {
+  .address {
+    text-align: center;
+  }
+}
+
+.social,
+.stores {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social {
+  margin-bottom: 1.75rem;
+}
+
+.social li {
+  margin: 0 0.9375rem;
+}
+
+.social li:first-child {
+  margin-left: 0;
+}
+
+.social li:last-child {
+  margin-right: 0;
+}
+
+.socialLink {
+  --focusRingOffset: -0.1875rem;
+  --focusRingRadius: 999rem;
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+}
+
+.stores li {
+  margin-right: 0.8125rem;
+}
+
+.stores li:last-child {
+  margin-right: 0;
+}
+
+.storeLink {
+  --focusRingOffset: -0.1875rem;
+  --focusRingRadius: 0.375rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  height: 2.25rem;
+  padding: 0 0.75rem;
+  border-radius: 0.25rem;
+  background-color: var(--neutral-900);
+  color: var(--cream);
+  font-size: 0.75rem;
+  text-decoration: none;
+}
+
+/* Link columns */
+
+.content {
+  display: flex;
+  flex-basis: 50rem;
+  flex-direction: column;
+  flex-grow: 0;
+}
+
+.columns {
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 0;
+  justify-content: space-between;
+}
+
+@media (max-width: 1023px) {
+  .columns {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 37.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .columns {
+    max-width: 18.75rem;
+  }
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@media (max-width: 1023px) {
+  .column {
+    flex-basis: 11.25rem;
+    flex-grow: 0;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .column {
+    margin-bottom: 3.75rem;
+  }
+
+  .column:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.columnTitle {
+  margin: 0;
+  color: var(--neutral-900);
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.columnLink {
+  display: block;
+  margin-top: 1rem;
+  color: var(--neutral-900);
+  text-decoration: none;
+}
+
+.columnLink:hover {
+  text-decoration: underline;
+}
+
+/* Legal */
+
+.legal {
+  display: flex;
+  flex-grow: 0;
+  flex-wrap: wrap;
+  max-width: 20rem;
+  padding-top: 1rem;
+}
+
+@media (max-width: 1023px) {
+  .legal {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.legalLink {
+  display: inline-block;
+  margin: 0 2.875rem 0.75rem 0;
+  color: var(--neutral-900);
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.legalLink:last-of-type {
+  margin-right: 0;
+}
+
+.legalLink:hover {
+  text-decoration: underline;
+}
+
+.fineprint {
+  flex-basis: 100%;
+  margin: 0.75rem 0 0;
+  color: var(--neutral-900);
+  font-size: 0.75rem;
+  line-height: 1.33;
+}
+
+.fineprint a {
+  color: var(--green-800);
+  text-decoration: underline;
+  text-underline-offset: 0.125em;
+}
+
+.fineprint a:hover {
+  color: var(--green-700);
+}
+
+/* Below desktop the order becomes: link columns, brand block, legal.
+   Kept last so it overrides the base .content/.inner rules above. */
+@media (max-width: 1023px) {
+  .inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content {
+    display: contents;
+  }
+
+  .columns {
+    order: 1;
+  }
+
+  .brand {
+    order: 2;
+  }
+
+  .legal {
+    order: 3;
+  }
+}

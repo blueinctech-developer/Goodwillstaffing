@@ -1,0 +1,18 @@
+.shell {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  min-height: 100vh;
+  /* Clears the fixed header. */
+  padding-top: 3.75rem;
+}
+
+@media (min-width: 768px) {
+  .shell {
+    padding-top: 4.5rem;
+  }
+}
+
+.main {
+  flex: 1;
+}
