@@ -1,0 +1,154 @@
+.section {
+  display: flex;
+  justify-content: center;
+  min-height: 42rem;
+  overflow: hidden;
+  background-color: var(--green-900);
+}
+
+.inner {
+  display: flex;
+  max-width: 90rem;
+}
+
+@media (max-width: 1023px) {
+  .inner {
+    flex-direction: column-reverse;
+  }
+}
+
+.copyColumn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 50vw;
+  overflow: hidden;
+}
+
+@media (max-width: 1023px) {
+  .copyColumn {
+    width: 100%;
+    padding: 3.5rem 0;
+  }
+}
+
+.copy {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  max-width: 30rem;
+  margin: 0 0 0 6.25rem;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+@media (max-width: 1023px) {
+  .copy {
+    margin: 0 3.75rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .copy {
+    max-width: 17.375rem;
+    font-size: 1.5rem;
+    line-height: 1.33;
+    text-align: center;
+  }
+}
+
+.action {
+  margin-top: 1.875rem;
+}
+
+@media (max-width: 1199px) {
+  .action {
+    margin-top: 2.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .action {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+.button {
+  padding-right: 0.9375rem;
+}
+
+.chevron {
+  flex-shrink: 0;
+}
+
+.photoColumn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+}
+
+@media (max-width: 1023px) {
+  .photoColumn {
+    width: 100%;
+    padding-top: 3.75rem;
+  }
+}
+
+.photo {
+  display: block;
+  width: 29.625rem;
+  height: 29.625rem;
+  overflow: hidden;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+@media (max-width: 767px) {
+  .photo {
+    width: 17.375rem;
+    height: 17.375rem;
+  }
+}
+
+.wave {
+  position: absolute;
+  right: -12.5rem;
+  bottom: 0;
+  width: 56.25rem;
+  height: 30.0625rem;
+}
+
+@media (max-width: 1199px) {
+  .wave {
+    right: -18.75rem;
+  }
+}
+
+@media (max-width: 1023px) {
+  .wave {
+    display: none;
+  }
+}
+
+.waveMobile {
+  position: absolute;
+  bottom: -6.25rem;
+  display: none;
+  width: 45.5625rem;
+  height: 35.4375rem;
+}
+
+@media (max-width: 479px) {
+  .waveMobile {
+    bottom: -11.25rem;
+    left: -2.1875rem;
+    display: block;
+  }
+}

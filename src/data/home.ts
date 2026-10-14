@@ -81,21 +81,20 @@ export const TESTIMONIALS = [
   },
 ];
 
-// `mobileRow` splits the logos across the two rows shown below 768px;
-// desktop shows every logo in a single row.
+// Order matters: LogoMarquee puts the first half on the second mobile row.
 export const EMPLOYER_LOGOS = [
-  { src: "/images/Trinity2x.png", alt: "Trinity Health", mobileRow: 2 },
-  { src: "/images/MemorialHermann2x.png", alt: "Memorial Hermann Health", mobileRow: 2 },
-  { src: "/images/UHealth2x.png", alt: "University of Miami Health", mobileRow: 2 },
-  { src: "/images/Tenet2x.png", alt: "Tenet Health", mobileRow: 2 },
-  { src: "/images/Supplemental.png", alt: "Supplemental Health Care", mobileRow: 2 },
-  { src: "/images/Ingenovis.png", alt: "Ingenovis Health", mobileRow: 2 },
-  { src: "/images/JacksonNurseProfessionals.png", alt: "Jackson Nurse Professionals", mobileRow: 1 },
-  { src: "/images/lrsHealthcare.png", alt: "LRS Healthcare", mobileRow: 1 },
-  { src: "/images/Epic.png", alt: "Epic Staffing", mobileRow: 1 },
-  { src: "/images/Favorite.png", alt: "Favorite Healthcare Staffing", mobileRow: 1 },
-  { src: "/images/AdventistHealth.png", alt: "Adventist Health", mobileRow: 1 },
-] as const;
+  { src: "/images/Trinity2x.png", alt: "Trinity Health" },
+  { src: "/images/MemorialHermann2x.png", alt: "Memorial Hermann Health" },
+  { src: "/images/UHealth2x.png", alt: "University of Miami Health" },
+  { src: "/images/Tenet2x.png", alt: "Tenet Health" },
+  { src: "/images/Supplemental.png", alt: "Supplemental Health Care" },
+  { src: "/images/Ingenovis.png", alt: "Ingenovis Health" },
+  { src: "/images/JacksonNurseProfessionals.png", alt: "Jackson Nurse Professionals" },
+  { src: "/images/lrsHealthcare.png", alt: "LRS Healthcare" },
+  { src: "/images/Epic.png", alt: "Epic Staffing" },
+  { src: "/images/Favorite.png", alt: "Favorite Healthcare Staffing" },
+  { src: "/images/AdventistHealth.png", alt: "Adventist Health" },
+];
 
 export const PRESS_LOGOS = [
   { src: "/svg/press-forbes.svg", alt: "Forbes" },

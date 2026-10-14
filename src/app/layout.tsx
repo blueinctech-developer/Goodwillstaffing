@@ -27,30 +27,11 @@ const spezia = localFont({
   ],
 });
 
-const title = "Find Healthcare & Nursing Jobs | Vivian Health";
-const description =
-  "Take the first step to finding your next healthcare job. Explore thousands of job opportunities with all the information you need. It's your future. Come find it.";
-
+// Site-wide defaults; each page supplies its own title and social tags via
+// `pageMetadata` in src/lib/metadata.ts.
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title,
-  description,
-  alternates: { canonical: "/" },
-  openGraph: {
-    title,
-    description,
-    url: "/",
-    siteName: "Vivian Health",
-    type: "website",
-    images: ["/images/2023-B2C-Open-Graph-Image.jpg"],
-  },
-  twitter: {
-    card: "summary",
-    site: "@vivianhealthapp",
-    title,
-    description,
-    images: ["/images/2023-B2C-Open-Graph-Image.jpg"],
-  },
+  title: "Vivian Health",
   facebook: { appId: "1736870763275572" },
 };
 

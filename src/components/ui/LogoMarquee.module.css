@@ -1,0 +1,65 @@
+.viewport {
+  overflow: hidden;
+}
+
+.track {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: max-content;
+  min-width: 200vw;
+  animation: scroll 50s linear infinite;
+}
+
+.reverse {
+  margin-top: 4.5rem;
+  animation-name: scrollReverse;
+}
+
+@media (min-width: 768px) {
+  .reverse {
+    display: none;
+  }
+}
+
+.logo {
+  display: block;
+  max-height: 3.25rem;
+  padding: 0 1.5625rem;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    padding: 0 3.5rem;
+  }
+}
+
+/* Mobile row assignment; desktop shows every logo in the first track. */
+.track:not(.reverse) .mobileRowTwo,
+.reverse .mobileRowOne {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .track:not(.reverse) .mobileRowTwo {
+    display: block;
+  }
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scrollReverse {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
