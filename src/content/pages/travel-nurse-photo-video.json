@@ -1,0 +1,96 @@
+{
+  "slug": "travel-nurse-photo-video",
+  "title": "Submit Your Travel Nurse Photo Video",
+  "modified": "2025-10-09T13:36:57",
+  "seo": {
+    "title": "Submit Your Travel Nurse Video/Photo - Goodwill Staffing",
+    "description": "Stand better healthcare job opportunties. Submit your travel nurse video or photo to us, and we will take it up from there.",
+    "image": {
+      "src": "/media/2025/01/ng.jpg",
+      "width": 393,
+      "height": 282
+    }
+  },
+  "hero": {
+    "layout": "split",
+    "title": "Share Your Travel Experience",
+    "ctas": [],
+    "image": {
+      "src": "/media/2025/01/ng.jpg",
+      "alt": ""
+    }
+  },
+  "blocks": [
+    {
+      "type": "image",
+      "src": "/media/2025/01/icons8-airplane-take-off-50.png",
+      "alt": "",
+      "width": 50,
+      "height": 50
+    },
+    {
+      "type": "image",
+      "src": "/media/2025/01/nurse-1.jpg",
+      "alt": "",
+      "width": 209,
+      "height": 240
+    },
+    {
+      "type": "image",
+      "src": "/media/2025/01/smile.svg",
+      "alt": "",
+      "width": 65,
+      "height": 65
+    },
+    {
+      "type": "image",
+      "src": "/media/2025/01/mountains.jpg",
+      "alt": "",
+      "width": 200,
+      "height": 300
+    },
+    {
+      "type": "rich",
+      "html": "<h2><strong><em>Share your Travel Nursing Experience</em></strong></h2>"
+    },
+    {
+      "type": "image",
+      "src": "/media/2025/01/Screenshot-11.jpg",
+      "alt": "",
+      "width": 635,
+      "height": 123
+    },
+    {
+      "type": "image",
+      "src": "/media/2025/01/holiday.jpg",
+      "alt": "",
+      "width": 393,
+      "height": 282
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Option 1 : Email us"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Send your photos to info@goodwillstaffing.ca",
+      "href": "mailto:digitalmarketing@goodwillstaffing.ca"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Option 2 : Online Submission"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Submit your photos or videos with this form"
+    },
+    {
+      "type": "form",
+      "formId": 5
+    }
+  ]
+}

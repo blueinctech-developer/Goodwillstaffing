@@ -1,0 +1,133 @@
+{
+  "slug": "travel-nursing-jobs-by-province",
+  "title": "Travel Nursing Jobs by Province",
+  "modified": "2026-01-10T14:40:23",
+  "seo": {
+    "title": "Travel Nursing Jobs by Province - Goodwill Staffing & Recruitment",
+    "description": "Find travel nursing contracts by province. From Ontario to British Columbia, Goodwill Staffing offers nursing placements in cities and rural regions across Canada.",
+    "image": {
+      "src": "/media/2025/07/PROV.png",
+      "width": 624,
+      "height": 353
+    }
+  },
+  "hero": {
+    "layout": "split",
+    "title": "Get Travel Nursing Jobs in Any Province Across Canada",
+    "ctas": [
+      {
+        "text": "Apply Now",
+        "href": "https://nexus-leap.laboredge.com/goodwill%20/signup"
+      }
+    ],
+    "image": {
+      "src": "/media/2025/07/PROV.png",
+      "alt": "Submit Your Travel Nurse Photo Video"
+    }
+  },
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "We match professionals to travel contracts in"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "text": "Alberta",
+          "href": "/travel-nursing-healthcare-jobs-in-alberta/"
+        },
+        {
+          "text": "Ontario"
+        },
+        {
+          "text": "British Columbia",
+          "href": "/travel-nursing-jobs-in-british-columbia/"
+        },
+        {
+          "text": "Nova Scotia",
+          "href": "/travel-nursing-jobs-nova-scotia/"
+        },
+        {
+          "text": "Manitoba",
+          "href": "/travel-nursing-jobs-in-manitoba/"
+        },
+        {
+          "text": "Prince Edward Island",
+          "href": "/travel-nursing-jobs-in-prince-edward-island/"
+        },
+        {
+          "text": "New Brunswick",
+          "href": "/travel-nursing-jobs-new-brunswick/"
+        },
+        {
+          "text": "Saskatchewan",
+          "href": "/travel-nursing-jobs-in-saskatchewan/"
+        },
+        {
+          "text": "Newfoundland & Labrador",
+          "href": "/travel-nursing-jobs-in-newfoundland-labrador/"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Each location offers"
+    },
+    {
+      "type": "rich",
+      "html": "<i></i>\r\n      Offer competitive pay and clear communication\r\n    \r\n    \r\n      <i></i>\r\n      Help you choose the right province for your goals\r\n    \r\n    \r\n      <i></i>\r\n      Provide licensing and travel assistance\r\n    \r\n    \r\n      <i></i>\r\n      Match your experience with provincial needs"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Frequently Asked Questions"
+    },
+    {
+      "type": "faq",
+      "items": [
+        {
+          "question": "Can I work in a different province than I’m licensed in?",
+          "answer": "<p>Yes. We guide you through interprovincial licensing (e.g., RPNs moving to Ontario).</p>"
+        },
+        {
+          "question": "Do all provinces offer housing?",
+          "answer": "<p>Yes. All travel contracts include accommodations.</p>"
+        },
+        {
+          "question": "How long are travel contracts by province?",
+          "answer": "<p>Most range from 4–12 weeks with extensions available.</p>"
+        },
+        {
+          "question": "Which provinces hire the most travel nurses?",
+          "answer": "<p>Ontario, Alberta, BC, and Nova Scotia have the highest volume, but opportunities are growing Canada-wide.</p>"
+        }
+      ]
+    },
+    {
+      "type": "rich",
+      "html": "<p>Goodwill Staffing helps nurses find travel contracts across every region of Canada. Whether it’s Ontario, PEI, or the BC coast, we offer support, licensing guidance, and full travel coordination.</p>"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Apply Now to Find a Travel Nursing Role That Fits"
+    },
+    {
+      "type": "buttons",
+      "items": [
+        {
+          "text": "Apply Now",
+          "href": "https://nexus-leap.laboredge.com/goodwill%20/signup"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 6,
+      "text": "Let’s turn your skills into impact. Whether you're ready for your first contract or your fifteenth, we're here to support your journey. We respond to all qualified applicants within 1 business day."
+    }
+  ]
+}

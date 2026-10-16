@@ -1,0 +1,134 @@
+.section {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  padding: 5.5rem var(--page-inset);
+  background: var(--green-100);
+}
+
+.title {
+  margin: 0;
+  color: var(--neutral-1100);
+  font-family: var(--font-serif);
+  font-size: var(--type-h2);
+  font-weight: var(--heading-weight);
+  line-height: var(--heading-leading);
+  letter-spacing: var(--heading-tracking);
+}
+
+.intro {
+  max-width: 44rem;
+  margin: 1rem 0 2.5rem;
+  color: var(--neutral-900);
+  font-size: var(--type-lead);
+  line-height: 1.75;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (max-width: 767px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  height: 100%;
+  padding: 1.75rem 2rem;
+  border-radius: 1.25rem;
+  background: #fff;
+  box-shadow: 0 0.75rem 2.5rem rgb(2 100 111 / 10%);
+  color: inherit;
+  text-decoration: none;
+  transition:
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 1.25rem 3rem rgb(2 100 111 / 16%);
+  transform: translateY(-3px);
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* White circle with a soft glow, holding the role's two-tone icon. */
+.badge {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 3.75rem;
+  height: 3.75rem;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 0.25rem 1rem rgb(2 100 111 / 14%);
+}
+
+.badge svg {
+  color: var(--pink-200);
+}
+
+.role {
+  color: var(--neutral-1100);
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  padding: 0.4375rem 0.875rem;
+  border: 1px solid var(--green-800);
+  border-radius: 999rem;
+  background: var(--green-100);
+  color: var(--green-800);
+  font-size: 0.875rem;
+  line-height: 1.2;
+}
+
+.tag small {
+  font-size: 0.75rem;
+}
+
+.browse {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 2.5rem;
+  padding: 0.875rem 1.75rem;
+  border-radius: 999rem;
+  background: var(--green-900);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.browse:hover {
+  background: var(--green-800);
+}
+
+.browse:focus-visible {
+  outline: 0.125rem solid var(--green-800);
+  outline-offset: 0.1875rem;
+}

@@ -1,0 +1,30 @@
+{
+  "slug": "staffing-cost-calculator",
+  "title": "Healthcare Staffing Cost Calculator",
+  "modified": "2026-01-21T09:28:43",
+  "seo": {
+    "title": "Healthcare Staffing Cost Calculator",
+    "description": "Find out how much you spend on staffing with this tested and proven staffing cost calculator. Results will help you make better decisions",
+    "image": {
+      "src": "/media/2025/02/featured.jpg",
+      "width": 1200,
+      "height": 657
+    }
+  },
+  "hero": {
+    "layout": "plain",
+    "title": "Healthcare Staffing Cost Calculator",
+    "ctas": [],
+    "breadcrumbs": [
+      {
+        "text": "Healthcare Staffing Cost Calculator"
+      }
+    ]
+  },
+  "blocks": [
+    {
+      "type": "custom",
+      "component": "StaffingCostCalculator"
+    }
+  ]
+}

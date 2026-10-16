@@ -1,0 +1,47 @@
+[
+  {
+    "slug": "caregiver",
+    "name": "Caregiver",
+    "description": ""
+  },
+  {
+    "slug": "doctor",
+    "name": "Doctor",
+    "description": ""
+  },
+  {
+    "slug": "employer-blog",
+    "name": "Employer Blog",
+    "description": ""
+  },
+  {
+    "slug": "goodwill-blog",
+    "name": "Goodwill Blog",
+    "description": ""
+  },
+  {
+    "slug": "medical",
+    "name": "Medical",
+    "description": ""
+  },
+  {
+    "slug": "tips",
+    "name": "Tips",
+    "description": ""
+  },
+  {
+    "slug": "travel-nursing",
+    "name": "Travel Nursing",
+    "description": ""
+  },
+  {
+    "slug": "travel-spotlight",
+    "name": "Travel Spotlight",
+    "description": ""
+  },
+  {
+    "slug": "treatment",
+    "name": "Treatment",
+    "description": ""
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "slug": "careers",
+  "title": "Careers",
+  "modified": "2026-05-01T06:13:55",
+  "seo": {
+    "title": "Careers - Goodwill Staffing & Recruitment",
+    "description": "Discover Goodwill Staffing careers offering flexible jobs, team support, and growth opportunities. Apply today online.",
+    "image": {
+      "src": "/media/2025/02/featured.jpg",
+      "width": 1200,
+      "height": 657
+    }
+  },
+  "hero": {
+    "layout": "plain",
+    "title": "Work with us",
+    "ctas": [],
+    "subtitle": "At Goodwill Staffing, our team is the heart of everything we do. We value collaboration, recognize hard work, and provide opportunities for growth in a supportive environment."
+  },
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Here’s why our team loves working here"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Together, we’re building careers, changing lives, and making Goodwill Staffing a great place to work. Talk to your manager today about how we can support your growth!"
+    },
+    {
+      "type": "form",
+      "formId": 8
+    }
+  ]
+}

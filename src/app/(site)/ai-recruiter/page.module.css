@@ -1,0 +1,65 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4.5rem var(--page-inset) 5.5rem;
+  background: linear-gradient(120deg, var(--pink-100) 0%, var(--green-100) 100%);
+}
+
+@media (max-width: 767px) {
+  .section {
+    padding: 2.5rem var(--page-inset) 3rem;
+  }
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 44rem;
+  text-align: center;
+}
+
+.eyebrow {
+  margin: 0 0 1rem;
+  padding: 0.25rem 0.875rem;
+  border-radius: 999rem;
+  background: #fff;
+  color: var(--pink-200);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  line-height: 1.4;
+  text-transform: uppercase;
+  box-shadow: 0 0 0 0.0625rem rgb(229 72 46 / 25%);
+}
+
+.title {
+  margin: 0;
+  color: var(--neutral-1100);
+  font-family: var(--font-serif);
+  text-wrap: balance;
+  font-size: var(--type-h2);
+  font-weight: var(--heading-weight);
+  line-height: var(--heading-leading);
+  letter-spacing: var(--heading-tracking);
+}
+
+.lead {
+  margin: 1rem 0 0;
+  color: var(--neutral-900);
+  font-size: var(--type-lead);
+  line-height: 1.7;
+}
+
+.chat {
+  width: 100%;
+  max-width: 48rem;
+  margin-top: 2.5rem;
+}
+
+@media (max-width: 767px) {
+  .chat {
+    margin-top: 1.75rem;
+  }
+}

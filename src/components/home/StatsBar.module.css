@@ -1,0 +1,54 @@
+.section {
+  display: flex;
+  justify-content: center;
+  padding: 3rem var(--page-inset);
+  background: #fff;
+  border-bottom: 1px solid var(--neutral-300);
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  width: 100%;
+  margin: 0;
+}
+
+@media (max-width: 1023px) {
+  .list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 479px) {
+  .list {
+    grid-template-columns: 1fr;
+  }
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.stat > div {
+  display: flex;
+  /* dt comes first in the markup; the figure shows above its label. */
+  flex-direction: column-reverse;
+}
+
+.value {
+  margin: 0;
+  color: var(--neutral-1100);
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.label {
+  color: var(--neutral-900);
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+

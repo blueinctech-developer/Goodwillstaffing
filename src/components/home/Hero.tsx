@@ -2,14 +2,19 @@
 
 import { useEffect, useRef, useState } from "react";
 import { ButtonLink } from "@/components/ui/Button";
-import { ChevronRightIcon, CloseIcon, PauseGlyph, PlayGlyph } from "@/components/icons";
-import { HERO_CLIP_URL, HERO_FULL_VIDEO_URL, REGISTER_PATH } from "@/lib/site";
+import { ArrowIcon, ChevronRightIcon, CloseIcon, MapleLeafIcon, PauseGlyph, PlayGlyph } from "@/components/icons";
+import { HERO_CLIP_URL, HERO_FULL_VIDEO_URL, JOB_BOARD_URL, REQUEST_STAFFING_PATH } from "@/lib/site";
+import { mediaUrl } from "@/lib/media";
 import { useMediaQuery } from "@/lib/useMediaQuery";
-import type { JobsByType } from "@/data/home";
+import type { JobType } from "@/data/home";
 import { JobTypeCard } from "./JobTypeCard";
 import styles from "./Hero.module.css";
 
-export function Hero({ jobsByType }: { jobsByType: JobsByType[] }) {
+// Faint, blurred backdrop: a hospital corridor from the Goodwill media library.
+const HERO_BACKDROP = "/media/2025/01/sdr0-scaled-1.jpg";
+
+
+export function Hero({ jobTypes }: { jobTypes: JobType[] }) {
   const loopRef = useRef<HTMLVideoElement>(null);
   const dialogRef = useRef<HTMLDialogElement>(null);
   const fullVideoRef = useRef<HTMLVideoElement>(null);
@@ -45,91 +50,114 @@ export function Hero({ jobsByType }: { jobsByType: JobsByType[] }) {
   };
 
   return (
-    <section className={styles.hero}>
-      <div className={styles.banner}>
-        <div className={styles.copyColumn}>
+    <>
+      <section className={styles.hero}>
+        {/* Blurred hospital scene behind the hero, washed out toward the copy. */}
+        <div className={styles.backdrop} style={{ backgroundImage: `url(${mediaUrl(HERO_BACKDROP)})` }} aria-hidden="true" />
+        <div className={styles.banner}>
           <div className={styles.copy}>
             <h1 className={styles.title}>
-              Find the <span className={styles.italic}>healthcare</span>
-              <br className={styles.breakMobileWide} /> job where{" "}
-              <span className={styles.italic}>
-                you are <br className={styles.breakMobile} />
-                valued
-              </span>
+              <span className={styles.line}>Hire the best,</span>{" "}
+              <span className={styles.line}>when it matters</span>{" "}
+              <span className={`${styles.line} ${styles.accent}`}>the most.</span>
             </h1>
             <p className={styles.subtitle}>
-              Vivian is the leading marketplace for <br className={styles.breakMobile} />
-              healthcare jobs. Choose from staff, <br className={styles.breakMobile} />
-              travel, local contract, and per diem <br className={styles.breakMobile} />
-              opportunities to fit your lifestyle needs.
+              Connecting skilled healthcare professionals with leading healthcare organizations across Canada.
             </p>
             <div className={styles.actions}>
-              <ButtonLink href={REGISTER_PATH} tall fullWidth className={styles.cta}>
-                Create a free profile
+              <ButtonLink href={JOB_BOARD_URL} tall variant="secondary" className={styles.button}>
+                Find a job <ArrowIcon size="1.125rem" />
+              </ButtonLink>
+              <ButtonLink href={REQUEST_STAFFING_PATH} tall variant="light" className={`${styles.button} ${styles.outline}`}>
+                Request staffing <ArrowIcon size="1.125rem" />
               </ButtonLink>
             </div>
+            </div>
+
+          <div className={styles.media}>
+            <div className={styles.frame}>
+              <video
+                ref={loopRef}
+                className={styles.video}
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="auto"
+              >
+                <source src={mediaUrl(HERO_CLIP_URL)} type="video/mp4" />
+              </video>
+              {/* Live site's control: one white pill, teal play/pause dot, "Watch Video ›". */}
+              <div className={styles.videoControls}>
+                <button
+                  type="button"
+                  className={styles.playButton}
+                  aria-label={isPlaying ? "Pause" : "Play"}
+                  onClick={() => setPlayChoice(!isPlaying)}
+                >
+                  {isPlaying ? <PauseGlyph /> : <PlayGlyph />}
+                </button>
+                <button type="button" className={styles.watchButton} onClick={openFullVideo}>
+                  Watch Video
+                  <ChevronRightIcon size="1rem" />
+                </button>
+              </div>
+              <p className={styles.note} aria-hidden="true">
+                Real people
+                <br />
+                Real opportunities
+                <svg viewBox="0 0 60 40" className={styles.noteArrow}>
+                  <path d="M52 4C50 22 36 32 10 34" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+                  <path d="M17 28l-7 6 8 3" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </p>
+            </div>
+            <p className={styles.badge}>
+              <MapleLeafIcon size="2.25rem" className={styles.leaf} />
+              <span>
+                Across
+                <br />
+                <strong>Canada</strong>
+              </span>
+            </p>
           </div>
         </div>
 
-        <div className={styles.media}>
-          <div className={styles.videoControls}>
+        <dialog
+          ref={dialogRef}
+          className={styles.dialog}
+          aria-label="Goodwill Staffing & Recruitment video"
+          onClose={handleDialogClose}
+          onClick={(event) => {
+            if (event.target === dialogRef.current) dialogRef.current.close();
+          }}
+        >
+          <div className={styles.dialogBody}>
+            {/* preload="none": the 28 MB file only streams once someone presses play. */}
+            <video ref={fullVideoRef} className={styles.fullVideo} controls playsInline preload="none">
+              <source src={mediaUrl(HERO_FULL_VIDEO_URL)} type="video/mp4" />
+            </video>
             <button
               type="button"
-              className={styles.playButton}
-              aria-label={isPlaying ? "Pause" : "Play"}
-              onClick={() => setPlayChoice(!isPlaying)}
+              aria-label="Close"
+              className={styles.dialogClose}
+              onClick={() => dialogRef.current?.close()}
             >
-              {isPlaying ? <PauseGlyph /> : <PlayGlyph />}
-            </button>
-            <button type="button" className={styles.fullVideoButton} onClick={openFullVideo}>
-              Full video
-              <ChevronRightIcon size="1rem" className={styles.fullVideoChevron} />
+              <CloseIcon size="1.5rem" />
             </button>
           </div>
-          <video
-            ref={loopRef}
-            className={styles.video}
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="auto"
-          >
-            <source src={HERO_CLIP_URL} type="video/mp4" />
-          </video>
-        </div>
-      </div>
+        </dialog>
 
-      <dialog
-        ref={dialogRef}
-        className={styles.dialog}
-        aria-label="Vivian Health video"
-        onClose={handleDialogClose}
-        onClick={(event) => {
-          if (event.target === dialogRef.current) dialogRef.current.close();
-        }}
-      >
-        <div className={styles.dialogBody}>
-          {/* preload="none": the 315 MB file only streams once someone presses play. */}
-          <video ref={fullVideoRef} className={styles.fullVideo} controls playsInline preload="none">
-            <source src={HERO_FULL_VIDEO_URL} type="video/mp4" />
-          </video>
-          <button
-            type="button"
-            aria-label="Close"
-            className={styles.dialogClose}
-            onClick={() => dialogRef.current?.close()}
-          >
-            <CloseIcon size="1.5rem" />
-          </button>
-        </div>
-      </dialog>
+      </section>
 
-      <div className={styles.cards}>
-        {jobsByType.map((jobs) => (
-          <JobTypeCard key={jobs.employmentType} {...jobs} className={styles.card} />
-        ))}
-      </div>
-    </section>
+      {/* A separate section whose cards ride up over the bottom of the hero. */}
+      <section className={styles.cardsSection} aria-label="Job types">
+        <div className={styles.cards}>
+          {jobTypes.map((jobType) => (
+            <JobTypeCard key={jobType.employmentType} {...jobType} className={styles.card} />
+          ))}
+        </div>
+      </section>
+    </>
   );
 }

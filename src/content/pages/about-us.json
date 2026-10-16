@@ -1,0 +1,78 @@
+{
+  "slug": "about-us",
+  "title": "About us",
+  "modified": "2025-10-09T10:39:56",
+  "seo": {
+    "title": "About Us - Goodwill Staffing and Recruitment",
+    "description": "Goodwill staffing and recruitment is a healthcare agency dedicated to connecting qualified professionals with hospitals, clinics, and care facilities in Canada.",
+    "image": {
+      "src": "/media/2025/01/goodwill-home.jpg",
+      "width": 1000,
+      "height": 1500
+    }
+  },
+  "hero": {
+    "layout": "split",
+    "title": "We Serve your Labour Needs",
+    "ctas": [
+      {
+        "text": "Request Staffing support",
+        "href": "/request-staffing/"
+      }
+    ],
+    "subtitle": "Goodwill staffing and recruitment is a healthcare agency dedicated to connecting qualified professionals with hospitals, clinics, and care facilities.  committed to solving staffing challenges with speed, accuracy, and care.",
+    "image": {
+      "src": "/media/2025/01/goodwill-home-683x1024.jpg",
+      "alt": ""
+    }
+  },
+  "blocks": [
+    {
+      "type": "image",
+      "src": "/media/2025/01/goodwill-laptop-683x1024.jpg",
+      "alt": "",
+      "width": 683,
+      "height": 1024
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Canada’s choice for top-tier healthcare staffing."
+    },
+    {
+      "type": "cards",
+      "items": [
+        {
+          "title": "Our Mission",
+          "text": "To provide qualified professionals to meet your immediate labour needs."
+        },
+        {
+          "title": "Vision",
+          "text": "Provider of choice for healthcare organizations and professionals."
+        },
+        {
+          "title": "Core Values",
+          "text": "Excellence, continuous improvement, work life balance and reliability."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Connecting Healthcare Providers with Top-Tier Talent"
+    },
+    {
+      "type": "rich",
+      "html": "<p>We are an incorporated company with expertise in providing staffing services across Canada. If you are an individual looking for quality care at home or are an institution looking for well-trained staff for your facility, we are here for you. Our goal is to provide solutions to your labour needs in line with your specifications.</p><p>As registered nurses (RNs) with varying experiences in various healthcare institutions and different operational environments, we have a firsthand understanding of these staffing challenges and possess a wide network of medical professionals to serve our clients.</p>"
+    },
+    {
+      "type": "buttons",
+      "items": [
+        {
+          "text": "Contact us >",
+          "href": "/contact-us/"
+        }
+      ]
+    }
+  ]
+}

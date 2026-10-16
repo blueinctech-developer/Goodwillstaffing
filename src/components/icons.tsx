@@ -3,8 +3,9 @@ import type { EmploymentType } from "@/data/home";
 
 // Paths copied from the production vivian.com markup and bundle.
 
-const BRAND_GREEN = "#124E3B";
-const BRAND_PINK = "#EAAFB0";
+// Palette of the icons on goodwillstaffing.ca: teal line art, soft pink fill.
+const BRAND_GREEN = "#02646F";
+const BRAND_PINK = "#F9C0C0";
 
 type IconProps = SVGProps<SVGSVGElement> & { size?: string | number };
 
@@ -63,6 +64,26 @@ export function ArrowRightIcon(props: IconProps) {
   );
 }
 
+/** Straight arrow (line and head) for CTA buttons. */
+export function ArrowIcon(props: IconProps) {
+  return (
+    <UiIcon {...props}>
+      <path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    </UiIcon>
+  );
+}
+
+export function MapleLeafIcon(props: IconProps) {
+  return (
+    <UiIcon {...props}>
+      <path
+        d="M12 1.5l1.6 3.1 2-.8-.7 4.6 2.4-2 .7 1.7 3-.6-.9 3 1.5.8-4.4 3.5.6 1.8-5.2-.8.1 5.4h-1.4l.1-5.4-5.2.8.6-1.8-4.4-3.5 1.5-.8-.9-3 3 .6.7-1.7 2.4 2-.7-4.6 2 .8L12 1.5z"
+        fill="currentColor"
+      />
+    </UiIcon>
+  );
+}
+
 export function CloseIcon(props: IconProps) {
   return (
     <UiIcon {...props}>
@@ -101,8 +122,8 @@ export function VivianMarkIcon(props: IconProps) {
 export function PauseGlyph(props: SVGProps<SVGSVGElement>) {
   return (
     <svg width="8" height="12" viewBox="0 0 8 12" fill="none" aria-hidden="true" {...props}>
-      <line x1="0.5" y1="0" x2="0.5" y2="11.88" stroke="white" />
-      <line x1="6.98" y1="0" x2="6.98" y2="11.88" stroke="white" />
+      <line x1="0.5" y1="0" x2="0.5" y2="11.88" stroke="currentColor" strokeWidth="2" />
+      <line x1="6.98" y1="0" x2="6.98" y2="11.88" stroke="currentColor" strokeWidth="2" />
     </svg>
   );
 }
@@ -112,7 +133,7 @@ export function PlayGlyph(props: SVGProps<SVGSVGElement>) {
     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" {...props}>
       <path
         d="M13.25 7.93301L5 12.6962C4.66667 12.8886 4.25 12.648 4.25 12.2631L4.25 2.73686C4.25 2.35196 4.66667 2.1114 5 2.30385L13.25 7.06699C13.5833 7.25944 13.5833 7.74056 13.25 7.93301Z"
-        stroke="white"
+        stroke="currentColor" fill="currentColor"
       />
     </svg>
   );
@@ -158,28 +179,11 @@ export function CircleArrowRight(props: SVGProps<SVGSVGElement>) {
   );
 }
 
-function Illustration({ children, size = 40 }: { children: React.ReactNode; size?: number }) {
+function Illustration({ children, size = 40, className }: { children: React.ReactNode; size?: number; className?: string }) {
   return (
-    <svg aria-hidden="true" focusable="false" viewBox="0 0 64 64" width={size} height={size}>
+    <svg aria-hidden="true" focusable="false" viewBox="0 0 64 64" width={size} height={size} className={className}>
       {children}
     </svg>
-  );
-}
-
-function TravelIllustration() {
-  return (
-    <Illustration>
-      <path d="M38.2263 15.6587L11.4028 6.34697C8.25589 5.25452 5.93881 9.33828 8.49076 11.4793L26.933 26.952L38.2263 15.6587Z" fill={BRAND_PINK} />
-      <path d="M18.3795 36.111L2.59287 38.9339C0.561684 39.2972 0.344202 42.125 2.29596 42.7945L13.7708 46.7308L14.7641 43.5244C15.5853 40.8736 16.8072 38.3747 18.3795 36.111Z" fill={BRAND_PINK} />
-      <path d="M17.2434 49.7257L21.184 61.4741C21.8449 63.4444 24.6998 63.2247 25.0514 61.1765L27.8289 44.9968C25.4789 46.6819 22.8655 47.9841 20.0851 48.8454L17.2434 49.7257Z" fill={BRAND_PINK} />
-      <path d="M38.1479 35.1861L53.5209 53.5095C55.662 56.0615 59.7457 53.7444 58.6533 50.5975L49.3979 23.9361L38.1479 35.1861Z" fill={BRAND_PINK} />
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M61.734 4.49696C61.9243 3.50528 61.1215 2.60327 60.1144 2.67737C54.8971 3.06124 49.9917 5.30757 46.2925 9.0067L22.1702 33.129C19.1834 36.1159 16.9692 39.7854 15.7193 43.8203L14.4542 47.9041C14.2162 48.6726 14.9369 49.3933 15.7054 49.1552L19.7892 47.8901C23.824 46.6402 27.4936 44.4261 30.4804 41.4393L55.4211 16.4986C58.6544 13.2652 60.8436 9.13635 61.7055 4.64567L61.734 4.49696ZM59.9677 0.682759C62.2873 0.512089 64.1366 2.58974 63.6981 4.87394L63.6696 5.02265C62.7323 9.9063 60.3516 14.3965 56.8353 17.9128L31.8946 42.8535C28.6781 46.0701 24.7262 48.4545 20.381 49.8006L16.2972 51.0657C13.9917 51.7798 11.8296 49.6177 12.5438 47.3123L13.8089 43.2285C15.1549 38.8832 17.5394 34.9314 20.756 31.7148L44.8783 7.59249C48.9166 3.55415 54.272 1.10183 59.9677 0.682759Z"
-        fill={BRAND_GREEN}
-      />
-    </Illustration>
   );
 }
 
@@ -200,32 +204,13 @@ function StaffIllustration() {
 function LocalIllustration() {
   return (
     <Illustration>
-      <path d="M44 25C44 31.6274 38.6274 37 32 37C25.3726 37 20 31.6274 20 25C20 18.3726 25.3726 13 32 13C38.6274 13 44 18.3726 44 25Z" fill={BRAND_PINK} />
+      <circle className="sonar-ring" cx="32" cy="25" r="9" fill="none" stroke={BRAND_PINK} strokeWidth="2" />
+      <circle className="sonar-ring sonar-ring-late" cx="32" cy="25" r="9" fill="none" stroke={BRAND_PINK} strokeWidth="2" />
+      <circle className="sonar-core" cx="32" cy="25" r="9" fill={BRAND_PINK} />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
         d="M33.4249 61H44C44.5523 61 45 61.4477 45 62C45 62.5523 44.5523 63 44 63H20C19.4477 63 19 62.5523 19 62C19 61.4477 19.4477 61 20 61H30.5751C30.4908 60.9158 30.3998 60.8247 30.3025 60.7267C29.6677 60.0881 28.7625 59.1611 27.677 58.0043C25.5071 55.6917 22.6115 52.4546 19.7132 48.7603C16.8177 45.0695 13.9034 40.9019 11.7087 36.7291C9.52384 32.575 8 28.319 8 24.4762C8 11.4891 18.767 1 32 1C45.233 1 56 11.4891 56 24.4762C56 28.319 54.4762 32.575 52.2913 36.7291C50.0966 40.9019 47.1823 45.0695 44.2868 48.7603C41.3885 52.4546 38.4929 55.6917 36.323 58.0043C35.2375 59.1611 34.3323 60.0881 33.6975 60.7267C33.6002 60.8247 33.5092 60.9158 33.4249 61ZM10 24.4762C10 12.6368 19.8279 3 32 3C44.1721 3 54 12.6368 54 24.4762C54 27.84 52.6488 31.7528 50.5212 35.7981C48.4034 39.8248 45.5677 43.8874 42.7132 47.5258C39.8615 51.1609 37.0071 54.3522 34.8645 56.6358C33.7937 57.777 32.902 58.69 32.279 59.3168C32.179 59.4175 32.0858 59.5108 32 59.5965C31.9142 59.5108 31.821 59.4175 31.721 59.3168C31.098 58.69 30.2063 57.777 29.1355 56.6358C26.9929 54.3522 24.1385 51.1609 21.2868 47.5258C18.4323 43.8874 15.5966 39.8248 13.4788 35.7981C11.3512 31.7528 10 27.84 10 24.4762Z"
-        fill={BRAND_GREEN}
-      />
-    </Illustration>
-  );
-}
-
-function PerDiemIllustration() {
-  return (
-    <Illustration>
-      <path d="M61 8H3V23H61V8Z" fill={BRAND_PINK} />
-      <path d="M13 29C11.8954 29 11 29.8954 11 31V36C11 37.1046 11.8954 38 13 38H19C20.1046 38 21 37.1046 21 36V31C21 29.8954 20.1046 29 19 29H13Z" fill={BRAND_PINK} />
-      <path d="M45 29C43.8954 29 43 29.8954 43 31V36C43 37.1046 43.8954 38 45 38H51C52.1046 38 53 37.1046 53 36V31C53 29.8954 52.1046 29 51 29H45Z" fill={BRAND_PINK} />
-      <path d="M27 31C27 29.8954 27.8954 29 29 29H35C36.1046 29 37 29.8954 37 31V36C37 37.1046 36.1046 38 35 38H29C27.8954 38 27 37.1046 27 36V31Z" fill={BRAND_PINK} />
-      <path d="M13 45C11.8954 45 11 45.8954 11 47V52C11 53.1046 11.8954 54 13 54H19C20.1046 54 21 53.1046 21 52V47C21 45.8954 20.1046 45 19 45H13Z" fill={BRAND_PINK} />
-      <path d="M27 47C27 45.8954 27.8954 45 29 45H35C36.1046 45 37 45.8954 37 47V52C37 53.1046 36.1046 54 35 54H29C27.8954 54 27 53.1046 27 52V47Z" fill={BRAND_PINK} />
-      <path d="M14 2C14 1.44772 14.4477 1 15 1C15.5523 1 16 1.44772 16 2V16C16 16.5523 15.5523 17 15 17C14.4477 17 14 16.5523 14 16V2Z" fill={BRAND_GREEN} />
-      <path d="M46 2C46 1.44772 46.4477 1 47 1C47.5523 1 48 1.44772 48 2V16C48 16.5523 47.5523 17 47 17C46.4477 17 46 16.5523 46 16V2Z" fill={BRAND_GREEN} />
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M3 23V55C3 58.866 6.13401 62 10 62H44.4321L60.727 44.6866L61 44.3984V23H59V42H47C44.2386 42 42 44.2386 42 47V60H10C7.23858 60 5 57.7614 5 55V23H3ZM58.6226 44L44 59.4378V47C44 45.3431 45.3431 44 47 44H58.6226Z"
         fill={BRAND_GREEN}
       />
     </Illustration>
@@ -252,10 +237,78 @@ function LocumIllustration() {
   );
 }
 
-export const EMPLOYMENT_TYPE_ICONS: Record<EmploymentType, () => React.JSX.Element> = {
-  Travel: TravelIllustration,
-  Permanent: StaffIllustration,
-  "Local Contract": LocalIllustration,
-  "Per Diem / PRN": PerDiemIllustration,
-  "Locum Tenens": LocumIllustration,
+// The job-type icons used on goodwillstaffing.ca (public/svg/job-types).
+export const EMPLOYMENT_TYPE_ICONS: Record<EmploymentType, string> = {
+  Permanent: "/svg/job-types/staff-positions.svg",
+  Travel: "/svg/job-types/travel-nursing.svg",
+  "Locum Tenens": "/svg/job-types/locum-tenens.svg",
+  "Per Diem / PRN": "/svg/job-types/per-diem.svg",
+  "Local Contract": "/svg/job-types/local-contracts.svg",
 };
+
+// Section icons in the same two-tone line style as the job-type illustrations.
+function StarIllustration() {
+  return (
+    <Illustration>
+      <path d="M32 6l7.6 16.2 17.4 2.1-12.8 12.1 3.3 17.4L32 45.1 16.5 53.8l3.3-17.4L7 24.3l17.4-2.1L32 6z" fill="none" stroke={BRAND_GREEN} strokeWidth="2.5" strokeLinejoin="round" />
+      <path className="sonar-ring" d="M32 18l4 8.6 9.2 1.1-6.8 6.4 1.7 9.2L32 38.7l-8.1 4.6 1.7-9.2-6.8-6.4 9.2-1.1L32 18z" fill="none" stroke={BRAND_PINK} strokeWidth="1.5" strokeLinejoin="round" />
+      <path className="sonar-ring sonar-ring-late" d="M32 18l4 8.6 9.2 1.1-6.8 6.4 1.7 9.2L32 38.7l-8.1 4.6 1.7-9.2-6.8-6.4 9.2-1.1L32 18z" fill="none" stroke={BRAND_PINK} strokeWidth="1.5" strokeLinejoin="round" />
+      <path className="sonar-core" d="M32 18l4 8.6 9.2 1.1-6.8 6.4 1.7 9.2L32 38.7l-8.1 4.6 1.7-9.2-6.8-6.4 9.2-1.1L32 18z" fill={BRAND_PINK} />
+    </Illustration>
+  );
+}
+
+function ClockIllustration() {
+  return (
+    <Illustration>
+      <circle cx="32" cy="32" r="25" fill="none" stroke={BRAND_GREEN} strokeWidth="2.5" />
+      {/* Minute hand sweeps once a cycle, hour hand creeps: round-the-clock. */}
+      <path className="clock-minute" d="M32 32V14" fill="none" stroke={BRAND_PINK} strokeWidth="3.5" strokeLinecap="round" />
+      <path className="clock-hour" d="M32 32l10 6" fill="none" stroke={BRAND_PINK} strokeWidth="4" strokeLinecap="round" />
+      <circle cx="32" cy="32" r="2.5" fill={BRAND_GREEN} />
+    </Illustration>
+  );
+}
+
+function ShieldIllustration() {
+  return (
+    <Illustration>
+      <path d="M32 5l22 8v16c0 14.5-9.4 25.4-22 30-12.6-4.6-22-15.5-22-30V13l22-8z" fill="none" stroke={BRAND_GREEN} strokeWidth="2.5" strokeLinejoin="round" />
+      <path className="draw-tick" pathLength={1} d="M22 32l7 7 14-15" fill="none" stroke={BRAND_PINK} strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
+    </Illustration>
+  );
+}
+
+function HeartIllustration() {
+  return (
+    <Illustration>
+      <path d="M32 55S7 40.5 7 23.5C7 15 13.5 9 21 9c5 0 9 2.7 11 6.5C34 11.7 38 9 43 9c7.5 0 14 6 14 14.5C57 40.5 32 55 32 55z" fill="none" stroke={BRAND_GREEN} strokeWidth="2.5" strokeLinejoin="round" />
+      <path d="M20 28h7l3-6 4 12 3-6h7" fill="none" stroke={BRAND_PINK} strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round" />
+    </Illustration>
+  );
+}
+
+function PeopleIllustration() {
+  return (
+    <Illustration>
+      <circle cx="32" cy="20" r="8" fill={BRAND_PINK} />
+      <path d="M17 50c0-8.8 6.7-15 15-15s15 6.2 15 15" fill="none" stroke={BRAND_GREEN} strokeWidth="2.5" strokeLinecap="round" />
+      <circle cx="13" cy="25" r="5.5" fill="none" stroke={BRAND_GREEN} strokeWidth="2.5" />
+      <circle cx="51" cy="25" r="5.5" fill="none" stroke={BRAND_GREEN} strokeWidth="2.5" />
+      <path d="M3 47c0-6 4-10.5 10-10.5M61 47c0-6-4-10.5-10-10.5" fill="none" stroke={BRAND_GREEN} strokeWidth="2.5" strokeLinecap="round" />
+    </Illustration>
+  );
+}
+
+export const SECTION_ICONS = {
+  star: StarIllustration,
+  clock: ClockIllustration,
+  shield: ShieldIllustration,
+  heart: HeartIllustration,
+  people: PeopleIllustration,
+  map: LocalIllustration,
+  hospital: StaffIllustration,
+  stethoscope: LocumIllustration,
+} satisfies Record<string, () => React.JSX.Element>;
+
+export type SectionIcon = keyof typeof SECTION_ICONS;

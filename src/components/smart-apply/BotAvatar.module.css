@@ -1,0 +1,16 @@
+.avatar {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 0 0 0.0625rem var(--green-150);
+}
+
+.mark {
+  width: 74%;
+  height: auto;
+}

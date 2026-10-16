@@ -3,6 +3,7 @@
   align-items: stretch;
   justify-content: center;
   min-height: 41.875rem;
+  padding: 0 var(--page-inset);
   overflow: hidden;
   background: var(--green-900);
 }
@@ -13,23 +14,25 @@
   }
 }
 
+/* Copy starts on the page edge; the portraits sit against the right edge. */
 .inner {
   display: flex;
-  max-width: 74.875rem;
-  margin: 0 5.125rem;
+  justify-content: space-between;
+  width: 100%;
 }
 
 @media (max-width: 1023px) {
   .inner {
     flex-direction: column-reverse;
     justify-content: start;
-    margin: 3rem;
+    align-items: center;
+    margin: 3rem 0;
   }
 }
 
 @media (max-width: 767px) {
   .inner {
-    margin: 3rem 1.5rem;
+    margin: 3rem 0;
   }
 }
 
@@ -55,17 +58,16 @@
   margin: 0 0 1.625rem;
   color: #fff;
   font-family: var(--font-serif);
-  font-size: 4rem;
-  font-weight: 600;
-  line-height: 1.2;
   text-align: left;
+  font-size: var(--type-h1);
+  font-weight: var(--heading-weight);
+  line-height: var(--heading-leading);
+  letter-spacing: var(--heading-tracking);
 }
 
 @media (max-width: 1023px) {
   .title {
     margin: 0 0 1.25rem;
-    font-size: 1.75rem;
-    line-height: 1.29;
     text-align: center;
   }
 }
@@ -89,6 +91,18 @@
   }
 }
 
+.action {
+  align-self: flex-start;
+  margin-top: 2.5rem;
+}
+
+@media (max-width: 1023px) {
+  .action {
+    align-self: center;
+    margin-top: 2rem;
+  }
+}
+
 /* Portrait composition */
 
 .artColumn {
@@ -97,7 +111,7 @@
   flex-grow: 1;
   flex-shrink: 0;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 @media (max-width: 1199px) {
@@ -110,6 +124,7 @@
   .artColumn {
     flex-basis: unset;
     flex-grow: 0;
+    justify-content: center;
   }
 }
 
@@ -154,7 +169,7 @@
   width: 18.25rem;
   height: 18.25rem;
   border-radius: 50%;
-  background: #fceded;
+  background: var(--pink-100);
 }
 
 @media (max-width: 1199px) {

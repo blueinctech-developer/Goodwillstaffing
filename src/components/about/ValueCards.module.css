@@ -1,0 +1,127 @@
+.section {
+  padding: 10rem 0;
+}
+
+@media (max-width: 767px) {
+  .section {
+    padding: 5rem 0;
+  }
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  max-width: 45.875rem;
+  margin: 0 var(--page-inset) 4.6875rem;
+  text-align: center;
+  font-size: var(--type-h2);
+  font-weight: var(--heading-weight);
+  line-height: var(--heading-leading);
+  letter-spacing: var(--heading-tracking);
+}
+
+@media (max-width: 767px) {
+  .title {
+    margin: 0 var(--page-inset) 3.75rem;
+  }
+}
+
+.listWrap {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0 var(--page-inset);
+}
+
+.list {
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: row;
+  flex-grow: 0;
+  flex-shrink: 1;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (max-width: 1023px) {
+  .list {
+    flex-direction: column;
+  }
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex: 1 1 0;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.cardTitle {
+  margin: 0;
+  color: var(--green-800);
+  font-family: var(--font-serif);
+  font-size: 2.75rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.cardText {
+  max-width: 16rem;
+  margin: 1rem 0 0;
+  color: var(--neutral-1100);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/* Vertical dividers between the cards on desktop. */
+.card:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 0.5rem;
+  right: 0;
+  bottom: 0.5rem;
+  border-right: 1px solid var(--neutral-700);
+}
+
+/* Stacked layout with short horizontal rules between the cards. */
+@media (max-width: 1023px) {
+  .card {
+    padding: 0 0 3.125rem;
+  }
+
+  .card:not(:last-child) {
+    margin-bottom: 3.125rem;
+  }
+
+  .card:not(:last-child)::after {
+    top: auto;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    max-width: 8.375rem;
+    margin: 0 auto;
+    border-right: none;
+    border-bottom: 1px solid var(--neutral-700);
+  }
+
+  .card:last-child {
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .cardTitle {
+    font-size: 2rem;
+  }
+}

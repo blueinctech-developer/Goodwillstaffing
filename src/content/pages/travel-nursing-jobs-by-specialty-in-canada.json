@@ -1,0 +1,160 @@
+{
+  "slug": "travel-nursing-jobs-by-specialty-in-canada",
+  "title": "Travel Nursing Jobs by Specialty",
+  "modified": "2026-01-10T14:43:12",
+  "seo": {
+    "title": "Travel Nursing Jobs by Specialty in Canada",
+    "description": "Browse travel nursing jobs by specialty. Goodwill Staffing offers high-paying placements in ER, ICU, LTC, Med-Surg, and more. Apply today.",
+    "image": {
+      "src": "/media/2025/07/spe.png",
+      "width": 624,
+      "height": 351
+    }
+  },
+  "hero": {
+    "layout": "split",
+    "title": "Find Your Perfect Fit in Nursing",
+    "ctas": [
+      {
+        "text": "Apply Now",
+        "href": "https://nexus-leap.laboredge.com/goodwill%20/signup"
+      }
+    ],
+    "subtitle": "No matter your expertise—from high-acuity ER to comforting LTC—we’ve got meaningful opportunities waiting. You’ve worked hard to build your skills—now let’s find a role where you can thrive, grow, and feel supported",
+    "image": {
+      "src": "/media/2025/07/spe.png",
+      "alt": "Close-up of a travel nurse in scrubs writing on a clipboard while reviewing a healthcare contract or travel healthcare job offer"
+    }
+  },
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "We are actively hiring travel nurses for"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "text": "Emergency Department (ER)"
+        },
+        {
+          "text": "Intensive Care Unit (ICU)"
+        },
+        {
+          "text": "Long-Term Care (LTC)"
+        },
+        {
+          "text": "Medical-Surgical (Med-Surg"
+        },
+        {
+          "text": "Obstetrics (OBS)"
+        },
+        {
+          "text": "Rehabilitation"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "text": "Labour & Delivery (L&D)"
+        },
+        {
+          "text": "Medicine"
+        },
+        {
+          "text": "Acute Care"
+        },
+        {
+          "text": "Neonatal Intensive Care Unit (NICU)"
+        },
+        {
+          "text": "Orthopedics"
+        },
+        {
+          "text": "Palliative Care"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "text": "Pediatrics"
+        },
+        {
+          "text": "Mental Health & Addictions"
+        },
+        {
+          "text": "Public & Community Health"
+        },
+        {
+          "text": "Indigenous & Remote Health"
+        },
+        {
+          "text": "Oncology"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Full Support From Application to Assignment"
+    },
+    {
+      "type": "rich",
+      "html": "<i></i>\r\n      Offer competitive pay and transparent rates\r\n    \r\n    \r\n      <i></i>\r\n      Provide licensing and travel support\r\n    \r\n    \r\n      <i></i>\r\n      Match you with jobs that suit your background\r\n    \r\n    \r\n      <i></i>\r\n      Available to support you throughout your assignment"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Frequently Asked Questions"
+    },
+    {
+      "type": "faq",
+      "items": [
+        {
+          "question": "Do I need experience in my chosen specialty?",
+          "answer": "<p>Most roles require 1–2 years of recent experience in the specialty area.</p>"
+        },
+        {
+          "question": "Can I switch specialties?",
+          "answer": "<p>Yes, with enough experience and available contracts. We’ll advise if retraining is needed.</p>"
+        },
+        {
+          "question": "How long are the contracts?",
+          "answer": "<p>Most range from 4 to 12 weeks, with extension options.</p>"
+        },
+        {
+          "question": "Is housing included?",
+          "answer": "<p>Yes. All travel contracts include accommodations and travel support.</p>"
+        }
+      ]
+    },
+    {
+      "type": "rich",
+      "html": "<p>Goodwill Staffing connects Canada’s top allied health professionals with rewarding travel assignments. Whether you’re a therapist, technician, or paramedic, we provide licensing, housing, and full travel coordination.</p>"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Apply Now to Find a Travel Nursing Role That Fits"
+    },
+    {
+      "type": "buttons",
+      "items": [
+        {
+          "text": "Apply Now",
+          "href": "https://nexus-leap.laboredge.com/goodwill%20/signup"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 6,
+      "text": "Let’s turn your skills into impact. Whether you're ready for your first contract or your fifteenth, we're here to support your journey. We respond to all qualified applicants within 1 business day."
+    }
+  ]
+}

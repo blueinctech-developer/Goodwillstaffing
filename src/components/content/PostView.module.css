@@ -1,0 +1,94 @@
+/* Title and body start on the page edge (--page-inset) and keep a readable
+   measure, like the content pages. */
+.header {
+  display: flex;
+  padding: 4.5rem var(--page-inset) 9rem;
+  background: var(--green-900);
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .header {
+    padding: 3rem var(--page-inset) 6rem;
+  }
+}
+
+.headerInner {
+  width: 100%;
+  max-width: 48rem;
+}
+
+.crumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.crumbs a {
+  padding: 0.25rem 0.75rem;
+  border-radius: 999rem;
+  background: rgb(255 255 255 / 12%);
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.crumbs a:hover {
+  background: rgb(255 255 255 / 22%);
+}
+
+.title {
+  margin: 0 0 1rem;
+  font-family: var(--font-serif);
+  text-wrap: balance;
+  font-size: var(--type-h1);
+  font-weight: var(--heading-weight);
+  line-height: var(--heading-leading);
+  letter-spacing: var(--heading-tracking);
+}
+
+.date {
+  color: var(--green-150);
+}
+
+.body {
+  max-width: 48rem;
+  margin: -6rem var(--page-inset) 5rem;
+  color: var(--neutral-900);
+}
+
+@media (max-width: 767px) {
+  .body {
+    margin-top: -4rem;
+  }
+}
+
+.featured {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 2.5rem;
+  border-radius: 1.5rem;
+  box-shadow: var(--shadow-raised);
+}
+
+.related {
+  display: flex;
+  padding: 5rem var(--page-inset);
+  background: var(--cream);
+}
+
+@media (max-width: 767px) {
+  .related {
+    padding: 3rem var(--page-inset);
+  }
+}
+
+.relatedInner {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}

@@ -1,0 +1,210 @@
+{
+  "slug": "services",
+  "title": "Services",
+  "modified": "2025-08-05T16:28:06",
+  "seo": {
+    "title": "Services - Goodwill Staffing & Recruitment",
+    "description": "Explore the range of staffing and recruitment services offered by Goodwill Staffing. From healthcare staffing solutions to customized recruitment strategies, discover how we can help meet your staffing needs.",
+    "image": {
+      "src": "/media/2023/11/business-1-1.jpg",
+      "width": 531,
+      "height": 531
+    }
+  },
+  "hero": {
+    "layout": "plain",
+    "title": "Our services and solutions",
+    "ctas": [],
+    "breadcrumbs": [
+      {
+        "text": "Services"
+      }
+    ],
+    "subtitle": "Discover how our tech solutions can transform your business. Explore our features and take your business to new heights."
+  },
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Your business goals are our top priority"
+    },
+    {
+      "type": "buttons",
+      "items": [
+        {
+          "text": "Get in touch",
+          "href": "/contact-us/"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Strategic planning for optimal growth"
+    },
+    {
+      "type": "rich",
+      "html": "<p>Crafting precise financial roadmaps aligned with your business objectives.</p>"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "text": "Optimize resource allocation"
+        },
+        {
+          "text": "Adapt to market changes"
+        },
+        {
+          "text": "Achieve long-term goals"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "/media/2023/11/business-1-1.jpg",
+      "alt": "services",
+      "width": 531,
+      "height": 531
+    },
+    {
+      "type": "image",
+      "src": "/media/2023/11/business-img-2-1.jpg",
+      "alt": "",
+      "width": 531,
+      "height": 531
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "In-depth financial performance analysis"
+    },
+    {
+      "type": "rich",
+      "html": "<p>Analyze and enhance financial performance for sustained growth.</p>"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "text": "Identify strengths and weaknesses"
+        },
+        {
+          "text": "Optimize operational efficiency"
+        },
+        {
+          "text": "Increase revenue streams"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Expert advisory tailored for maximum returns"
+    },
+    {
+      "type": "rich",
+      "html": "<p>Tailored investment strategies for optimal returns and risk management.</p>"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "text": "Capitalize on market opportunities"
+        },
+        {
+          "text": "Minimize investment risks"
+        },
+        {
+          "text": "Realize growth potential"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "/media/2023/11/business-3-1.jpg",
+      "alt": "",
+      "width": 531,
+      "height": 531
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Meet our brand partner community"
+    },
+    {
+      "type": "buttons",
+      "items": [
+        {
+          "text": "See all partners",
+          "href": "/contact-us/"
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "items": [
+        {
+          "title": "PayPal",
+          "text": "Define each stage of work to see what’s important and where things are stuck.",
+          "image": {
+            "src": "/media/2023/12/paypal-2.svg",
+            "alt": "",
+            "width": 24,
+            "height": 24
+          }
+        },
+        {
+          "title": "Airbnb",
+          "text": "Define each stage of work to see what’s important and where things are stuck.",
+          "image": {
+            "src": "/media/2023/12/airbnb-2.svg",
+            "alt": "",
+            "width": 24,
+            "height": 24
+          }
+        },
+        {
+          "title": "Shopify",
+          "text": "Define each stage of work to see what’s important and where things are stuck.",
+          "image": {
+            "src": "/media/2023/12/shopify-2.svg",
+            "alt": "",
+            "width": 24,
+            "height": 24
+          }
+        },
+        {
+          "title": "Yelp",
+          "text": "Define each stage of work to see what’s important and where things are stuck.",
+          "image": {
+            "src": "/media/2023/12/yelp-2.svg",
+            "alt": "",
+            "width": 24,
+            "height": 24
+          }
+        },
+        {
+          "title": "Magento",
+          "text": "Define each stage of work to see what’s important and where things are stuck.",
+          "image": {
+            "src": "/media/2023/12/magento-2.svg",
+            "alt": "",
+            "width": 24,
+            "height": 24
+          }
+        },
+        {
+          "title": "Amazon",
+          "text": "Define each stage of work to see what’s important and where things are stuck.",
+          "image": {
+            "src": "/media/2023/12/amazon-2.svg",
+            "alt": "",
+            "width": 24,
+            "height": 24
+          }
+        }
+      ]
+    }
+  ]
+}

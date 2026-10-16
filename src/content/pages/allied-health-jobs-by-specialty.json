@@ -1,0 +1,142 @@
+{
+  "slug": "allied-health-jobs-by-specialty",
+  "title": "Allied Health Jobs by Specialty",
+  "modified": "2026-01-10T13:27:18",
+  "seo": {
+    "title": "Allied Health Jobs by Specialty",
+    "description": "Browse permanent and contract allied health jobs by specialty. Apply for roles in imaging, lab, paramedicine, rehab, and diagnostics.",
+    "image": {
+      "src": "/media/2025/08/goodhands-1-1024x576.png",
+      "width": 1024,
+      "height": 576
+    }
+  },
+  "hero": {
+    "layout": "split",
+    "title": "Explore Allied Health Careers by Specialty",
+    "ctas": [
+      {
+        "text": "Apply Now",
+        "href": "https://nexus-leap.laboredge.com/goodwill%20/signup"
+      }
+    ],
+    "subtitle": "From diagnostics to rehab, we’ll help you turn your expertise into a role where you feel valued and supported.",
+    "image": {
+      "src": "/media/2025/07/spe.png",
+      "alt": "Close-up of a travel nurse in scrubs writing on a clipboard while reviewing a healthcare contract or travel healthcare job offer"
+    }
+  },
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "We’re actively recruiting professionals in"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "text": "Diagnostic Imaging (MRT, Sonography, Radiology)"
+        },
+        {
+          "text": "Respiratory Therapy (RT)"
+        },
+        {
+          "text": "Laboratory Sciences (MLT, CLXT)"
+        },
+        {
+          "text": "Occupational Therapy (OT)"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "text": "Physiotherapy (PT)"
+        },
+        {
+          "text": "Speech-Language Pathology (SLP)"
+        },
+        {
+          "text": "Kinesiology"
+        },
+        {
+          "text": "Audiology"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "text": "Dietetics"
+        },
+        {
+          "text": "Paramedicine (ACP, PCP)"
+        },
+        {
+          "text": "Behavioral Therapy"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Why Work With Goodwill?"
+    },
+    {
+      "type": "rich",
+      "html": "<i></i>\r\n      Connect you to facilities seeking your exact specialty\r\n    \r\n    \r\n      <i></i>\r\n      Provide onboarding support and relocation coordination where needed\r\n    \r\n    \r\n      <i></i>\r\n      Offer roles that align with your goals—contract or permanent\r\n    \r\n    \r\n      <i></i>\r\n      Assist with licensing, credentialing, and application follow-through"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Frequently Asked Questions"
+    },
+    {
+      "type": "faq",
+      "items": [
+        {
+          "question": "Do you offer both permanent and contract roles?",
+          "answer": "<p>Yes. We offer allied health opportunities in both categories.</p>"
+        },
+        {
+          "question": "Can I work in a province I’m not licensed in?",
+          "answer": "<p>Yes. We’ll help you navigate interprovincial credentialing.</p>"
+        },
+        {
+          "question": "What kinds of facilities do you work with?",
+          "answer": "<p>Hospitals, clinics, diagnostic centers, long-term care, and remote health posts.</p>"
+        },
+        {
+          "question": "Are there rural or remote placements available?",
+          "answer": "<p>Absolutely. Many of our allied professionals take roles in rural, northern, or underserved communities.</p>"
+        }
+      ]
+    },
+    {
+      "type": "rich",
+      "html": "<p>Goodwill Staffing connects Canada’s top allied health professionals with rewarding travel assignments. Whether you’re a therapist, technician, or paramedic, we provide licensing, housing, and full travel coordination.</p>"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Apply Now to Find a Travel Nursing Role That Fits"
+    },
+    {
+      "type": "buttons",
+      "items": [
+        {
+          "text": "Apply Now",
+          "href": "https://nexus-leap.laboredge.com/goodwill%20/signup"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 6,
+      "text": "Let’s turn your skills into impact. Whether you're ready for your first contract or your fifteenth, we're here to support your journey. We respond to all qualified applicants within 1 business day."
+    }
+  ]
+}

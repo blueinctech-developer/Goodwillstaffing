@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { ComponentProps } from "react";
 import styles from "./Button.module.css";
 
-type Variant = "primary" | "secondary" | "dark";
+type Variant = "primary" | "secondary" | "dark" | "light";
 
 type ButtonLinkProps = ComponentProps<typeof Link> & {
   variant?: Variant;

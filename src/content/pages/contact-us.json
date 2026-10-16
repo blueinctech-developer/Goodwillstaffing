@@ -1,0 +1,57 @@
+{
+  "slug": "contact-us",
+  "title": "Contact",
+  "modified": "2025-09-12T08:40:12",
+  "seo": {
+    "title": "Contact Us - Goodwill Staffing & Recruitment",
+    "description": "Contact us today for all your staffing and career solutions. At Goodwill, we are dedicated to providing you tailored solutions.",
+    "image": {
+      "src": "/media/2025/08/medical-practitioner-answering-phone-calls-scaled.jpg",
+      "width": 2560,
+      "height": 1707
+    }
+  },
+  "hero": {
+    "layout": "plain",
+    "title": "Get in Touch",
+    "ctas": [],
+    "subtitle": "Reach out to us for expert health care staffing solutions."
+  },
+  "blocks": [
+    {
+      "type": "form",
+      "formId": 6
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Exceptional agency and reliable results—Goodwill Staffing never disappoints!"
+    },
+    {
+      "type": "cards",
+      "items": [
+        {
+          "title": "Email",
+          "text": "info@goodwillstaffing.ca",
+          "href": "mailto:info@goodwillstaffing.ca"
+        },
+        {
+          "title": "Contact",
+          "text": "+1 343 309 5318 +1 343 306 1363"
+        },
+        {
+          "title": "Address",
+          "text": "900 - 1000 Suite, 300 Terry Fox Dr, Kanata, ON, K2K 0E3."
+        }
+      ]
+    },
+    {
+      "type": "rich",
+      "html": "<p>Have an apartment or property you’re looking to rent out to our travelers?</p>"
+    },
+    {
+      "type": "form",
+      "formId": 7
+    }
+  ]
+}

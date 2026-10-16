@@ -1,0 +1,135 @@
+{
+  "slug": "nursing-jobs-by-province",
+  "title": "Nursing Jobs by Province",
+  "modified": "2026-01-10T14:01:29",
+  "seo": {
+    "title": "Nursing Jobs by Province - Goodwill Staffing & Recruitment",
+    "description": "Discover direct hire and permanent nursing jobs by province. Goodwill Staffing helps nurses find full-time roles in hospitals, LTC, and community health settings across Canada.",
+    "image": {
+      "src": "/media/2025/07/nurpro.png",
+      "width": 624,
+      "height": 351
+    }
+  },
+  "hero": {
+    "layout": "split",
+    "title": "Plant Roots in a Place That Feels Right",
+    "ctas": [
+      {
+        "text": "Apply Now",
+        "href": "https://nexus-leap.laboredge.com/goodwill%20/signup"
+      }
+    ],
+    "subtitle": "Whether you’re staying close to home or starting fresh in a new community, we’ll help you build a career where you feel supported and valued. From the moment you apply to your first day on the job, we’re by your side—placing RNs, LPNs, and NPs in meaningful roles that last.",
+    "image": {
+      "src": "/media/2025/07/nurpro.png",
+      "alt": "Nurse arriving for first shift in new Canadian province — Goodwill Staffing"
+    }
+  },
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "We place nurses in"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "text": "Alberta",
+          "href": "/travel-nursing-healthcare-jobs-in-alberta/"
+        },
+        {
+          "text": "Ontario",
+          "href": "/travel-nursing-jobs-in-ontario/"
+        },
+        {
+          "text": "British Columbia",
+          "href": "/travel-nursing-jobs-in-british-columbia/"
+        },
+        {
+          "text": "Nova Scotia",
+          "href": "/travel-nursing-jobs-nova-scotia/"
+        },
+        {
+          "text": "Manitoba",
+          "href": "/travel-nursing-jobs-in-manitoba/"
+        },
+        {
+          "text": "Prince Edward Island",
+          "href": "/travel-nursing-jobs-in-prince-edward-island/"
+        },
+        {
+          "text": "New Brunswick",
+          "href": "/travel-nursing-jobs-new-brunswick/"
+        },
+        {
+          "text": "Saskatchewan",
+          "href": "/travel-nursing-jobs-in-saskatchewan/"
+        },
+        {
+          "text": "Newfoundland & Labrador",
+          "href": "/travel-nursing-jobs-in-newfoundland-labrador/"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Support for Every Stage of Your Nursing Career"
+    },
+    {
+      "type": "rich",
+      "html": "<i></i>\r\n      Help match your skills with available roles\r\n    \r\n    \r\n      <i></i>\r\n      Assist with relocation discussions and employer coordination when needed\r\n    \r\n    \r\n      <i></i>\r\n      Provide interview coaching and onboarding guidance\r\n    \r\n    \r\n      <i></i>\r\n      Understand provincial licensing and employment processes"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Frequently Asked Questions"
+    },
+    {
+      "type": "faq",
+      "items": [
+        {
+          "question": "Can I work outside the province I trained in?",
+          "answer": "<p>Yes. We assist with interprovincial licensing and registration.</p>"
+        },
+        {
+          "question": "Do you offer full-time and part-time roles?",
+          "answer": "<p>Most placements are full-time, but some facilities offer part-time or flexible schedules.</p>"
+        },
+        {
+          "question": "Will I get relocation assistance?",
+          "answer": "<p>We don’t cover relocation costs directly, but we’ll advocate for support where possible and help you navigate the logistics of your move.</p>"
+        },
+        {
+          "question": "Do I need hospital experience to apply?",
+          "answer": "<p>Not always. Some roles are open to LTC, community, or specialty care backgrounds.</p>"
+        }
+      ]
+    },
+    {
+      "type": "rich",
+      "html": "<p>Goodwill Staffing connects nurses with permanent roles in provinces across Canada. From city hospitals to remote communities, we offer support, guidance, and relocation coordination assistance.</p>"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Apply Now to Find a Travel Nursing Role That Fits"
+    },
+    {
+      "type": "buttons",
+      "items": [
+        {
+          "text": "Apply Now",
+          "href": "https://nexus-leap.laboredge.com/goodwill%20/signup"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 6,
+      "text": "Let’s turn your skills into impact. Whether you're ready for your first contract or your fifteenth, we're here to support your journey. We respond to all qualified applicants within 1 business day."
+    }
+  ]
+}

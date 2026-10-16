@@ -2,7 +2,7 @@
    hard-stop gradients rather than a separate element. */
 .section {
   padding: 10rem 0;
-  background-image: linear-gradient(180deg, transparent 80%, #f8f3f1 0);
+  background-image: linear-gradient(180deg, transparent 80%, var(--pink-100) 0);
 }
 
 @media (max-width: 767px) {
@@ -25,55 +25,45 @@
 
 .title {
   flex-basis: 49.875rem;
-  margin: 0 1.5rem;
+  margin: 0 var(--page-inset);
   color: var(--neutral-900);
   font-family: var(--font-serif);
-  font-size: 2.75rem;
-  font-weight: 600;
-  line-height: 1.27;
   text-align: center;
+  font-size: var(--type-h2);
+  font-weight: var(--heading-weight);
+  line-height: var(--heading-leading);
+  letter-spacing: var(--heading-tracking);
 }
 
 @media (max-width: 767px) {
   .title {
     flex-basis: 25rem;
-    font-size: 1.625rem;
-    line-height: 1.38;
   }
 }
 
 .videoRow {
   display: flex;
   justify-content: center;
-  padding: 0 10.3125rem;
-  background-image: linear-gradient(180deg, transparent 50%, #f8f3f1 0);
+  padding: 0 var(--page-inset);
+  background-image: linear-gradient(180deg, transparent 50%, var(--pink-100) 0);
 }
 
 @media (max-width: 1199px) {
   .videoRow {
-    padding: 0 1.5rem;
+    padding: 0 var(--page-inset);
   }
 }
 
+/* Spans the page container at 16:9. */
 .frame {
   position: relative;
-  flex-basis: 69.375rem;
-  height: 41.75rem;
+  flex-basis: 100%;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
   border-radius: 1rem;
 }
 
-@media (max-width: 767px) {
-  .frame {
-    height: 26.25rem;
-  }
-}
 
-@media (max-width: 479px) {
-  .frame {
-    height: 15rem;
-  }
-}
 
 .iframe {
   display: block;

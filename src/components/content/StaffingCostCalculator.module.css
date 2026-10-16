@@ -1,0 +1,156 @@
+.calculator {
+  display: flex;
+  max-width: 60rem;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  background: var(--green-900);
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .calculator {
+    padding: 1.5rem;
+  }
+}
+
+.title {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.toggle {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.toggleButton {
+  padding: 0.625rem 1.125rem;
+  border: 0.0625rem solid var(--green-200);
+  border-radius: 0.75rem;
+  background: transparent;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.toggleButton[aria-pressed="true"] {
+  background: #fff;
+  color: var(--green-900);
+}
+
+.toggleButton:focus-visible,
+.input:focus-visible,
+.select:focus-visible {
+  outline: 0.1875rem solid #fff;
+  outline-offset: 0.125rem;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 1rem;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  .row {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.5rem;
+  }
+}
+
+.label {
+  font-weight: 600;
+}
+
+.inputs {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 0.75rem;
+}
+
+.input,
+.select,
+.subBox,
+.wide {
+  min-width: 0;
+  padding: 0.75rem 1rem;
+  border: 0;
+  border-radius: 0.75rem;
+  font: inherit;
+  font-size: 1rem;
+}
+
+.input,
+.select {
+  background: #fff;
+  color: var(--neutral-1100);
+}
+
+.subBox,
+.wide {
+  background: rgb(255 255 255 / 12%);
+  color: #fff;
+  font-weight: 600;
+  text-align: right;
+}
+
+.totalRow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 1rem;
+  align-items: center;
+  padding-top: 1rem;
+  border-top: 0.0625rem solid rgb(255 255 255 / 20%);
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 0.5rem 0 0;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background: #fff;
+  color: var(--neutral-900);
+}
+
+.result div {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 0.0625rem solid var(--neutral-300);
+}
+
+.result dd {
+  margin: 0;
+  font-weight: 600;
+}
+
+.result .grand {
+  padding: 0.5rem 0 0;
+  border: 0;
+  color: var(--green-900);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.grand dd {
+  font-family: var(--font-serif);
+  font-size: 1.75rem;
+}
+
+.footnote {
+  margin: 0;
+  color: var(--green-150);
+  font-size: 0.875rem;
+  line-height: 1.6;
+}

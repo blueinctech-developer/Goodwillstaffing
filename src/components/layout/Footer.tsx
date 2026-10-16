@@ -1,8 +1,18 @@
 /* eslint-disable @next/next/no-img-element -- small static SVG icons */
 import Link from "next/link";
+import { Logo } from "@/components/ui/Logo";
 import { cacheLife } from "next/cache";
-import { VivianMarkIcon } from "@/components/icons";
-import { APP_STORE_URL, FOOTER_COLUMNS, GOOGLE_PLAY_URL, SOCIAL_LINKS } from "@/lib/site";
+import {
+  ADDRESS_LINES,
+  CONTACT_EMAIL,
+  CONTACT_PHONE,
+  CONTACT_PHONE_HREF,
+  FOOTER_COLUMNS,
+  LEGAL_LINKS,
+  RECAPTCHA_LINKS,
+  SITE_NAME,
+  SOCIAL_LINKS,
+} from "@/lib/site";
 import styles from "./Footer.module.css";
 
 // Reading the clock during prerender fails under Cache Components, so the
@@ -16,14 +26,17 @@ async function CopyrightYear() {
 function BrandBlock() {
   return (
     <div className={styles.brand}>
-      <Link href="/" className={`${styles.logoLink} focus-ring`} aria-label="Vivian Health">
-        <VivianMarkIcon size="100%" className={styles.mark} />
-        <img src="/svg/vivian-logo.svg" alt="" className={styles.wordmark} width={114} height={33} />
+      <Link href="/" className={`${styles.logoLink} focus-ring logoHover`} aria-label={SITE_NAME}>
+        <Logo animated="hover" className={styles.wordmark} title="" />
       </Link>
       <address className={styles.address}>
-        100 Pine St., Ste. 1250 (PMB A140)
+        {ADDRESS_LINES[0]}
         <br />
-        San Francisco, CA 94111
+        {ADDRESS_LINES[1]}
+        <br />
+        <a href={CONTACT_PHONE_HREF}>{CONTACT_PHONE}</a>
+        <br />
+        <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
       </address>
       <ul className={styles.social}>
         {SOCIAL_LINKS.map((social) => (
@@ -33,20 +46,6 @@ function BrandBlock() {
             </a>
           </li>
         ))}
-      </ul>
-      <ul className={styles.stores}>
-        <li>
-          <a href={APP_STORE_URL} className={`${styles.storeLink} focus-ring`}>
-            <img src="/svg/icon-apple.svg" alt="" width={15} height={18} />
-            App Store
-          </a>
-        </li>
-        <li>
-          <a href={GOOGLE_PLAY_URL} className={`${styles.storeLink} focus-ring`}>
-            <img src="/svg/icon-google-play.svg" alt="" width={16} height={17} />
-            Google Play
-          </a>
-        </li>
       </ul>
     </div>
   );
@@ -71,22 +70,24 @@ export function Footer() {
             ))}
           </div>
           <div className={styles.legal}>
-            <Link href="/terms-of-service/" target="_blank" className={`${styles.legalLink} focus-ring`}>
-              Terms of use
-            </Link>
-            <Link href="/privacy-policy/" target="_blank" className={`${styles.legalLink} focus-ring`}>
-              Privacy policy
-            </Link>
+            {LEGAL_LINKS.map((link) => (
+              <Link key={link.href} href={link.href} className={`${styles.legalLink} focus-ring`}>
+                {link.text}
+              </Link>
+            ))}
             <p className={styles.fineprint}>
-              All rights reserved. Vivian Health <CopyrightYear />.
-              <br />
-              This site is protected by reCAPTCHA Enterprise and the Google{" "}
-              <a href="https://policies.google.com/privacy">Privacy Policy</a> and{" "}
-              <a href="https://policies.google.com/terms">Terms of Service</a> apply.
+              This site is protected by reCAPTCHA and the Google{" "}
+              {RECAPTCHA_LINKS.map((link, i) => (
+                <span key={link.href}>
+                  {i > 0 && " and "}
+                  <a href={link.href}>{link.text}</a>
+                </span>
+              ))}{" "}
+              apply.
             </p>
             <p className={styles.fineprint}>
-              Vivian is not a bank. Visa prepaid debit cards are issued by Lead Bank, Member FDIC,
-              pursuant to license from Visa U.S.A. Inc. Terms and conditions apply.
+              Copyright © <CopyrightYear /> {SITE_NAME}. All rights reserved. Designed by{" "}
+              <a href="https://blueinctech.com">Blueinc</a>.
             </p>
           </div>
         </div>

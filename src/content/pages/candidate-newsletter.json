@@ -1,0 +1,44 @@
+{
+  "slug": "candidate-newsletter",
+  "title": "Candidate Newsletter",
+  "modified": "2025-10-08T09:42:40",
+  "seo": {
+    "title": "Candidate Newsletter - Goodwill Staffing & Recruitment",
+    "description": "Get insights into updated news and affairs around travel nurse staffing and recruitment across Canada. Join our newsletter now to stay updated",
+    "image": {
+      "src": "/media/2025/07/spe.png",
+      "width": 624,
+      "height": 351
+    }
+  },
+  "hero": {
+    "layout": "split",
+    "title": "Subscribe to our candidate newsletter",
+    "ctas": [],
+    "eyebrow": "Stay Ahead in Your Career",
+    "image": {
+      "src": "/media/2025/08/168147.jpg",
+      "alt": "Group of smiling healthcare professionals including nurses and doctors standing together"
+    }
+  },
+  "blocks": [
+    {
+      "type": "list",
+      "items": [
+        {
+          "text": "Exclusive job openings and career tips"
+        },
+        {
+          "text": "Insights into the latest healthcare industry trends"
+        },
+        {
+          "text": "Updates on company news and staffing opportunities"
+        }
+      ]
+    },
+    {
+      "type": "form",
+      "formId": "candidate-newsletter"
+    }
+  ]
+}

@@ -1,0 +1,228 @@
+{
+  "slug": "hca-jobs-in-canada",
+  "title": "HCA Jobs in Canada",
+  "modified": "2026-01-10T13:49:26",
+  "seo": {
+    "title": "HCA Jobs in Canada - Goodwill Staffing & Recruitment",
+    "description": "Apply for HCA jobs across Canada. Explore roles in LTC, hospitals, and home care with housing, travel, and full recruiter assistance.",
+    "image": {
+      "src": "/media/2025/06/hca.jpg",
+      "width": 624,
+      "height": 353
+    }
+  },
+  "hero": {
+    "layout": "cover",
+    "title": "Flexible and Rewarding HCA Jobs Nationwide",
+    "ctas": [
+      {
+        "text": "Apply Now",
+        "href": "https://nexus-leap.laboredge.com/goodwill%20/signup"
+      }
+    ],
+    "breadcrumbs": [
+      {
+        "text": "Candidate Solutions",
+        "href": "/healthcare-jobs-in-canada-by-role-location/"
+      },
+      {
+        "text": "HCA"
+      }
+    ],
+    "subtitle": "We place HCAs in long-term care, hospitals, and homes with travel, housing, and onboarding support.",
+    "image": {
+      "src": "/media/2025/06/hca.jpg",
+      "alt": ""
+    }
+  },
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Health Care Aide Responsibilities"
+    },
+    {
+      "type": "rich",
+      "html": "<p>⦁ Assist with personal care, hygiene, and bathing</p>\n<p>⦁ Help with dressing, transfers, and mobility</p>\n<p>⦁ Support nutrition and feeding needs</p>\n<p>⦁ Observe and report health changes</p>\n<p>⦁ Provide emotional support and companionship</p>\n<p>⦁ Work in dementia, palliative, complex care, respite care, behavioral support, and post-acute recovery environments</p>"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "We welcome both experienced HCAs and newly trained aides ready to begin their healthcare journey"
+    },
+    {
+      "type": "cards",
+      "items": [
+        {
+          "title": "Group Homes",
+          "text": "",
+          "image": {
+            "src": "/media/2025/06/icons8-double-tick-48.png",
+            "alt": "RN Jobs In Canada",
+            "width": 48,
+            "height": 48
+          }
+        },
+        {
+          "title": "Long-Term Care Homes",
+          "text": "",
+          "image": {
+            "src": "/media/2025/06/icons8-double-tick-48.png",
+            "alt": "RN Jobs In Canada",
+            "width": 48,
+            "height": 48
+          }
+        },
+        {
+          "title": "Hospitals",
+          "text": "",
+          "image": {
+            "src": "/media/2025/06/icons8-double-tick-48.png",
+            "alt": "RN Jobs In Canada",
+            "width": 48,
+            "height": 48
+          }
+        },
+        {
+          "title": "Rural and Remote Locations",
+          "text": "",
+          "image": {
+            "src": "/media/2025/06/icons8-double-tick-48.png",
+            "alt": "RN Jobs In Canada",
+            "width": 48,
+            "height": 48
+          }
+        },
+        {
+          "title": "Home Care and Mobile Health Teams",
+          "text": "",
+          "image": {
+            "src": "/media/2025/06/icons8-double-tick-48.png",
+            "alt": "RN Jobs In Canada",
+            "width": 48,
+            "height": 48
+          }
+        },
+        {
+          "title": "Palliative and Hospice Centres",
+          "text": "",
+          "image": {
+            "src": "/media/2025/06/icons8-double-tick-48.png",
+            "alt": "RN Jobs In Canada",
+            "width": 48,
+            "height": 48
+          }
+        },
+        {
+          "title": "Mental Health and Addictions Support Settings",
+          "text": "",
+          "image": {
+            "src": "/media/2025/06/icons8-double-tick-48.png",
+            "alt": "RN Jobs In Canada",
+            "width": 48,
+            "height": 48
+          }
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HCA Opportunities Across Canada"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "text": "Alberta"
+        },
+        {
+          "text": "Ontario"
+        },
+        {
+          "text": "British Columbia"
+        },
+        {
+          "text": "Nova Scotia"
+        },
+        {
+          "text": "Manitoba"
+        },
+        {
+          "text": "Prince Edward Island"
+        },
+        {
+          "text": "New Brunswick"
+        },
+        {
+          "text": "Saskatchewan"
+        },
+        {
+          "text": "Newfoundland & Labrador"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Benefits of Working With Goodwill Staffing"
+    },
+    {
+      "type": "rich",
+      "html": "<i></i>\r\n      Competitive pay with housing and travel options\r\n    \r\n    \r\n      <i></i>\r\n      Local and travel-based assignments\r\n    \r\n    \r\n      <i></i>\r\n      Opportunities for training and upskilling\r\n    \r\n    \r\n      <i></i>\r\n      Roles in culturally inclusive and supportive workplaces\r\n    \r\n    \r\n      <i></i>\r\n      Supportive recruiters and credentialing team\r\n    \r\n    \r\n      <i></i>\r\n      Inclusive and culturally safe workplaces"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Frequently Asked Questions"
+    },
+    {
+      "type": "faq",
+      "items": [
+        {
+          "question": "Do I need prior experience to work with Goodwill?",
+          "answer": "<p>No. We welcome newly certified HCAs as well as experienced aides. Some roles offer mentorship and hands-on orientation.</p>"
+        },
+        {
+          "question": "What credentials do I need?",
+          "answer": "<p>You’ll need to have completed a recognized Health Care Aide or Continuing Care Assistant program (e.g., Alberta HCA, CCA in Nova Scotia).</p>"
+        },
+        {
+          "question": "Can I choose a specific province or region?",
+          "answer": "<p>Yes. We work with you to match your preferred schedule, location, and travel availability.</p>"
+        },
+        {
+          "question": "Do you have rural and remote placements?",
+          "answer": "<p>Yes. We specialize in providing staff to underserved areas across Canada, with full travel and housing support.</p>"
+        },
+        {
+          "question": "Are bilingual HCAs in demand?",
+          "answer": "<p>Yes. We often place bilingual HCAs in New Brunswick, Nova Scotia, and Ontario.</p>"
+        }
+      ]
+    },
+    {
+      "type": "rich",
+      "html": "<p>Goodwill Staffing connects Health Care Aides with job opportunities across Canada. Whether you prefer local or travel contracts, we support your success with flexible schedules, housing, travel, and onboarding support.</p>"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Apply Now to Find a Travel Nursing Role That Fits"
+    },
+    {
+      "type": "buttons",
+      "items": [
+        {
+          "text": "Apply Now",
+          "href": "https://nexus-leap.laboredge.com/goodwill%20/signup"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 6,
+      "text": "Let’s turn your skills into impact. Whether you're ready for your first contract or your fifteenth, we're here to support your journey. We respond to all qualified applicants within 1 business day."
+    }
+  ]
+}

@@ -4,10 +4,10 @@ export function Mission() {
   return (
     <section className={styles.section}>
       <div className={styles.inner}>
-        <h2 className={styles.eyebrow}>Our Mission</h2>
+        <h2 className={styles.eyebrow}>At Goodwill Staffing &amp; Recruitment</h2>
         <p className={styles.statement}>
-          Vivian&apos;s mission is to empower every healthcare professional to find their perfect job opportunity,
-          faster and easier than ever before.
+          Goodwill Staffing partners with healthcare institutions across Canada, to provide the right professionals
+          for quality care.
         </p>
       </div>
     </section>

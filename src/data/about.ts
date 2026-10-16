@@ -1,45 +1,25 @@
-import type { MarqueeLogo } from "@/components/ui/LogoMarquee";
+// Copy for /about-us/, taken from goodwillstaffing.ca/about-us/.
+import { INTRO_YOUTUBE_ID } from "@/lib/site";
 
-export const PLATFORM_STATS = [
-  { value: "9.2M", label: "Applications submitted on our platform" },
-  { value: "370+", label: "Unique employers hiring" },
-  { value: "2.1M", label: "Healthcare professionals on the platform" },
+export const ABOUT_IMAGES = {
+  heroArch: { src: "/media/2025/01/goodwill-home-683x1024.jpg", width: 683, height: 1024 },
+  heroCircle: { src: "/media/2025/01/3a.jpg", width: 630, height: 630 },
+  connecting: { src: "/media/2025/01/goodwill-laptop-683x1024.jpg", width: 683, height: 1024 },
+  join: { src: "/media/2025/01/image.jpg", width: 896, height: 1152 },
+};
+
+export const VALUE_CARDS = [
+  { title: "Our Mission", text: "To provide qualified professionals to meet your immediate labour needs." },
+  { title: "Vision", text: "Provider of choice for healthcare organizations and professionals." },
+  { title: "Core Values", text: "Excellence, continuous improvement, work life balance and reliability." },
 ];
 
-export const TEAM_TESTIMONIALS = [
-  {
-    image: "about/Shay",
-    quote:
-      "The collaborative nature makes coming to work fun and working for a start-up, everyday brings new and exciting challenges!",
-    name: "Shay Hubert, BSN, RN,",
-    role: "Nurse Concierge, Vivian Health",
-  },
-  {
-    image: "about/Kelly",
-    quote: "I like that I’m able to look at job postings from LOTS of different companies.",
-    name: "Nurse Kelly, RN",
-    role: "at Newark City Hospital",
-  },
-  {
-    image: "about/Tara",
-    quote: "Vivian has been a huge benefit to us. We saved over $550,000 in the first 3 months alone.",
-    name: "Tara Kopasz-Sumner,",
-    role: "Director of Talent Acquisition at Trinity Health",
-  },
-  {
-    image: "about/Ashley",
-    quote: "The amount of time I've saved in my recruiting process is a night and day difference.",
-    name: "Ashley Stadler,",
-    role: "National Director of Healthcare Recruiting at Voca",
-  },
+export const CONNECTING_PARAGRAPHS = [
+  "We are an incorporated company with expertise in providing staffing services across Canada. If you are an individual looking for quality care at home or are an institution looking for well-trained staff for your facility, we are here for you. Our goal is to provide solutions to your labour needs in line with your specifications.",
+  "As registered nurses (RNs) with varying experiences in various healthcare institutions and different operational environments, we have a firsthand understanding of these staffing challenges and possess a wide network of medical professionals to serve our clients.",
 ];
 
-export const PEOPLE_INC_BRANDS: MarqueeLogo[] = [
-  { src: "/svg/pi-instyle.svg", alt: "InStyle" },
-  { src: "/svg/pi-vivian.svg", alt: "Vivian" },
-  { src: "/svg/pi-verywell.svg", alt: "Verywell" },
-  { src: "/svg/pi-people.svg", alt: "People" },
-  { src: "/svg/pi-byrdie.svg", alt: "Byrdie" },
-];
-
-export const CELEBRATES_NURSES_VIDEO = "https://www.youtube.com/embed/XGLihCr7Vt4";
+export const ABOUT_VIDEO = {
+  src: `https://www.youtube.com/embed/${INTRO_YOUTUBE_ID}`,
+  title: "About Us: Goodwill Staffing & Recruitment",
+};

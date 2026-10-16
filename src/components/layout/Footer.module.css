@@ -1,25 +1,18 @@
 .footer {
-  padding: 4.0625rem 10.3125rem;
+  padding: 4.0625rem var(--page-inset);
   background-color: var(--cream);
   color: var(--neutral-900);
 }
 
-@media (max-width: 1199px) {
-  .footer {
-    padding: 4.0625rem 6.25rem;
-  }
-}
-
 @media (max-width: 1023px) {
   .footer {
-    padding: 3.75rem 1.25rem;
+    padding-block: 3.75rem;
   }
 }
 
 .inner {
   display: flex;
   justify-content: space-between;
-  max-width: 106.25rem;
 }
 
 /* Brand block */
@@ -42,21 +35,15 @@
 
 .logoLink {
   --focusRingOffset: -0.1875rem;
-  --focusRingRadius: 999rem;
+  --focusRingRadius: 0.25rem;
   display: inline-block;
-  width: 2.1875rem;
-  height: 2.1875rem;
-  margin-bottom: 3.125rem;
+  margin-bottom: 2rem;
   color: var(--green-900);
 }
 
-.mark {
-  display: inline-block;
-}
-
 .wordmark {
-  display: none;
-  width: 7.125rem;
+  display: block;
+  width: 10.5rem;
   height: auto;
 }
 
@@ -71,13 +58,6 @@
     margin-bottom: 2.25rem;
   }
 
-  .mark {
-    display: none;
-  }
-
-  .wordmark {
-    display: block;
-  }
 }
 
 .address {
@@ -86,6 +66,10 @@
   font-size: 0.875rem;
   font-style: normal;
   line-height: 1.43;
+}
+
+.address a {
+  color: inherit;
 }
 
 @media (max-width: 1023px) {

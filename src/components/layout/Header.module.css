@@ -10,18 +10,21 @@
 }
 
 .nav {
+  position: relative;
+  z-index: 2;
   display: flex;
   flex-direction: row;
   align-items: stretch;
   justify-content: space-between;
   min-height: 3.75rem;
-  padding: 0 1rem 0 0.75rem;
+  padding: 0 var(--page-inset);
+  background: #fff;
   box-shadow: var(--shadow-raised);
 }
 
 @media (min-width: 768px) {
   .nav {
-    min-height: 4.5rem;
+    min-height: 5rem;
   }
 }
 
@@ -35,13 +38,8 @@
   display: flex;
   align-items: center;
   height: 100%;
-  padding: 0 0.75rem 0 0.25rem;
-}
-
-@media (min-width: 768px) {
-  .logoLink {
-    padding-left: 0.75rem;
-  }
+  /* No left padding: the logo sits exactly on the page edge (--page-inset). */
+  padding: 0 0.75rem 0 0;
 }
 
 .logoLink:focus-visible {
@@ -49,9 +47,35 @@
   outline-offset: -0.125rem;
 }
 
+/* Live site: 206x59px. */
 .logo {
-  height: 1.5rem;
+  height: 2.5rem;
   width: auto;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    height: 3.6875rem;
+  }
+}
+
+/* The full bar needs room for six menu items: from 1280px (below that the
+   drawer takes over) up to 1440px the logo and type tighten so everything
+   stays on one line. */
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .nav .logo {
+    height: 2.75rem;
+  }
+
+  .nav .navLink,
+  .nav .loginLink {
+    font-size: 0.875rem;
+  }
+
+  .nav .dropdownIcon {
+    width: 1rem;
+    height: 1rem;
+  }
 }
 
 /* Desktop menus */
@@ -60,7 +84,7 @@
   display: none;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   .desktopMenus {
     display: flex;
     flex: 1;
@@ -78,6 +102,12 @@
   list-style: none;
 }
 
+.menuLeft {
+  gap: clamp(0.875rem, 1.25vw, 1.75rem);
+  /* Keeps clear air between the last menu item and the portal link. */
+  margin: 0 1.5rem 0 clamp(0.75rem, 1.5vw, 1.75rem);
+}
+
 .menuRight {
   margin-left: auto;
 }
@@ -87,18 +117,9 @@
   display: flex;
   flex-shrink: 0;
   align-items: center;
-  max-height: 3rem;
-  margin: 0 0.75rem;
+  align-self: stretch;
   font-size: 1rem;
   line-height: 1.5;
-}
-
-.menuLeft .menuItem:first-child {
-  margin-left: 1.75rem;
-}
-
-.menuRight .menuItem {
-  margin: 0;
 }
 
 .menuRight .loginItem {
@@ -106,20 +127,21 @@
 }
 
 .menuRight .joinItem {
-  padding: 0 1rem;
+  /* No right padding: the button ends on the page edge. */
+  padding: 0 0 0 1rem;
 }
 
 .navLink {
   position: relative;
   display: inline-flex;
   align-items: center;
+  align-self: center;
   padding: 0.75rem 0 0.625rem;
   border: none;
-  border-bottom: 2px solid transparent;
   background: transparent;
-  color: var(--neutral-900);
+  color: #111112;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.5;
   white-space: nowrap;
   text-decoration: none;
@@ -128,19 +150,44 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-.navLink:hover {
-  border-bottom-color: var(--green-700);
-  color: var(--neutral-1100);
+@media (max-width: 1535px) {
+  .navLink {
+    font-size: 0.9375rem;
+  }
 }
 
-.navLink:active {
-  border-bottom-color: var(--neutral-1100);
+/* Underline grows from the left on hover and stays while the panel is open. */
+.navLink::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0.25rem;
+  left: 0;
+  height: 0.125rem;
+  border-radius: 1rem;
+  background: var(--green-700);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.navLink:hover::after,
+.navLink[aria-expanded="true"]::after {
+  transform: scaleX(1);
+}
+
+.navLink[aria-expanded="true"] {
+  color: var(--green-900);
+}
+
+.navLink[aria-expanded="true"]::after {
+  background: var(--pink-200);
 }
 
 .navLink::before {
   content: "";
   position: absolute;
-  inset: -0.0625rem;
+  inset: -0.0625rem -0.375rem;
   border: 0.125rem solid var(--green-800);
   border-radius: 0.25rem;
   opacity: 0;
@@ -152,62 +199,459 @@
 }
 
 .dropdownIcon {
-  margin-left: 0.25rem;
+  margin-left: 0.125rem;
+  transition: transform 0.25s ease;
 }
 
 .navLink[aria-expanded="true"] .dropdownIcon {
   transform: rotate(180deg);
 }
 
-.dropdown {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 13000;
-  min-width: 15rem;
-  max-width: 19rem;
-  margin: 0.5rem 0 0;
-  padding: 0.625rem 0;
-  list-style: none;
-  background-color: #fff;
-  box-shadow: var(--shadow-raised);
-}
-
-.dropdownLink {
-  display: flex;
+.labelWithBadge {
+  display: inline-flex;
   align-items: center;
-  padding: 0.75rem 1rem;
-  color: var(--neutral-900);
-  font-size: 1rem;
-  line-height: 1.5rem;
-  text-decoration: none;
+  gap: 0.375rem;
 }
 
-.dropdownLink:hover {
-  background: var(--green-100);
-  color: var(--neutral-1100);
-}
-
-.dropdownLink:active {
-  background: var(--green-900);
+.badge {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 0.375rem;
+  padding: 0.0625rem 0.4375rem;
+  border-radius: 999rem;
+  background: var(--pink-200);
   color: #fff;
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1.5;
+  text-transform: uppercase;
 }
 
-.dropdownLink:focus-visible {
-  outline: 0.125rem solid var(--green-800);
-  outline-offset: -0.125rem;
+.labelWithBadge .badge {
+  margin-left: 0;
 }
 
 .loginLink {
   color: var(--green-800);
+  white-space: nowrap;
   text-decoration: none;
 }
 
-/* Mobile menu button + drawer */
+@media (max-width: 1535px) {
+  .loginLink {
+    font-size: 0.9375rem;
+  }
+}
+
+/* Mega menu panels ---------------------------------------------------- */
+
+.panels {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+@media (max-width: 1279px) {
+  .panels,
+  .scrim {
+    display: none;
+  }
+}
+
+.panel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  max-height: calc(100vh - 5rem);
+  overflow-y: auto;
+  border-top: 0.1875rem solid var(--green-700);
+  border-radius: 0 0 1.5rem 1.5rem;
+  background:
+    radial-gradient(60rem 18rem at 100% 0, var(--green-100), transparent 70%),
+    #fff;
+  box-shadow: 0 1.5rem 3rem -1rem rgb(5 46 38 / 28%);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-0.5rem);
+  transition:
+    opacity 0.2s ease,
+    transform 0.28s cubic-bezier(0.2, 0.7, 0.2, 1),
+    visibility 0s linear 0.28s;
+}
+
+.panel[data-open] {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+  transition:
+    opacity 0.2s ease,
+    transform 0.28s cubic-bezier(0.2, 0.7, 0.2, 1),
+    visibility 0s;
+}
+
+/* Intro | link columns | promo tile, spanning the page container. */
+.panelGrid {
+  display: grid;
+  grid-template-columns: minmax(13rem, 16rem) repeat(var(--columns), minmax(0, 1fr)) minmax(17rem, 20rem);
+  gap: 2.5rem;
+  padding: 2.25rem var(--page-inset) 2.5rem;
+}
+
+@media (max-width: 1439px) {
+  .panelGrid {
+    grid-template-columns: 12rem repeat(var(--columns), minmax(0, 1fr)) 15.5rem;
+    gap: 1.75rem;
+  }
+}
+
+/* Columns rise in one after another when a panel opens. */
+.panel[data-open] .intro,
+.panel[data-open] .column,
+.panel[data-open] .promo {
+  animation: panel-rise 0.4s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  animation-delay: calc(var(--i, 0) * 45ms);
+}
+
+.panel[data-open] .promo {
+  animation-delay: 0.16s;
+}
+
+@keyframes panel-rise {
+  from {
+    opacity: 0;
+    transform: translateY(0.625rem);
+  }
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding-right: 2rem;
+  border-right: 0.0625rem solid var(--neutral-300);
+}
+
+@media (max-width: 1439px) {
+  .intro {
+    padding-right: 1.25rem;
+  }
+}
+
+.introTitle {
+  margin: 0;
+  color: var(--green-900);
+  font-size: 1.5rem;
+  font-weight: var(--heading-weight);
+  letter-spacing: var(--heading-tracking);
+  line-height: 1.2;
+  text-wrap: balance;
+}
+
+.introText {
+  margin: 0;
+  color: var(--neutral-900);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+.introLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  margin-top: 0.5rem;
+  color: var(--pink-200);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.introLink svg {
+  transition: transform 0.2s ease;
+}
+
+.introLink:hover svg {
+  transform: translateX(0.25rem);
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  min-width: 0;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.groupTitle {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  margin: 0 0 0.25rem;
+  color: var(--green-900);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.groupIcon {
+  display: inline-flex;
+  flex-shrink: 0;
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.groupIcon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.groupList {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Links sit flush with the column edge; the hover tint bleeds out a little. */
+.panelLink {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+  margin: 0 -0.625rem;
+  padding: 0.4375rem 0.625rem;
+  border-radius: 0.625rem;
+  color: var(--neutral-1100);
+  text-decoration: none;
+  transition: background-color 0.15s ease;
+}
+
+.panelLink:hover {
+  background: var(--green-100);
+}
+
+.panelLink:focus-visible {
+  outline: 0.125rem solid var(--green-800);
+  outline-offset: -0.125rem;
+}
+
+.panelLinkText {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.panelLink:hover .panelLinkText {
+  color: var(--green-900);
+}
+
+.panelLinkArrow {
+  flex-shrink: 0;
+  color: var(--pink-200);
+  opacity: 0;
+  transform: translateX(-0.25rem);
+  transition:
+    opacity 0.15s ease,
+    transform 0.2s ease;
+}
+
+.panelLink:hover .panelLinkArrow,
+.panelLink:focus-visible .panelLinkArrow {
+  opacity: 1;
+  transform: none;
+}
+
+.panelLinkHint {
+  color: var(--neutral-700);
+  font-size: 0.8125rem;
+  line-height: 1.4;
+}
+
+/* Promo tile: a slanted photo over a teal card. */
+.promo {
+  --focusRingRadius: 1.25rem;
+  position: relative;
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 1.25rem;
+  background: var(--green-900);
+  color: #fff;
+  text-decoration: none;
+  outline: none;
+}
+
+.promo:focus-visible {
+  outline: 0.1875rem solid var(--green-800);
+  outline-offset: 0.25rem;
+}
+
+.promoMedia {
+  position: relative;
+  display: block;
+  height: 9.5rem;
+  overflow: hidden;
+  clip-path: polygon(0 0, 100% 0, 100% 78%, 0 100%);
+}
+
+.promoMedia img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+  transition: transform 0.5s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.promo:hover .promoMedia img {
+  transform: scale(1.05);
+}
+
+.promoBody {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.5rem 1.375rem 1.375rem;
+}
+
+.promoEyebrow {
+  display: inline-flex;
+  align-items: center;
+  color: var(--green-200);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.promoTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.promoText {
+  color: var(--green-150);
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.promoCta {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  gap: 0.375rem;
+  margin-top: 0.375rem;
+  padding: 0.5rem 1rem;
+  border-radius: 999rem;
+  background: var(--pink-200);
+  font-size: 0.9375rem;
+  font-weight: 600;
+}
+
+.promoCta svg {
+  transition: transform 0.2s ease;
+}
+
+.promo:hover .promoCta {
+  background: var(--pink-300);
+}
+
+.promo:hover .promoCta svg {
+  transform: translateX(0.25rem);
+}
+
+/* Province chips along the bottom of a panel. */
+.strip {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1.25rem;
+  padding: 1.125rem var(--page-inset) 1.375rem;
+  border-top: 0.0625rem dashed var(--neutral-300);
+}
+
+.stripTitle {
+  margin: 0;
+  color: var(--green-900);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.chip {
+  display: inline-flex;
+  padding: 0.3125rem 0.75rem;
+  border: 0.0625rem solid var(--green-200);
+  border-radius: 999rem;
+  background: #fff;
+  color: var(--green-900);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease;
+}
+
+.chip:hover {
+  border-color: var(--green-900);
+  background: var(--green-900);
+  color: #fff;
+}
+
+.chip:focus-visible {
+  outline: 0.125rem solid var(--green-800);
+  outline-offset: 0.125rem;
+}
+
+/* Page dimmer under an open panel. */
+.scrim {
+  position: fixed;
+  inset: 5rem 0 0;
+  z-index: 0;
+  background: rgb(5 46 38 / 35%);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+
+.header[data-menu-open] .scrim {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Mobile menu button + drawer ----------------------------------------- */
 
 .menuButton {
   align-self: center;
   display: block;
+  /* Pull the hit area out so the icon itself lines up with the page edge. */
+  margin-right: -0.6875rem;
   padding: 0.6875rem;
   border: 0.0625rem solid transparent;
   border-radius: 0.75rem;
@@ -228,7 +672,7 @@
   outline-offset: 0.25rem;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   .menuButton,
   .drawerRoot {
     display: none;
@@ -246,50 +690,56 @@
   pointer-events: auto;
 }
 
-.backdrop {
-  position: absolute;
-  inset: 0;
-  background: #00000080;
-  opacity: 0;
-  transition: opacity 0.225s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.drawerOpen .backdrop {
-  opacity: 1;
-}
-
+/* Full-screen sheet that slides in from the right. */
 .drawer {
   position: absolute;
-  top: 0;
-  right: 0;
+  inset: 0;
   display: flex;
   flex-direction: column;
-  width: min(20rem, 85vw);
-  height: 100%;
   overflow-y: auto;
   background: #fff;
   transform: translateX(100%);
-  transition: transform 0.225s cubic-bezier(0, 0, 0.2, 1);
+  visibility: hidden;
+  transition:
+    transform 0.3s cubic-bezier(0.2, 0.7, 0.2, 1),
+    visibility 0s linear 0.3s;
 }
 
 .drawerOpen .drawer {
-  transform: translateX(0);
+  transform: none;
+  visibility: visible;
+  transition:
+    transform 0.3s cubic-bezier(0.2, 0.7, 0.2, 1),
+    visibility 0s;
 }
 
 .drawerTop {
   position: sticky;
   top: 0;
   z-index: 1;
-  padding: 3.25rem 1rem 1rem;
-  border-bottom: 0.0625rem solid var(--neutral-300);
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 3.75rem;
+  padding: 0 var(--page-inset);
   background: #fff;
+  box-shadow: var(--shadow-raised);
+}
+
+@media (min-width: 768px) {
+  .drawerTop {
+    min-height: 5rem;
+  }
+}
+
+.drawerLogo {
+  display: flex;
 }
 
 .drawerClose {
-  position: absolute;
-  top: 0.75rem;
-  right: 0.75rem;
   display: flex;
+  margin-right: -0.4375rem;
   padding: 0.4375rem;
   border: none;
   border-radius: 0.75rem;
@@ -302,11 +752,118 @@
   background: var(--neutral-200);
 }
 
+.drawerClose:focus-visible {
+  outline: 0.1875rem solid var(--green-800);
+}
+
+.drawerList {
+  flex: 1;
+  margin: 0;
+  padding: 0.5rem var(--page-inset) 1rem;
+  list-style: none;
+}
+
+.drawerList > li {
+  border-bottom: 0.0625rem solid var(--neutral-300);
+}
+
+.drawerLink {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.125rem 0;
+  color: var(--neutral-1100);
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.3;
+  text-decoration: none;
+  list-style: none;
+  cursor: pointer;
+}
+
+.drawerLink::-webkit-details-marker {
+  display: none;
+}
+
+.drawerLink:focus-visible,
+.drawerSubLink:focus-visible,
+.drawerOverview:focus-visible {
+  outline: 0.125rem solid var(--green-800);
+  outline-offset: 0.125rem;
+}
+
+.drawerChevron {
+  color: var(--green-700);
+  transition: transform 0.25s ease;
+}
+
+.accordion[open] .drawerLink {
+  color: var(--green-900);
+}
+
+.accordion[open] .drawerChevron {
+  transform: rotate(180deg);
+}
+
+.accordionBody {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 0 0 1.5rem;
+}
+
+.accordion[open] .accordionBody {
+  animation: panel-rise 0.3s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+.drawerOverview {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  gap: 0.375rem;
+  color: var(--pink-200);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.drawerGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.drawerSubList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.drawerSubLink {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0 0.5rem 2.375rem;
+  color: var(--neutral-900);
+  font-size: 1rem;
+  line-height: 1.4;
+  text-decoration: none;
+}
+
+.drawerSubLink:hover {
+  color: var(--green-900);
+}
+
 .drawerActions {
+  position: sticky;
+  bottom: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.75rem;
+  gap: 0.5rem;
+  padding: 1rem var(--page-inset) 1.25rem;
+  border-top: 0.0625rem solid var(--neutral-300);
+  background: #fff;
 }
 
 .drawerLogin {
@@ -314,62 +871,4 @@
   color: var(--green-800);
   font-weight: 600;
   text-decoration: none;
-}
-
-.drawerList,
-.drawerSubList {
-  display: flex;
-  flex-direction: column;
-  margin: 0.5rem 0 0;
-  padding: 0;
-  list-style: none;
-}
-
-.drawerSubList {
-  margin-top: 0;
-}
-
-.drawerItem {
-  color: var(--neutral-900);
-}
-
-.drawerItem a,
-.drawerGroup summary {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  padding: 0.75rem 1rem;
-  color: var(--neutral-900);
-  font-size: 1rem;
-  line-height: 1.5rem;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.drawerItem a:hover,
-.drawerGroup summary:hover {
-  background-color: var(--neutral-200);
-}
-
-.drawerItem a:focus-visible,
-.drawerGroup summary:focus-visible {
-  outline: 0.125rem solid var(--green-800);
-  outline-offset: -0.125rem;
-}
-
-.drawerSubList a {
-  padding-left: 2rem;
-}
-
-.drawerGroup summary {
-  justify-content: space-between;
-  list-style: none;
-}
-
-.drawerGroup summary::-webkit-details-marker {
-  display: none;
-}
-
-.drawerGroup[open] .drawerChevron {
-  transform: rotate(180deg);
 }

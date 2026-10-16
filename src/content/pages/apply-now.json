@@ -1,0 +1,25 @@
+{
+  "slug": "apply-now",
+  "title": "Apply Now",
+  "modified": "2025-09-11T16:55:46",
+  "seo": {
+    "title": "Apply Now - Goodwill Staffing & Recruitment",
+    "description": "Apply for physician and locum tenens jobs across Canada. Get licensing, housing, and recruiter support for short-term or permanent placements.",
+    "image": {
+      "src": "/media/2025/04/img-eZuuw8YQ9UFMChS9rrYJk-300x300.jpg",
+      "width": "",
+      "height": ""
+    }
+  },
+  "hero": {
+    "layout": "plain",
+    "title": "Apply Now",
+    "ctas": []
+  },
+  "blocks": [
+    {
+      "type": "form",
+      "formId": 3
+    }
+  ]
+}

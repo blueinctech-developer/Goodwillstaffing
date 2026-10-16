@@ -1,0 +1,26 @@
+{
+  "slug": "nurse-portal",
+  "title": "Nurse Portal",
+  "modified": "2025-08-05T16:17:24",
+  "seo": {
+    "title": "Nurse Portal - Goodwill Staffing & Recruitment",
+    "description": "Access job opportunities, resources, and support tailored for nurses through the Goodwill Staffing Nurse Portal.",
+    "image": {
+      "src": "/media/2025/02/featured.jpg",
+      "width": 1200,
+      "height": 657
+    }
+  },
+  "hero": {
+    "layout": "plain",
+    "title": "Nurse Documentation Portal",
+    "ctas": [],
+    "subtitle": "Fill out the form below to submit your application details to us."
+  },
+  "blocks": [
+    {
+      "type": "form",
+      "formId": "nurse-lead"
+    }
+  ]
+}

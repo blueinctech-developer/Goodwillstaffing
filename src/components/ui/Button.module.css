@@ -6,12 +6,12 @@
   height: max-content;
   min-width: 6.125rem;
   margin: 0;
-  padding: 0.6875rem 1.4375rem;
+  padding: 0.8125rem 1.5625rem;
   border: 0.0625rem solid transparent;
-  border-radius: 0.75rem;
+  border-radius: 0.9375rem;
   font-size: 1rem;
-  font-weight: 600;
-  line-height: 1.5;
+  font-weight: 500;
+  line-height: 1.25;
   white-space: nowrap;
   text-decoration: none;
   vertical-align: top;
@@ -40,7 +40,8 @@
 }
 
 .tall {
-  height: 3.6875rem;
+  height: 3.25rem;
+  padding-inline: 1.875rem;
 }
 
 .fullWidth {
@@ -66,7 +67,7 @@
 .secondary {
   background: var(--pink-200);
   border-color: var(--pink-200);
-  color: var(--neutral-1100);
+  color: #fff;
 }
 
 .secondary:hover {
@@ -89,4 +90,16 @@
 .dark:active {
   background: var(--neutral-700);
   border-color: var(--neutral-700);
+}
+
+/* White button for teal bands, beside the orange one. */
+.light {
+  background: #fff;
+  border-color: #fff;
+  color: var(--green-900);
+}
+
+.light:hover {
+  background: var(--green-100);
+  border-color: var(--green-100);
 }

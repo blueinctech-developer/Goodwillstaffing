@@ -1,4 +1,8 @@
-import { ResponsivePicture } from "@/components/ui/ResponsivePicture";
+/* eslint-disable @next/next/no-img-element -- WordPress uploads served from the media bucket */
+import { ButtonLink } from "@/components/ui/Button";
+import { ABOUT_IMAGES } from "@/data/about";
+import { mediaUrl } from "@/lib/media";
+import { REQUEST_STAFFING_PATH } from "@/lib/site";
 import styles from "./AboutHero.module.css";
 
 // Thin pink flourishes around the portraits; each has a smaller variant
@@ -49,45 +53,44 @@ export function AboutHero() {
       <div className={styles.inner}>
         <div className={styles.copy}>
           <h1 className={styles.title}>
-            <span className={styles.phrase}>We are transforming</span>{" "}
-            <span className={styles.phrase}>the way</span>{" "}
-            <span className={styles.phrase}>healthcare hires</span>
+            <span className={styles.phrase}>We Serve your</span>{" "}
+            <span className={styles.phrase}>Labour Needs</span>
           </h1>
-          <h2 className={styles.subtitle}>
-            We built a leading platform that connects employers with top healthcare professionals across the
-            country.
-          </h2>
+          <p className={styles.subtitle}>
+            Goodwill staffing and recruitment is a healthcare agency dedicated to connecting qualified professionals
+            with hospitals, clinics, and care facilities. Committed to solving staffing challenges with speed,
+            accuracy, and care.
+          </p>
+          <div className={styles.action}>
+            <ButtonLink href={REQUEST_STAFFING_PATH} variant="secondary" tall lightFocus>
+              Request Staffing support
+            </ButtonLink>
+          </div>
         </div>
         <div className={styles.artColumn}>
           <div className={styles.art}>
             <div className={styles.arch}>
               <ArchLine className={styles.archLine} />
               <ArchLineSmall className={styles.archLineSmall} />
-              <ResponsivePicture
-                name="about/client"
-                ext="png"
-                alt=""
+              <img
+                src={mediaUrl(ABOUT_IMAGES.heroArch.src)}
+                alt="Healthcare professional holding the Canadian flag"
                 className={styles.portrait}
-                width={598}
-                height={826}
-                breakpoints={[{ minWidth: 1200, density: "@2x" }]}
-                fallback="@1x"
-                loading="eager"
+                width={ABOUT_IMAGES.heroArch.width}
+                height={ABOUT_IMAGES.heroArch.height}
+                fetchPriority="high"
               />
             </div>
             <div className={styles.circle}>
               <CircleLine className={styles.circleLine} />
               <CircleLineSmall className={styles.circleLineSmall} />
-              <ResponsivePicture
-                name="about/nurse"
-                ext="png"
-                alt=""
+              <img
+                src={mediaUrl(ABOUT_IMAGES.heroCircle.src)}
+                alt="Two nurses in scrubs in a hospital corridor"
                 className={`${styles.portrait} ${styles.round}`}
-                width={584}
-                height={574}
-                breakpoints={[{ minWidth: 1200, density: "@2x" }]}
-                fallback="@1x"
-                loading="eager"
+                width={ABOUT_IMAGES.heroCircle.width}
+                height={ABOUT_IMAGES.heroCircle.height}
+                fetchPriority="high"
               />
             </div>
           </div>

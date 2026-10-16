@@ -1,0 +1,160 @@
+{
+  "slug": "nursing-jobs-by-specialty",
+  "title": "Nursing Jobs by Specialty",
+  "modified": "2026-01-10T14:03:28",
+  "seo": {
+    "title": "Nursing Jobs by Specialty - Goodwill Staffing & Recruitment",
+    "description": "Discover permanent and direct hire nursing roles across specialties including ICU, OBS, Med-Surg, and more. Goodwill Staffing connects nurses to full-time positions across Canada.",
+    "image": {
+      "src": "/media/2025/07/nurjob.png",
+      "width": 624,
+      "height": 351
+    }
+  },
+  "hero": {
+    "layout": "split",
+    "title": "Explore Nursing Jobs by Specialty",
+    "ctas": [
+      {
+        "text": "Apply Now",
+        "href": "https://nexus-leap.laboredge.com/goodwill%20/signup"
+      }
+    ],
+    "subtitle": "From critical care to maternity, we match your expertise to permanent positions where you can truly grow. Whether you’re a seasoned RN, an experienced LPN, or a new NP—there’s a facility looking for your long-term support. We’ll help you find the right fit.",
+    "image": {
+      "src": "/media/2025/07/nurjob.png",
+      "alt": "Nurse supporting one another in a clinical setting — Goodwill Staffing"
+    }
+  },
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Nursing Specialties We’re Hiring For"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "text": "Emergency Department (ER)"
+        },
+        {
+          "text": "Intensive Care Unit (ICU)"
+        },
+        {
+          "text": "Long-Term Care (LTC)"
+        },
+        {
+          "text": "Medical-Surgical"
+        },
+        {
+          "text": "Obstetrics (OBS)"
+        },
+        {
+          "text": "Oncology"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "text": "Labour & Delivery (L&D)"
+        },
+        {
+          "text": "Medicine"
+        },
+        {
+          "text": "Acute Care"
+        },
+        {
+          "text": "Neonatal Intensive Care Unit (NICU)"
+        },
+        {
+          "text": "Indigenous & Remote Health"
+        },
+        {
+          "text": "Rehabilitation"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "text": "Orthopedics"
+        },
+        {
+          "text": "Pediatrics"
+        },
+        {
+          "text": "Mental Health & Addictions"
+        },
+        {
+          "text": "Public & Community Health"
+        },
+        {
+          "text": "Palliative Care"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Support That’s Tailored to You"
+    },
+    {
+      "type": "rich",
+      "html": "<i></i>\r\n      Match you with contracts aligned to your credentials\r\n    \r\n    \r\n      <i></i>\r\n      Assist with onboarding, relocation support, and interview preparation\r\n    \r\n    \r\n      <i></i>\r\n      Assist with interprovincial licensing and onboarding\r\n    \r\n    \r\n      <i></i>\r\n      Secure you competitive compensation and 24/7 recruiter access"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Frequently Asked Questions"
+    },
+    {
+      "type": "faq",
+      "items": [
+        {
+          "question": "Do I need recent experience in the specialty?",
+          "answer": "<p>Yes. Most roles require 1–2 years of recent, relevant experience.</p>"
+        },
+        {
+          "question": "Can I switch specialties between contracts?",
+          "answer": "<p>Yes. If you meet requirements and availability exists, we’ll support that transition.</p>"
+        },
+        {
+          "question": "Are these jobs available nationwide?",
+          "answer": "<p>Yes. We help nurses find permanent roles in almost every Canadian province.</p>"
+        },
+        {
+          "question": "What settings are available?",
+          "answer": "<p>We offer hospital, LTC, community health, and remote placements.</p>"
+        }
+      ]
+    },
+    {
+      "type": "rich",
+      "html": "<p>Goodwill Staffing places nurses in permanent positions across specialties, helping you transition into roles with confidence. We support licensing, assist with relocation, and onboarding so you can focus on long-term impact.</p>"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Apply Now to Find a Travel Nursing Role That Fits"
+    },
+    {
+      "type": "buttons",
+      "items": [
+        {
+          "text": "Apply Now",
+          "href": "https://nexus-leap.laboredge.com/goodwill%20/signup"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 6,
+      "text": "Let’s turn your skills into impact. Whether you're ready for your first contract or your fifteenth, we're here to support your journey. We respond to all qualified applicants within 1 business day."
+    }
+  ]
+}

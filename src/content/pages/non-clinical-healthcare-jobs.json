@@ -1,0 +1,94 @@
+{
+  "slug": "non-clinical-healthcare-jobs",
+  "title": "Non-Clinical Healthcare Jobs",
+  "modified": "2026-01-10T13:57:19",
+  "seo": {
+    "title": "Non-Clinical Healthcare Jobs - Goodwill Staffing & Recruitment",
+    "description": "Explore permanent healthcare careers in non-clinical roles. We connect professionals with opportunities in admin, scheduling, HR, payroll, and more.",
+    "image": {
+      "src": "/media/2025/02/travel-nursing-in-manitoba.jpg",
+      "width": 1330,
+      "height": 700
+    }
+  },
+  "hero": {
+    "layout": "plain",
+    "title": "Explore Non-Clinical Healthcare Careers",
+    "ctas": [
+      {
+        "text": "Apply Now",
+        "href": "https://nexus-leap.laboredge.com/goodwill%20/signup"
+      }
+    ],
+    "subtitle": "From scheduling to HR, we connect skilled professionals like you with roles that power the entire healthcare system. Whether you’re coming from healthcare or a different industry, we’ll match your strengths to a permanent role where you’re appreciated."
+  },
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "We place permanent and direct hire candidates in"
+    },
+    {
+      "type": "rich",
+      "html": "<p>⦁ Scheduling &amp; Staffing Coordination</p>\n<p>⦁ Administrative Assistants (clinical and corporate)</p>\n<p>⦁ Human Resources (HR coordinators, assistants)</p>\n<p>⦁ Payroll &amp; Billing Professionals</p>\n<p>⦁ Receptionists &amp; Front Desk Staff</p>\n<p>⦁ Office Managers</p>\n<p>⦁ Medical Office Assistants (MOAs)</p>\n<p>⦁ Data Entry &amp; Records Specialists</p>\n<p>⦁ Health Information Management Clerks</p>\n<p>⦁ Executive Assistants (healthcare sector)</p>"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Why Work With Us"
+    },
+    {
+      "type": "rich",
+      "html": "<i></i>\r\n      Focus on long-term placements and culture fit\r\n    \r\n    \r\n      <i></i>\r\n      Understand what healthcare employers need—and what candidates want\r\n    \r\n    \r\n      <i></i>\r\n      Support your resume, interview prep, and onboarding\r\n    \r\n   \r\n    \r\n    \r\n      <i></i>\r\n      Work with hospitals, clinics, private offices, and government agencies"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Frequently Asked Questions"
+    },
+    {
+      "type": "faq",
+      "items": [
+        {
+          "question": "Do I need healthcare experience?",
+          "answer": "<p>Not always. Some roles are open to those with administrative or operations experience from other sectors.</p>"
+        },
+        {
+          "question": "Are these permanent roles?",
+          "answer": "<p>Yes. All non-clinical jobs listed are permanent or direct hire placements.</p>"
+        },
+        {
+          "question": "What types of facilities do you work with?",
+          "answer": "<p>We place staff in hospitals, clinics, long-term care homes, and health-focused corporate offices.</p>"
+        },
+        {
+          "question": "Can I apply if I’m from a different industry?",
+          "answer": "<p>Yes. We’ll assess your transferable skills and recommend the best matches.</p>"
+        }
+      ]
+    },
+    {
+      "type": "rich",
+      "html": "<p>Goodwill Staffing helps healthcare facilities find skilled professionals for non-clinical roles in admin, HR, billing, and operations. We offer full recruitment support for permanent placements.</p>"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Apply Now to Find a Travel Nursing Role That Fits"
+    },
+    {
+      "type": "buttons",
+      "items": [
+        {
+          "text": "Apply Now",
+          "href": "https://nexus-leap.laboredge.com/goodwill%20/signup"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 6,
+      "text": "Let’s turn your skills into impact. Whether you're ready for your first contract or your fifteenth, we're here to support your journey. We respond to all qualified applicants within 1 business day."
+    }
+  ]
+}

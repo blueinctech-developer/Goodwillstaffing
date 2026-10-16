@@ -1,0 +1,219 @@
+{
+  "slug": "healthcare-staffing-solutions-across-canada",
+  "title": "Client Solutions",
+  "modified": "2025-10-09T12:37:48",
+  "seo": {
+    "title": "Healthcare Staffing Solutions Across Canada - Goodwill Staffing",
+    "description": "Discover flexible, fast, and credentialed healthcare staffing solutions with Goodwill Staffing. Serving hospitals, LTCs, and remote care",
+    "image": {
+      "src": "/media/2025/08/healthcare-staffing-Canada.png",
+      "width": 1366,
+      "height": 768
+    }
+  },
+  "hero": {
+    "layout": "split",
+    "title": "Expert Healthcare Staffing Across Canada",
+    "ctas": [
+      {
+        "text": "Request Staff Now",
+        "href": "/request-staffing/"
+      }
+    ],
+    "subtitle": "From hospitals to group homes, find top-tier, credentialed professionals ready to serve",
+    "image": {
+      "src": "/media/2025/06/coronarius-patient-with-pulse-oximeter-scaled.jpg",
+      "alt": ""
+    }
+  },
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Healthcare Settings We Support"
+    },
+    {
+      "type": "cards",
+      "items": [
+        {
+          "title": "Hospitals",
+          "text": "",
+          "href": "/staffing-for-hospital/"
+        },
+        {
+          "title": "Clinics",
+          "text": "",
+          "href": "/staffing-for-clinics/"
+        },
+        {
+          "title": "Long Term Care Facilities",
+          "text": "",
+          "href": "/long-term-care-homes/"
+        },
+        {
+          "title": "Group Homes",
+          "text": "",
+          "href": "/staffing-for-group-homes/"
+        },
+        {
+          "title": "Rural and Remote Locations",
+          "text": "",
+          "href": "/staffing-solutions-for-rural-remote/"
+        },
+        {
+          "title": "Telehealth Services",
+          "text": "",
+          "href": "/staffing-solutions-telehealth/"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Find Staffing Solutions in Your Province"
+    },
+    {
+      "type": "image",
+      "src": "/media/2025/05/client-solutions2-1024x682.png",
+      "alt": "Request Staffing",
+      "width": 1024,
+      "height": 682
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Flexible Staffing Options to Suit Your Needs"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "text": "Allied Health Professionals"
+        },
+        {
+          "text": "Telehealth Services"
+        },
+        {
+          "text": "Temporary Talent"
+        },
+        {
+          "text": "Permanent Talent"
+        },
+        {
+          "text": "Contract To Hire"
+        },
+        {
+          "text": "Travel Nursing"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Trusted by Healthcare Leaders Nationwide"
+    },
+    {
+      "type": "cards",
+      "items": [
+        {
+          "title": "Credentialed Professionals, Screened & Vetted",
+          "text": ""
+        },
+        {
+          "title": "Rapid Placement Across Canada",
+          "text": ""
+        },
+        {
+          "title": "Flexible, Client-Focused Solutions",
+          "text": ""
+        },
+        {
+          "title": "24/7 Support and Response Times",
+          "text": ""
+        }
+      ]
+    },
+    {
+      "type": "stats",
+      "items": [
+        {
+          "value": "27+",
+          "label": "In House Support Experts"
+        },
+        {
+          "value": "1100+",
+          "label": "Nurse Placements"
+        },
+        {
+          "value": "300000+",
+          "label": "Hours of Care Annually"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Easy and Transparent Staffing Process"
+    },
+    {
+      "type": "cards",
+      "items": [
+        {
+          "title": "Submit your staffing request",
+          "text": ""
+        },
+        {
+          "title": "We match you with qualified professionals",
+          "text": ""
+        },
+        {
+          "title": "Candidates are screened and credentialed",
+          "text": ""
+        },
+        {
+          "title": "Ongoing support throughout the assignment",
+          "text": ""
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Frequently Asked Questions"
+    },
+    {
+      "type": "faq",
+      "items": [
+        {
+          "question": "How quickly can you fill a role?",
+          "answer": "<p>We typically fill roles within 24–72 hours, depending on location, role type, and urgency. Our team prioritizes your request and provides timely updates to ensure continuity of care.</p>"
+        },
+        {
+          "question": "What credentials do your nurses have?",
+          "answer": "<p>All of our nurses are fully licensed to practice in their respective provinces. Credentials are verified upon onboarding and include background checks, vulnerable sector screening, CPR/First Aid, immunization records, and specialty certifications when applicable.</p>"
+        },
+        {
+          "question": "Do you provide staffing in rural or remote areas?",
+          "answer": "<p>Yes. We provide staffing support to rural and remote communities across Canada, including fly-in locations and underserved regions. Our mobile and travel healthcare teams are equipped to deliver care where it’s needed most.</p>"
+        },
+        {
+          "question": "Can we hire temporary staff permanently?",
+          "answer": "<p>Yes, we do have an option for that. Many of our clients begin with short-term contracts and later transition top-performing staff into permanent roles through our contract-to-hire model.</p>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Ready to Find Qualified Staff?"
+    },
+    {
+      "type": "rich",
+      "html": "<h5>Get a response from our team within 1 business day\nor call 1-343-309-5318 | Email info@goodwillstaffing.ca</h5>"
+    },
+    {
+      "type": "form",
+      "formId": 2
+    }
+  ]
+}

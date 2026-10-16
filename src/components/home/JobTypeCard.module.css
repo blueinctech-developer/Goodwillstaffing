@@ -1,24 +1,17 @@
 .card {
   display: flex;
   flex-direction: column;
-  height: auto;
-  padding: 1.5rem;
-  border: 0.09375rem solid var(--neutral-900);
-  border-radius: 0.875rem;
-  background-color: #fff;
-  color: inherit;
+  padding: 2rem 1.75rem;
+  color: var(--neutral-900);
   text-decoration: none;
-  cursor: pointer;
-  transition: transform 0.3s ease-in-out;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .card:hover {
-  transform: scale(1.05);
-}
-
-.card:hover,
-.card:active {
-  background-color: var(--cream);
+  transform: translateY(-2px);
+  box-shadow: 0 0.75rem 1.75rem rgb(5 46 38 / 10%);
 }
 
 @media (max-width: 1199px) {
@@ -28,7 +21,7 @@
   }
 
   .icon {
-    align-self: center;
+    align-self: flex-start;
   }
 }
 
@@ -36,7 +29,10 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 2rem 0 1rem;
+  gap: 0.25rem;
+  margin: 1.25rem 0 1rem;
+  font-size: 0.9375rem;
+  line-height: 1.45;
 }
 
 @media (max-width: 1199px) {
@@ -46,13 +42,38 @@
 }
 
 .label {
+  color: var(--neutral-1100);
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .count {
   display: flex;
   align-items: center;
+  gap: 0.25rem;
+  margin-top: auto;
+  color: var(--green-800);
   font-size: 0.875rem;
-  font-weight: 600;
+  font-weight: 700;
+}
+
+.card:hover .count svg {
+  transform: translateX(0.2rem);
+}
+
+.count svg {
+  transition: transform 0.2s ease;
+}
+
+/* Text column fills the card so every "Explore" link sits on the same line. */
+.card > div:last-child {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.iconImage {
+  display: block;
+  width: 3.5rem;
+  height: 3.5rem;
 }

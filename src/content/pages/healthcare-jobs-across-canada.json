@@ -1,0 +1,158 @@
+{
+  "slug": "healthcare-jobs-across-canada",
+  "title": "Healthcare Jobs Across Canada",
+  "modified": "2026-01-10T13:17:05",
+  "seo": {
+    "title": "Find Healthcare Job Opportunity Across Canada",
+    "description": "Start your search for nursing, allied health, HCA, and non-clinical healthcare jobs across Canada. Permanent, travel, and contract jobs are available now.",
+    "image": {
+      "src": "/media/2025/06/Picture1.jpg",
+      "width": 624,
+      "height": 353
+    }
+  },
+  "hero": {
+    "layout": "split",
+    "title": "Travel and Healthcare Jobs from Coast to Coast",
+    "ctas": [
+      {
+        "text": "Apply Now",
+        "href": "https://nexus-leap.laboredge.com/goodwill%20/signup"
+      }
+    ],
+    "subtitle": "Choose your path by job specialty or province. Apply for flexible, high-paying roles with full support.",
+    "image": {
+      "src": "/media/2025/06/Picture1.jpg",
+      "alt": "Healthcare workers across Canada in clinical and non-clinical roles — Goodwill Staffing"
+    }
+  },
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Explore Jobs by Category"
+    },
+    {
+      "type": "rich",
+      "html": "<a href=\"/travel-nursing-jobs-by-specialty-in-canada/\">\r\n      <i></i>\r\n      Travel Nursing Jobs by Specialty\r\n    </a>\r\n    <a href=\"/travel-nursing-jobs-by-province/\">\r\n      <i></i>\r\n      Travel Nursing Jobs by Province \r\n    </a>\r\n    <a href=\"/travel-allied-health-jobs-by-specialty-2/\">\r\n      <i></i>\r\n      Travel Allied Health Jobs by Specialty\r\n    </a>\r\n    <a href=\"/travel-allied-health-jobs-by-province/\">\r\n      <i></i>\r\n      Travel Allied Health Jobs by Province\r\n    </a>\r\n    <a href=\"/nursing-jobs-by-specialty/\">\r\n      <i></i>\r\n      Nursing Jobs by Specialty \r\n    </a>\r\n    <a href=\"/nursing-jobs-by-province/\">\r\n      <i></i>\r\n      Nursing Jobs by Province  \r\n    </a>\r\n    <a href=\"/allied-health-jobs-by-specialty/\">\r\n      <i></i>\r\n      Allied Health Jobs by Specialty \r\n    </a>\r\n    <a href=\"/allied-health-jobs-by-province/\">\r\n      <i></i>\r\n      Allied Health Jobs by Province \r\n    </a>\r\n    <a href=\"/non-clinical-healthcare-jobs/\">\r\n      <i></i>\r\n      Non-Clinical Healthcare Jobs  \r\n    </a>"
+    },
+    {
+      "type": "image",
+      "src": "/media/2025/05/client-solutions2-1024x682.png",
+      "alt": "Request Staffing",
+      "width": 1024,
+      "height": 682
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Why Canadian Healthcare Workers Trust Us"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "text": "Competitive pay & per diems"
+        },
+        {
+          "text": "Travel & housing coverage included"
+        },
+        {
+          "text": "Licensing and onboarding assistance"
+        },
+        {
+          "text": "Job opportunities in urban, rural, and remote communities"
+        },
+        {
+          "text": "24/7 recruiter support and personalized service"
+        },
+        {
+          "text": "Over 1,100 placements completed in 2024"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Simple 4-Step Application Process"
+    },
+    {
+      "type": "cards",
+      "items": [
+        {
+          "title": "Choose your specialty or location",
+          "text": ""
+        },
+        {
+          "title": "Submit your resume or apply directly",
+          "text": ""
+        },
+        {
+          "title": "We handle screening, onboarding, and travel",
+          "text": ""
+        },
+        {
+          "title": "Start your assignment with full support",
+          "text": ""
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Frequently Asked Questions"
+    },
+    {
+      "type": "faq",
+      "items": [
+        {
+          "question": "What specialties do you recruit for?",
+          "answer": "<p>We recruit for a wide range of healthcare specialties, including RNs, LPNs, PSWs, HCAs, NPs, and allied health roles like physiotherapists, lab techs, respiratory therapists, and more.</p>"
+        },
+        {
+          "question": "How does travel nursing work?",
+          "answer": "<p>Travel nurses take short-term contracts in different provinces, often with travel, housing, and licensing support included. It’s a flexible way to explore new areas while earning competitive pay.</p>"
+        },
+        {
+          "question": "Can I work in another province?",
+          "answer": "<p>Yes! We’ll assist with the licensing process to help you practice in other provinces, and we offer roles across Canada (excluding Quebec, Yukon, and NWT).</p>"
+        },
+        {
+          "question": "Are you hiring bilingual professionals?",
+          "answer": "<p>Absolutely. Bilingual (English/French) nurses are in high demand. We offer dedicated placements and premium roles for bilingual applicants.</p>"
+        },
+        {
+          "question": "Do you help with licensing?",
+          "answer": "<p>Our credentialing team supports interprovincial licensing applications and ensures you’re ready to work wherever you’re placed.</p>"
+        },
+        {
+          "question": "What if I want a permanent job?",
+          "answer": "<p>In addition to travel and contract roles, we offer permanent placements and contract-to-hire opportunities that let you trial a role before committing.</p>"
+        }
+      ]
+    },
+    {
+      "type": "rich",
+      "html": "<p>Goodwill Staffing connects healthcare professionals with job opportunities across Canada. From nurses and allied health to administrative staff, we offer full support for permanent, travel, and contract placements.</p>"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Apply Now to Find a Travel Nursing Role That Fits"
+    },
+    {
+      "type": "buttons",
+      "items": [
+        {
+          "text": "Apply Now",
+          "href": "https://nexus-leap.laboredge.com/goodwill%20/signup"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 6,
+      "text": "Let’s turn your skills into impact. Whether you're ready for your first contract or your fifteenth, we're here to support your journey. We respond to all qualified applicants within 1 business day."
+    }
+  ]
+}

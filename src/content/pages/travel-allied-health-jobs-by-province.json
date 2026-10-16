@@ -1,0 +1,134 @@
+{
+  "slug": "travel-allied-health-jobs-by-province",
+  "title": "Travel Allied Health Jobs by Province",
+  "modified": "2026-01-10T14:23:52",
+  "seo": {
+    "title": "Travelled Allied Healthcare by Province - Goodwill Staffing",
+    "description": "Discover travel allied health contracts by province. Apply for roles in imaging, diagnostics, therapy, and emergency response across Canada.",
+    "image": {
+      "src": "/media/2025/07/tralh.png",
+      "width": 624,
+      "height": 351
+    }
+  },
+  "hero": {
+    "layout": "split",
+    "title": "Work in the Places That Inspire You",
+    "ctas": [
+      {
+        "text": "Apply Now",
+        "href": "https://nexus-leap.laboredge.com/goodwill%20/signup"
+      }
+    ],
+    "subtitle": "Whether it’s coastal calm or prairie pace, we’ll help you take your career there. We place allied professionals across Canada—from rural hospitals to coastal clinics—with full support along the way.",
+    "image": {
+      "src": "/media/2025/07/tralh.png",
+      "alt": "Nurse staying active to avoid burnout"
+    }
+  },
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "We match professionals to travel contracts in"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "text": "Alberta",
+          "href": "/travel-nursing-healthcare-jobs-in-alberta/"
+        },
+        {
+          "text": "Ontario"
+        },
+        {
+          "text": "British Columbia",
+          "href": "/travel-nursing-jobs-in-british-columbia/"
+        },
+        {
+          "text": "Nova Scotia",
+          "href": "/travel-nursing-jobs-nova-scotia/"
+        },
+        {
+          "text": "Manitoba",
+          "href": "/travel-nursing-jobs-in-manitoba/"
+        },
+        {
+          "text": "Prince Edward Island",
+          "href": "/travel-nursing-jobs-in-prince-edward-island/"
+        },
+        {
+          "text": "New Brunswick",
+          "href": "/travel-nursing-jobs-new-brunswick/"
+        },
+        {
+          "text": "Saskatchewan",
+          "href": "/travel-nursing-jobs-in-saskatchewan/"
+        },
+        {
+          "text": "Newfoundland & Labrador",
+          "href": "/travel-nursing-jobs-in-newfoundland-labrador/"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Each location offers"
+    },
+    {
+      "type": "rich",
+      "html": "<i></i>\r\n      Offer clear, competitive compensation packages\r\n    \r\n    \r\n      <i></i>\r\n      Support your travel, housing, and onboarding from start to finish\r\n    \r\n    \r\n      <i></i>\r\n      Communicate proactively so you always know what’s next\r\n    \r\n    \r\n      <i></i>\r\n      Help you understand provincial credentialing and job availability"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Frequently Asked Questions"
+    },
+    {
+      "type": "faq",
+      "items": [
+        {
+          "question": "Are certain provinces better for specific allied health roles?",
+          "answer": "<p>Yes. For example, respiratory therapists are in high demand in Ontario and Alberta.</p>"
+        },
+        {
+          "question": "Can I switch provinces between contracts?",
+          "answer": "<p>Absolutely. Many of our professionals move province to province with us.</p>"
+        },
+        {
+          "question": "Is housing always included?",
+          "answer": "<p>Yes. All travel contracts come with housing and travel support.</p>"
+        },
+        {
+          "question": "Do you help with licensing in other provinces?",
+          "answer": "<p>Yes. We walk you through licensing and registration every step of the way.</p>"
+        }
+      ]
+    },
+    {
+      "type": "rich",
+      "html": "<p>Goodwill Staffing connects allied health professionals with contracts across Canada. From imaging to rehabilitation, we offer placements in urban centers and remote regions—with housing, licensing, and full recruiter support.</p>"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Apply Now to Find a Travel Nursing Role That Fits"
+    },
+    {
+      "type": "buttons",
+      "items": [
+        {
+          "text": "Apply Now",
+          "href": "https://nexus-leap.laboredge.com/goodwill%20/signup"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 6,
+      "text": "Let’s turn your skills into impact. Whether you're ready for your first contract or your fifteenth, we're here to support your journey. We respond to all qualified applicants within 1 business day."
+    }
+  ]
+}

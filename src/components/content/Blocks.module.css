@@ -1,0 +1,431 @@
+.section {
+  display: flex;
+  padding: 5rem var(--page-inset);
+  background: #fff;
+}
+
+.alt {
+  background: var(--green-100);
+}
+
+@media (max-width: 767px) {
+  .section {
+    padding: 3rem var(--page-inset);
+  }
+}
+
+/* The column spans the page container so card grids, stats and galleries
+   line up with the header; running text and headings keep a readable measure
+   but still start on the page edge. */
+.inner {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  min-width: 0;
+  color: var(--neutral-900);
+}
+
+.inner > :is(.h2, .h3, .h4, .prose, .figure, .faq, .video, .form) {
+  max-width: 60rem;
+}
+
+.h2 {
+  margin: 0;
+  color: var(--green-900);
+  font-family: var(--font-serif);
+  text-wrap: balance;
+  font-size: var(--type-h2);
+  font-weight: var(--heading-weight);
+  line-height: var(--heading-leading);
+  letter-spacing: var(--heading-tracking);
+}
+
+.h3 {
+  margin: 1rem 0 0;
+  color: var(--neutral-1100);
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.33;
+}
+
+.h4 {
+  margin: 0.5rem 0 0;
+  color: var(--neutral-1100);
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+/* Imported WordPress body copy. */
+.prose {
+  font-size: 1.0625rem;
+  line-height: 1.7;
+}
+
+.prose > :first-child {
+  margin-top: 0;
+}
+
+.prose > :last-child {
+  margin-bottom: 0;
+}
+
+.prose p,
+.prose ul,
+.prose ol,
+.prose blockquote,
+.prose table {
+  margin: 0 0 1.125rem;
+}
+
+.prose h2,
+.prose h3,
+.prose h4,
+.prose h5,
+.prose h6 {
+  margin: 2rem 0 0.75rem;
+  color: var(--neutral-1100);
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.prose h2 {
+  font-size: 1.75rem;
+}
+
+.prose h3 {
+  font-size: 1.375rem;
+}
+
+.prose h4,
+.prose h5,
+.prose h6 {
+  font-size: 1.125rem;
+}
+
+.prose ul,
+.prose ol {
+  padding-left: 1.5rem;
+}
+
+.prose li {
+  margin-bottom: 0.375rem;
+}
+
+.prose a {
+  color: var(--green-800);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.prose a:hover {
+  color: var(--green-900);
+}
+
+.prose img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
+
+.prose figure {
+  margin: 1.5rem 0;
+}
+
+.prose figcaption {
+  margin-top: 0.5rem;
+  color: var(--neutral-700);
+  font-size: 0.875rem;
+}
+
+.prose blockquote {
+  padding: 0.25rem 0 0.25rem 1.25rem;
+  border-left: 0.25rem solid var(--green-700);
+  font-style: italic;
+}
+
+.prose table {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+  font-size: 0.9375rem;
+}
+
+.prose th,
+.prose td {
+  padding: 0.625rem 0.75rem;
+  border: 0.0625rem solid var(--neutral-300);
+  text-align: left;
+  vertical-align: top;
+}
+
+.prose th {
+  background: var(--green-100);
+  color: var(--neutral-1100);
+}
+
+.prose iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: 1rem;
+}
+
+.figure {
+  margin: 0;
+}
+
+.image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 1.5rem;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin: 0.5rem 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Cards span the container: three across by default, pairs stay pairs and
+   sets of four or eight run four across on wide screens. */
+.cards[data-count="2"],
+.cards[data-count="4"],
+.cards[data-count="8"] {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (min-width: 1200px) {
+  .cards[data-count="4"],
+  .cards[data-count="8"] {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 1023px) {
+  .cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 767px) {
+  .cards,
+  .cards[data-count] {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.75rem;
+  border-radius: 1.25rem;
+  background: #fff;
+  box-shadow: var(--shadow-raised);
+}
+
+.alt .card {
+  background: #fff;
+  box-shadow: var(--shadow-raised);
+}
+
+.card:has(.cardLink) {
+  padding: 0;
+}
+
+.cardLink {
+  --focusRingRadius: 1.25rem;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.75rem;
+  border-radius: 1.25rem;
+  color: inherit;
+  text-decoration: none;
+  transition: background-color 150ms ease;
+}
+
+.cardLink:hover {
+  background: var(--green-100);
+}
+
+.cardImage {
+  width: 3rem;
+  height: 3rem;
+  object-fit: contain;
+}
+
+.cardTitle {
+  margin: 0;
+  color: var(--green-900);
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.cardText {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.cardMore {
+  margin-top: auto;
+  color: var(--pink-200);
+  font-weight: 600;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 1.5rem;
+  margin: 0;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 0.25rem;
+}
+
+.statValue {
+  margin: 0;
+  color: var(--green-800);
+  font-family: var(--font-serif);
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.statLabel {
+  font-size: 1rem;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pill {
+  --focusRingRadius: 999rem;
+  display: inline-flex;
+  padding: 0.5rem 1rem;
+  border: 0.0625rem solid var(--green-200);
+  border-radius: 999rem;
+  background: #fff;
+  color: var(--green-900);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.pill:hover {
+  background: var(--green-100);
+}
+
+.listText {
+  display: inline-flex;
+  padding: 0.5rem 1rem;
+  border-radius: 999rem;
+  background: var(--green-100);
+  color: var(--green-900);
+}
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  border-top: 0.0625rem solid var(--neutral-300);
+}
+
+.faqItem {
+  border-bottom: 0.0625rem solid var(--neutral-300);
+}
+
+.faqQuestion {
+  position: relative;
+  padding: 1.25rem 2.5rem 1.25rem 0;
+  color: var(--neutral-1100);
+  font-size: 1.125rem;
+  font-weight: 600;
+  list-style: none;
+  cursor: pointer;
+}
+
+.faqQuestion::-webkit-details-marker {
+  display: none;
+}
+
+.faqQuestion::after {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  right: 0.5rem;
+  color: var(--green-800);
+  font-size: 1.5rem;
+  font-weight: 400;
+  transform: translateY(-50%);
+}
+
+.faqItem[open] .faqQuestion::after {
+  content: "–";
+}
+
+.faqItem .prose {
+  padding-bottom: 1.25rem;
+}
+
+.video {
+  overflow: hidden;
+  border-radius: 1.5rem;
+  background: var(--neutral-1100);
+}
+
+.video iframe,
+.video video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  gap: 1rem;
+}
+
+.gallery img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.form {
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  background: #fff;
+  box-shadow: var(--shadow-raised);
+}
+
+@media (max-width: 767px) {
+  .form {
+    padding: 1.5rem;
+  }
+}

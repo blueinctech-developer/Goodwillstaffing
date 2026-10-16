@@ -1,0 +1,39 @@
+{
+  "slug": "request-staffing",
+  "title": "Request Staffing",
+  "modified": "2025-10-08T10:11:36",
+  "seo": {
+    "title": "Request Staffing - Goodwill Staffing & Recruitment",
+    "description": "Let's connect you with top-tier healthcare professionals. We have a pool of reliable and competent care providers. Request staffing now",
+    "image": {
+      "src": "/media/2025/05/client-solutions2.png",
+      "width": 1400,
+      "height": 933
+    }
+  },
+  "hero": {
+    "layout": "split",
+    "title": "Start Building Your Dream Healthcare Team Today",
+    "ctas": [],
+    "subtitle": "Let’s connect you with top-tier healthcare professionals in a fast, efficient, reliable, and personalized manner.",
+    "image": {
+      "src": "/media/2025/01/image.jpg",
+      "alt": "Calgary"
+    }
+  },
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Looking for Healthcare Professionals?"
+    },
+    {
+      "type": "rich",
+      "html": "<h3>Let us help you</h3><p><br />Complete the form below, and we will get in touch with you.</p>"
+    },
+    {
+      "type": "form",
+      "formId": 2
+    }
+  ]
+}

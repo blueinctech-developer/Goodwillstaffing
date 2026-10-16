@@ -1,0 +1,91 @@
+{
+  "slug": "free-consultation",
+  "title": "Free consultation",
+  "modified": "2025-09-12T09:03:35",
+  "seo": {
+    "title": "Free Consultation - Goodwill Staffing & Recruitment",
+    "description": "Get expert advice with a free consultation from Goodwill Staffing & Recruitment.",
+    "image": {
+      "src": "/media/2025/08/young-doctor-supporting-his-patient-scaled.jpg",
+      "width": 2560,
+      "height": 1761
+    }
+  },
+  "hero": {
+    "layout": "plain",
+    "title": "Book free consultation",
+    "ctas": [],
+    "breadcrumbs": [
+      {
+        "text": "Free consultation"
+      }
+    ],
+    "subtitle": "Feel free to reach out to us using the options below, and our dedicated team will respond to your inquiries promptly."
+  },
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Don’t hesitate to reach out. We’ll be happy to respond"
+    },
+    {
+      "type": "rich",
+      "html": "<p>Fill out the form and discover your options for free.</p>"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "text": "1. Initial request Fill out the consultation form."
+        },
+        {
+          "text": "2. Information review Our team reviews your details."
+        },
+        {
+          "text": "3. Scheduling Schedule the consultation meeting."
+        },
+        {
+          "text": "4. Advice session Engage in a consultation session."
+        },
+        {
+          "text": "5. Post-consultation Provide additional information."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Got a question? Get your answer"
+    },
+    {
+      "type": "buttons",
+      "items": [
+        {
+          "text": "Get in touch",
+          "href": "/contact-us/"
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "items": [
+        {
+          "question": "1. How can financial consulting benefit my business?",
+          "answer": "<p>Our consulting optimizes strategies for sustainable growth and improved financial performance.</p>"
+        },
+        {
+          "question": "2. What distinguishes your firm from others in the industry?",
+          "answer": "We blend expertise with personalized approaches, focusing on client-centric solutions."
+        },
+        {
+          "question": "3. Do you offer services tailored to specific industries?",
+          "answer": "Yes, our solutions cater to diverse industries, customized to meet unique needs."
+        },
+        {
+          "question": "4. How do you ensure confidentiality with client data?",
+          "answer": "We adhere to strict confidentiality protocols to safeguard all client information."
+        }
+      ]
+    }
+  ]
+}

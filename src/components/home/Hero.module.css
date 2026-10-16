@@ -1,227 +1,322 @@
 .hero {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  max-height: 100rem;
+  overflow: hidden;
+  isolation: isolate;
+  background: #f7fafb;
+}
+
+/* Blurred photo, faded to near-white over the copy and to warm white below. */
+.backdrop {
+  position: absolute;
+  inset: -2rem;
+  z-index: -2;
+  background-position: center;
+  background-size: cover;
+  filter: blur(10px) saturate(85%);
+  opacity: 0.55;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(90deg, rgb(247 250 251 / 96%) 0%, rgb(247 250 251 / 88%) 42%, rgb(247 250 251 / 35%) 100%);
 }
 
 .banner {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   width: 100%;
-  height: 40vw;
-  background-color: var(--pink-100);
+  min-height: 42rem;
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 1023px) {
   .banner {
-    min-height: 37.5rem;
-  }
-}
-
-@media (max-width: 1199px) {
-  .banner {
-    grid-template-columns: 1fr;
-    height: 100%;
-  }
-}
-
-.copyColumn {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 5.625rem 1.25rem 0;
-}
-
-@media (max-width: 1199px) {
-  .copyColumn {
-    margin: 0;
-    padding: 3.4375rem 1.25rem;
-  }
-}
-
-@media (max-width: 479px) {
-  .copyColumn {
-    align-items: flex-start;
+    grid-template-columns: minmax(0, 1fr);
+    min-height: 0;
   }
 }
 
 .copy {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  /* Left edge lines up with the logo (shared page inset). */
+  padding: 3.5rem 3.5rem 6.5rem var(--page-inset);
+}
+
+@media (max-width: 1023px) {
+  .copy {
+    padding: 2.75rem var(--page-inset) 3rem;
+  }
 }
 
 .title {
-  align-self: flex-start;
-  max-width: 37.5rem;
   margin: 0;
-  color: var(--green-900);
+  color: #0e3a42;
   font-family: var(--font-serif);
-  font-size: 3.125rem;
-  font-weight: 600;
-  line-height: 1.42;
+  font-size: var(--type-h1);
+  font-weight: var(--heading-weight);
+  line-height: var(--heading-leading);
+  letter-spacing: var(--heading-tracking);
 }
 
-@media (max-width: 767px) {
-  .title {
-    font-size: 2rem;
-    line-height: 1.25;
+.line {
+  display: block;
+  white-space: nowrap;
+}
+
+@media (max-width: 479px) {
+  .line {
+    white-space: normal;
   }
 }
 
-.italic {
-  font-style: italic;
+/* Teal accent with a brush-stroke orange underline. */
+.accent {
+  position: relative;
+  width: fit-content;
+  padding-bottom: 0.12em;
+  color: var(--green-800);
 }
 
-/* The original inserts hard breaks on small screens to control the rag. */
-.breakMobile,
-.breakMobileWide {
-  display: none;
-}
-
-@media (max-width: 767px) {
-  .breakMobile {
-    display: inline;
-  }
-}
-
-@media (min-width: 356px) and (max-width: 767px) {
-  .breakMobileWide {
-    display: inline;
-  }
+.accent::after {
+  content: "";
+  position: absolute;
+  left: -0.04em;
+  right: -0.06em;
+  bottom: -0.02em;
+  height: 0.16em;
+  background: no-repeat center / 100% 100%
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 12' preserveAspectRatio='none'%3E%3Cpath d='M3 8C40 3 90 2 197 6' fill='none' stroke='%23E5482E' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E");
 }
 
 .subtitle {
-  max-width: 30.625rem;
-  margin: 1.25rem 0 3.75rem;
+  max-width: 30rem;
+  margin: 1.5rem 0 0;
   color: var(--neutral-900);
-  font-size: 1.25rem;
-  line-height: 1.6;
-}
-
-@media (max-width: 767px) {
-  .subtitle {
-    margin: 1.25rem 0 2.125rem;
-    font-size: 1rem;
-    line-height: 1.5;
-  }
+  font-size: var(--type-lead);
+  line-height: 1.75;
 }
 
 .actions {
   display: flex;
-  gap: 0.75rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
 }
 
-@media (max-width: 1199px) {
-  .actions {
-    flex-direction: column;
-  }
+.button {
+  gap: 0.625rem;
+  min-width: 10rem;
 }
 
-@media (min-width: 1200px) {
-  .cta {
-    max-width: 22.5rem;
-  }
+.outline {
+  border-color: var(--pink-200);
+  background: #fff;
+  color: var(--pink-200);
+  box-shadow: 0 0.5rem 1.25rem rgb(229 72 46 / 10%);
 }
 
-/* Video */
+.outline:hover {
+  border-color: var(--pink-300);
+  background: var(--pink-100);
+  color: var(--pink-300);
+}
+
+/* Video card */
 
 .media {
   position: relative;
   width: 100%;
-  height: 100%;
+}
+
+/* The video fills the whole right half of the hero, edge to edge. */
+.frame {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  background: var(--green-900);
+}
+
+@media (max-width: 1023px) {
+  .media {
+    aspect-ratio: 4 / 3;
+  }
 }
 
 .video {
+  display: block;
   width: 100%;
   height: 100%;
-  min-height: 25rem;
   object-fit: cover;
 }
 
+/* Slight dark wash over the footage, as on the live site. */
+.frame::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgb(0 0 0 / 22%);
+  pointer-events: none;
+}
+
+/* White pill: teal play/pause dot plus "Watch Video ›" (live-site design). */
 .videoControls {
   position: absolute;
-  top: 1.25rem;
-  right: 1.25rem;
+  /* Above the job-type cards, which overlap the bottom 3rem of the video. */
+  right: 1.5rem;
+  bottom: 4.75rem;
   z-index: 1;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 0.75rem;
-  padding: 0.5rem;
-  border-radius: 1.5625rem;
+  gap: 0.625rem;
+  padding: 0.5rem 1.25rem 0.5rem 0.5rem;
+  border-radius: 999rem;
   background: #fff;
-  color: var(--green-800);
-  opacity: 0.8;
-}
-
-@media (max-width: 479px) {
-  .videoControls {
-    top: unset;
-    right: unset;
-    bottom: 5.625rem;
-    left: 2.5rem;
-  }
+  box-shadow: 0 0.5rem 1.5rem rgb(0 0 0 / 15%);
 }
 
 .playButton {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 2rem;
-  height: 2rem;
+  width: 2.25rem;
+  height: 2.25rem;
   padding: 0;
-  border: 0.0625rem solid var(--green-900);
+  border: 0;
   border-radius: 50%;
-  background: var(--green-900);
+  background: var(--green-800);
+  color: #fff;
   cursor: pointer;
+  transition: background-color 0.2s ease;
 }
 
 .playButton:hover {
-  background: var(--green-700);
-  border-color: var(--green-700);
-}
-
-.playButton:active {
   background: var(--green-900);
-  border-color: var(--green-900);
 }
 
 .playButton svg {
-  width: 1rem;
-  min-width: 1rem;
-  height: 1rem;
+  width: 0.75rem;
+  height: 0.75rem;
 }
 
-.fullVideoButton {
-  display: flex;
+.watchButton {
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
+  gap: 0.125rem;
   padding: 0;
-  border: none;
+  border: 0;
   background: none;
-  color: inherit;
-  font-size: inherit;
+  color: var(--green-800);
+  font-size: 1rem;
+  font-weight: 500;
   cursor: pointer;
 }
 
+.watchButton svg {
+  transition: transform 0.2s ease;
+}
+
+.watchButton:hover svg {
+  transform: translateX(0.15rem);
+}
+
 .playButton:focus-visible,
-.fullVideoButton:focus-visible {
+.watchButton:focus-visible {
   outline: 0.125rem solid var(--green-800);
-  outline-offset: 0.25rem;
+  outline-offset: 0.1875rem;
 }
 
-.fullVideoChevron {
-  transition: transform 0.3s ease-in-out;
+/* Handwritten annotation */
+.note {
+  position: absolute;
+  z-index: 1;
+  top: 18%;
+  right: 8%;
+  margin: 0;
+  color: #fff;
+  font-family: var(--font-script), cursive;
+  font-size: 1.625rem;
+  line-height: 1.05;
+  text-align: right;
+  text-shadow: 0 1px 6px rgb(0 0 0 / 35%);
+  transform: rotate(-8deg);
+  pointer-events: none;
 }
 
-.fullVideoButton:hover .fullVideoChevron {
-  transform: translateX(0.375rem);
+.noteArrow {
+  display: block;
+  width: 3.5rem;
+  margin: 0.375rem 0 0 auto;
+  overflow: visible;
 }
 
-/* Full-video modal */
+@media (max-width: 479px) {
+  .note {
+    font-size: 1.25rem;
+  }
+}
+
+/* Orange maple leaf centred on the boundary between the halves, with
+   "Across Canada" running onto the video. No background. */
+.badge {
+  position: absolute;
+  top: 50%;
+  left: -1.125rem;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0;
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.15;
+  text-shadow: 0 1px 6px rgb(0 0 0 / 45%);
+}
+
+.badge strong {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.leaf {
+  flex-shrink: 0;
+  color: var(--pink-200);
+  filter: drop-shadow(0 0.25rem 0.5rem rgb(0 0 0 / 30%));
+  /* Gentle sway from the stem, like a leaf in a light breeze. */
+  transform-origin: 50% 95%;
+  animation: leaf-sway 4.5s ease-in-out infinite;
+}
+
+@keyframes leaf-sway {
+  0%,
+  100% {
+    transform: rotate(-6deg) translateY(0);
+  }
+  50% {
+    transform: rotate(6deg) translateY(-3px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .leaf {
+    animation: none;
+  }
+}
+
+@media (max-width: 1023px) {
+  .badge {
+    top: 1rem;
+    left: 1rem;
+  }
+}
 
 .dialog {
   width: 48rem;
@@ -313,63 +408,42 @@
   }
 }
 
-/* Job-type cards overlapping the bottom edge of the banner */
+/* Job-type cards: their own warm section, pulled up over the hero edge */
+
+.cardsSection {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  padding: 0 var(--page-inset) 4rem;
+  background: #fbf6f3;
+}
 
 .cards {
   position: relative;
-  bottom: 4.375rem;
+  z-index: 1;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 1.125rem;
-  width: 80%;
-  min-width: 61.875rem;
-  max-width: 70.9375rem;
-  padding: 0.9375rem;
-  border-radius: 1.5625rem;
-  background-color: #fff;
+  gap: 0.375rem;
+  width: 100%;
+  margin-top: -3rem;
+}
+
+.card {
+  border: 1px solid rgb(5 46 38 / 6%);
+  border-radius: 1rem;
+  background: #fff;
+  box-shadow: 0 1rem 2.5rem rgb(5 46 38 / 9%);
 }
 
 @media (max-width: 1199px) {
   .cards {
-    grid-template-columns: repeat(6, 1fr);
-    min-width: 47.8125rem;
-  }
-
-  .card:nth-child(n) {
-    grid-column: span 2;
-  }
-
-  /* Centre a trailing row of two cards. */
-  .card:nth-last-child(2):nth-child(3n + 1) {
-    grid-column-end: 4;
-  }
-
-  .card:last-child:nth-child(3n - 1) {
-    grid-column-end: -2;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 767px) {
   .cards {
     grid-template-columns: 1fr;
-    min-width: 0;
-    max-width: 18.75rem;
-    margin: 0 2.5rem;
-  }
-
-  .card:nth-child(n) {
-    grid-column: auto;
-  }
-
-  .card:nth-last-child(2):nth-child(3n + 1),
-  .card:last-child:nth-child(3n - 1) {
-    grid-column-end: auto;
-  }
-}
-
-@media (max-width: 479px) {
-  .cards {
-    max-width: unset;
-    width: calc(100% - 5rem);
   }
 }

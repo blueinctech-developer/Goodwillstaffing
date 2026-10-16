@@ -1,0 +1,34 @@
+.watermark {
+  position: absolute;
+  z-index: -1;
+  width: clamp(14rem, 26vw, 24rem);
+  height: auto;
+  aspect-ratio: 1;
+  color: var(--green-800);
+  opacity: 0.05;
+  pointer-events: none;
+}
+
+.top_right {
+  top: -3rem;
+  right: -3rem;
+  transform: rotate(12deg);
+}
+
+.bottom_right {
+  right: -3rem;
+  bottom: -4rem;
+  transform: rotate(-10deg);
+}
+
+.bottom_left {
+  bottom: -4rem;
+  left: -3rem;
+  transform: rotate(8deg);
+}
+
+.top_left {
+  top: -3rem;
+  left: -3rem;
+  transform: rotate(-12deg);
+}

@@ -1,0 +1,44 @@
+{
+  "slug": "client-newsletter",
+  "title": "Client Newsletter",
+  "modified": "2025-09-11T17:20:47",
+  "seo": {
+    "title": "Client Newsletter - Goodwill Staffing & Recruitment",
+    "description": "Get staffing and job opportunities updates delivered right into your email box. Start by signing up for our newsletters",
+    "image": {
+      "src": "/media/2025/07/spe.png",
+      "width": 624,
+      "height": 351
+    }
+  },
+  "hero": {
+    "layout": "split",
+    "title": "Subscribe to our client newsletter",
+    "ctas": [],
+    "eyebrow": "Get the Inside Scoop on Healthcare Staffing",
+    "image": {
+      "src": "/media/2025/08/78962.jpg",
+      "alt": "Employer blog"
+    }
+  },
+  "blocks": [
+    {
+      "type": "list",
+      "items": [
+        {
+          "text": "Updates on our latest services and solutions"
+        },
+        {
+          "text": "Industry news and analysis to inform your business decisions"
+        },
+        {
+          "text": "Expert insights into healthcare staffing trends and best practices"
+        }
+      ]
+    },
+    {
+      "type": "form",
+      "formId": "client-newsletter"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+.band {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 2.25rem;
+  border-radius: 1.5rem;
+  background: var(--green-900);
+  color: #fff;
+}
+
+.rating {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.rating span {
+  color: #f6c344;
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
+
+.caption {
+  margin: 0.25rem 0 0;
+  color: var(--green-150);
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+.link {
+  color: #fff;
+  font-weight: 600;
+  text-underline-offset: 0.2em;
+}

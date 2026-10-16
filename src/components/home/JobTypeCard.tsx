@@ -1,32 +1,30 @@
 import Link from "next/link";
-import { ArrowRightIcon, EMPLOYMENT_TYPE_ICONS } from "@/components/icons";
-import { EMPLOYMENT_TYPE_LABELS, browseJobsHref, type JobsByType } from "@/data/home";
+import { ArrowIcon, EMPLOYMENT_TYPE_ICONS } from "@/components/icons";
+import type { JobType } from "@/data/home";
 import styles from "./JobTypeCard.module.css";
 
 export function JobTypeCard({
   employmentType,
-  maxPay,
-  jobCount,
+  label,
+  description,
+  href,
   className,
-}: JobsByType & { className?: string }) {
-  const Icon = EMPLOYMENT_TYPE_ICONS[employmentType];
-
+}: JobType & { className?: string }) {
   return (
-    <Link href={browseJobsHref(employmentType)} className={`${styles.card} focus-ring ${className ?? ""}`}>
+    <Link href={href} className={`${styles.card} focus-ring ${className ?? ""}`}>
       <div className={styles.icon}>
-        <Icon />
+        {/* eslint-disable-next-line @next/next/no-img-element -- static vector icon; it animates its own trace */}
+        <img src={EMPLOYMENT_TYPE_ICONS[employmentType]} alt="" width={56} height={56} className={styles.iconImage} />
       </div>
       <div>
         <div className={styles.heading}>
-          <span className={styles.label}>{EMPLOYMENT_TYPE_LABELS[employmentType]}</span>
-          {maxPay && <span>up to {maxPay}</span>}
+          <span className={styles.label}>{label}</span>
+          <span>{description}</span>
         </div>
-        {jobCount > 0 && (
-          <div className={styles.count}>
-            <span>{jobCount.toLocaleString("en-US")} jobs</span>
-            <ArrowRightIcon size="1.125rem" />
-          </div>
-        )}
+        <div className={styles.count}>
+          <span>Explore</span>
+          <ArrowIcon size="1.125rem" />
+        </div>
       </div>
     </Link>
   );

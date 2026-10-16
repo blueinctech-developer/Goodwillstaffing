@@ -1,0 +1,471 @@
+/* Form controls in vivian.com's visual language: DM Sans, green-700 accents,
+   12px radii and the shared green focus ring. */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  color: var(--neutral-1100);
+}
+
+.intro {
+  margin: 0;
+  color: var(--neutral-900);
+  font-size: 1rem;
+}
+
+/* ---------------------------------------------------------------- steps */
+
+.progress {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.progressText {
+  margin: 0;
+  color: var(--neutral-700);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.progressBar {
+  height: 0.375rem;
+  overflow: hidden;
+  border-radius: 1rem;
+  background: var(--green-100);
+}
+
+.progressBar span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--green-700);
+  transition: width 0.25s ease;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.step[hidden] {
+  display: none;
+}
+
+.stepTitle {
+  margin: 0;
+  font-size: 1.375rem;
+  font-weight: 600;
+  line-height: 1.33;
+}
+
+/* ---------------------------------------------------------------- layout */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 1.25rem 1rem;
+}
+
+.cell {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  grid-column: span 6;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.cell[hidden] {
+  display: none;
+}
+
+.half {
+  grid-column: span 3;
+}
+
+.third {
+  grid-column: span 2;
+}
+
+@media (max-width: 767px) {
+  .half,
+  .third {
+    grid-column: span 6;
+  }
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.parts {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.75rem;
+}
+
+.part {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  min-width: 0;
+}
+
+.spanAll {
+  grid-column: 1 / -1;
+}
+
+/* ---------------------------------------------------------------- text */
+
+.label {
+  padding: 0;
+  color: var(--neutral-1100);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.required {
+  margin-left: 0.25rem;
+  color: var(--green-700);
+}
+
+.subLabel {
+  color: var(--neutral-700);
+  font-size: 0.8125rem;
+}
+
+.hint {
+  margin: 0;
+  color: var(--neutral-700);
+  font-size: 0.875rem;
+}
+
+.error {
+  margin: 0;
+  color: #b3261e;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.alert {
+  margin: 0;
+  padding: 0.875rem 1rem;
+  border-radius: 0.75rem;
+  background: var(--pink-100);
+  color: #8c1d18;
+  font-weight: 600;
+  outline: none;
+}
+
+.section {
+  margin: 1rem 0 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.0625rem solid var(--neutral-300);
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.33;
+}
+
+.html {
+  color: var(--neutral-900);
+}
+
+.html p {
+  margin: 0.25rem 0 0;
+}
+
+.htmlTitle {
+  margin: 0.5rem 0 0;
+  color: var(--neutral-1100);
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.link {
+  color: var(--green-700);
+  font-weight: 600;
+}
+
+.link:hover {
+  color: var(--green-800);
+}
+
+/* ---------------------------------------------------------------- controls */
+
+.input,
+.select,
+.textarea {
+  width: 100%;
+  min-width: 0;
+  min-height: 3rem;
+  margin: 0;
+  padding: 0.6875rem 1rem;
+  border: 0.0625rem solid var(--neutral-500);
+  border-radius: 0.75rem;
+  background: #fff;
+  color: var(--neutral-1100);
+  font: inherit;
+  font-size: 1rem;
+  line-height: 1.5;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  color: var(--neutral-700);
+  opacity: 1;
+}
+
+.textarea {
+  min-height: 8rem;
+  resize: vertical;
+}
+
+.select {
+  padding-right: 2.75rem;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5 6 6.5 11 1.5' fill='none' stroke='%23414042' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-position: right 1rem center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.input:hover,
+.select:hover,
+.textarea:hover {
+  border-color: var(--neutral-700);
+}
+
+.input:focus-visible,
+.select:focus-visible,
+.textarea:focus-visible {
+  border-color: var(--green-800);
+  outline: none;
+  box-shadow: 0 0 0 0.125rem var(--green-800);
+}
+
+.invalid .input,
+.invalid .select,
+.invalid .textarea {
+  border-color: #b3261e;
+}
+
+/* Choice lists (radio / checkbox / consent) */
+
+.choices {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.5rem 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .cols2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .cols3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* Date dropdowns stay three-up even on phones. */
+.parts.cols3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.choice {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.625rem;
+  color: var(--neutral-900);
+  font-size: 1rem;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.radio,
+.checkbox {
+  flex: none;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin: 0.125rem 0 0;
+  border: 0.0625rem solid var(--neutral-700);
+  background: #fff;
+  cursor: pointer;
+  appearance: none;
+  display: grid;
+  place-content: center;
+}
+
+.radio {
+  border-radius: 50%;
+}
+
+.checkbox {
+  border-radius: 0.3125rem;
+}
+
+.radio::before {
+  content: "";
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 50%;
+  background: #fff;
+  transform: scale(0);
+  transition: transform 0.12s ease;
+}
+
+.checkbox::before {
+  content: "";
+  width: 0.75rem;
+  height: 0.75rem;
+  background: #fff;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  transform: scale(0);
+  transition: transform 0.12s ease;
+}
+
+.radio:checked,
+.checkbox:checked {
+  border-color: var(--green-700);
+  background: var(--green-700);
+}
+
+.radio:checked::before,
+.checkbox:checked::before {
+  transform: scale(1);
+}
+
+.radio:focus-visible,
+.checkbox:focus-visible {
+  outline: 0.125rem solid var(--green-800);
+  outline-offset: 0.1875rem;
+}
+
+.invalid .radio,
+.invalid .checkbox {
+  border-color: #b3261e;
+}
+
+/* File input: native control, button styled like the secondary Button. */
+
+.file {
+  width: 100%;
+  padding: 0.75rem;
+  border: 0.0625rem dashed var(--neutral-500);
+  border-radius: 0.75rem;
+  background: var(--cream);
+  color: var(--neutral-900);
+  font: inherit;
+  font-size: 0.9375rem;
+  cursor: pointer;
+}
+
+.file::file-selector-button {
+  margin-right: 1rem;
+  padding: 0.5rem 1.125rem;
+  border: 0;
+  border-radius: 0.75rem;
+  background: var(--pink-200);
+  color: #fff;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.file:hover::file-selector-button {
+  background: var(--pink-300);
+}
+
+.file:focus-visible {
+  outline: 0.125rem solid var(--green-800);
+  outline-offset: 0.125rem;
+}
+
+.invalid .file {
+  border-color: #b3261e;
+}
+
+/* ---------------------------------------------------------------- actions */
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.submit {
+  min-width: 10rem;
+}
+
+.submit:disabled,
+.actions button:disabled {
+  cursor: progress;
+  opacity: 0.7;
+}
+
+@media (max-width: 767px) {
+  .actions button {
+    flex: 1 1 auto;
+  }
+}
+
+/* Off-screen honeypot. */
+.trap {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* ---------------------------------------------------------------- success */
+
+.success {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background: var(--green-100);
+  color: var(--green-900);
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.success p {
+  margin: 0;
+}
+
+.successIcon {
+  flex: none;
+  width: 2rem;
+  height: 2rem;
+}
+
+.successIcon circle {
+  fill: var(--green-700);
+}
+
+.successIcon path {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}

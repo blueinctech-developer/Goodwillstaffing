@@ -1,0 +1,31 @@
+{
+  "slug": "register-travel-nurse-jobs-canada",
+  "title": "Join Our Pool Today",
+  "modified": "2025-09-12T10:04:59",
+  "seo": {
+    "title": "Join Our Travel Nurse Pool – Travel Nursing Jobs Across Canada",
+    "description": "Join our Canada-wide travel nurse pool and get notified about upcoming travel RN contracts across the country. Register today — no pressure, just first access to great opportunities.",
+    "image": {
+      "src": "/media/2025/06/hca.jpg",
+      "width": 624,
+      "height": 353
+    }
+  },
+  "hero": {
+    "layout": "plain",
+    "title": "Register for Travel Nursing Jobs in Canada. Join Our Travel Nurse Pool Today!",
+    "ctas": [],
+    "breadcrumbs": [
+      {
+        "text": "Join Our Pool Today"
+      }
+    ],
+    "subtitle": "Join our Canada-wide travel nurse pool and get notified about upcoming travel RN contracts across the country. Register now. No pressure, just first access to great opportunities."
+  },
+  "blocks": [
+    {
+      "type": "form",
+      "formId": 9
+    }
+  ]
+}

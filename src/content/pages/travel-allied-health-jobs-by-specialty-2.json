@@ -1,0 +1,148 @@
+{
+  "slug": "travel-allied-health-jobs-by-specialty-2",
+  "title": "Travel Allied Health Jobs by Specialty",
+  "modified": "2026-01-10T14:25:28",
+  "seo": {
+    "title": "Travel Allied Health Jobs by Specialty - Goodwill Staffing",
+    "description": "Browse travel allied health jobs for professionals across Canada. Roles available in diagnostics, therapy, and emergency response.",
+    "image": {
+      "src": "/media/2025/08/Picture5.png",
+      "width": 624,
+      "height": 351
+    }
+  },
+  "hero": {
+    "layout": "split",
+    "title": "Take Your Expertise on the Road Canada Needs You",
+    "ctas": [
+      {
+        "text": "Apply Now",
+        "href": "https://nexus-leap.laboredge.com/goodwill%20/signup"
+      }
+    ],
+    "subtitle": "From imaging to rehab, we’ll connect you with contracts where your work truly matters.",
+    "image": {
+      "src": "/media/2025/07/alhsp.png",
+      "alt": ""
+    }
+  },
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "We are actively hiring travel nurses for"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "text": "Medical Laboratory Technologists (MLT)"
+        },
+        {
+          "text": "Medical Radiation Technologists (MRT)"
+        },
+        {
+          "text": "Combined Laboratory & X-Ray Technologists (CLXT)"
+        },
+        {
+          "text": "Sonographers & Ultrasound Techs"
+        },
+        {
+          "text": "Respiratory Therapists (RT)"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "text": "Occupational Therapists (OT)"
+        },
+        {
+          "text": "Physiotherapists (PT)"
+        },
+        {
+          "text": "Speech-Language Pathologists (SLP)"
+        },
+        {
+          "text": "Kinesiologists"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "text": "Audiologists"
+        },
+        {
+          "text": "Behavioral Therapists"
+        },
+        {
+          "text": "Dietitians"
+        },
+        {
+          "text": "Paramedics (ACP/PCP)"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Full Support From Application to Assignment"
+    },
+    {
+      "type": "rich",
+      "html": "<i></i>\r\n      Provide competitive pay and responsive support\r\n    \r\n    \r\n      <i></i>\r\n      Assist with licensing, onboarding, and travel logistics\r\n    \r\n    \r\n      <i></i>\r\n      Match your specialty and preferences to the right contracts\r\n    \r\n    \r\n      <i></i>\r\n      Stay connected throughout your assignment"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Frequently Asked Questions"
+    },
+    {
+      "type": "faq",
+      "items": [
+        {
+          "question": "Are allied health contracts available outside major cities?",
+          "answer": "<p>Yes. Many roles are available in rural and remote settings.</p>"
+        },
+        {
+          "question": "What if I’m licensed in another province?",
+          "answer": "<p>We help with interprovincial licensing and credentialing.</p>"
+        },
+        {
+          "question": "Do you accept internationally trained professionals?",
+          "answer": "<p>Yes. We welcome qualified applicants with valid Canadian registration.</p>"
+        },
+        {
+          "question": "How long are allied health contracts?",
+          "answer": "<p>Most range from 4 to 12+ weeks.</p>"
+        },
+        {
+          "question": "Is housing included?",
+          "answer": "<p>Yes. Most contracts include accommodations and travel support.</p>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Find a Contract That Fits Your Specialty"
+    },
+    {
+      "type": "buttons",
+      "items": [
+        {
+          "text": "Apply Now",
+          "href": "https://nexus-leap.laboredge.com/goodwill%20/signup"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 6,
+      "text": "You’ve trained hard to become an expert in your field. Let’s put that to work—where you want, when you want. We respond to all qualified applicants within 1 business day."
+    }
+  ]
+}

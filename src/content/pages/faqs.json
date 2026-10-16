@@ -1,0 +1,51 @@
+{
+  "slug": "faqs",
+  "title": "FAQ",
+  "modified": "2025-09-12T08:51:17",
+  "seo": {
+    "title": "FAQs - Goodwill Staffing & Recruitment",
+    "description": "Find answers to frequently asked questions about Goodwill Staffing's services, job opportunities, recruitment process, and more.",
+    "image": {
+      "src": "/media/2025/02/featured.jpg",
+      "width": 1200,
+      "height": 657
+    }
+  },
+  "hero": {
+    "layout": "plain",
+    "title": "Frequently Asked Questions - Answered",
+    "ctas": []
+  },
+  "blocks": [
+    {
+      "type": "faq",
+      "items": [
+        {
+          "question": "1. Do you only work with nurses??",
+          "answer": "<p>Not at all! We work with various healthcare professionals, not just nurses. If you’re in Allied Health Care, there could be exciting travel positions available for you too.</p>"
+        },
+        {
+          "question": "2. How long are most contracts?",
+          "answer": "<p>Most assignments last 6-8 weeks, though some travel jobs may be as short as 1-2 weeks or as long as 3-6 months or more. Many contracts can be extended if both you and the facility agree.</p>"
+        },
+        {
+          "question": "3. What qualifications do I need to be a travel nurse?",
+          "answer": "<p><br />To get started, you typically need at least one year of nursing experience. If you're ready for adventure and meeting new people, we’d love to chat and explore the amazing travel opportunities available to you!</p>"
+        },
+        {
+          "question": "4. Who is a Recruiter?",
+          "answer": "<p>Your recruiter is your main contact throughout your contract process. They help secure contracts, provide ongoing support during your assignments, and assist with future contracts, ensuring your experience is as smooth as possible.</p>"
+        }
+      ]
+    },
+    {
+      "type": "buttons",
+      "items": [
+        {
+          "text": "Get in touch",
+          "href": "/contact-us/"
+        }
+      ]
+    }
+  ]
+}

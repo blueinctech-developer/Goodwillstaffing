@@ -1,8 +1,5 @@
 .section {
-  max-width: 75rem;
-  margin: 0 auto;
-  padding: 4rem 0.625rem;
-  text-align: center;
+  padding: 4rem var(--page-inset);
 }
 
 @media (max-width: 767px) {
@@ -14,12 +11,13 @@
 
 .title {
   margin: 0;
-  padding: 0 1.25rem 1.25rem;
+  padding: 0 0 1.25rem;
   color: var(--neutral-1100);
   font-family: var(--font-serif);
-  font-size: 2rem;
-  font-weight: 600;
-  line-height: 1.25;
+  font-size: var(--type-h2);
+  font-weight: var(--heading-weight);
+  line-height: var(--heading-leading);
+  letter-spacing: var(--heading-tracking);
 }
 
 .tabsScroller {
@@ -37,7 +35,6 @@
   display: flex;
   flex-direction: row;
   align-items: stretch;
-  justify-content: center;
   width: max-content;
   min-width: 100%;
   margin: 0;
@@ -113,7 +110,7 @@
 
 .columns {
   column-count: 4;
-  padding: 1rem 2rem 0 3rem;
+  padding: 1rem 0 0;
 }
 
 @media (max-width: 1023px) {
@@ -131,7 +128,6 @@
 @media (max-width: 479px) {
   .columns {
     column-count: 1;
-    padding-left: 2rem;
   }
 }
 

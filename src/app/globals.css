@@ -1,16 +1,21 @@
-/* Design tokens taken from the production vivian.com stylesheet. */
+/* Goodwill's palette (the Elementor kit's global colours) mapped onto the
+   design's token names: "green" is Goodwill teal, "pink" is the orange accent
+   and its warm tint. */
 :root {
-  --green-900: #124e3b;
-  --green-800: #0a6647;
-  --green-700: #008055;
-  --green-100: #e6f7f0;
-  --green-150: #cfeee2;
-  --green-200: #add9c8;
+  --green-900: #02646f;
+  --green-800: #02535c;
+  --green-700: #02646f;
+  --green-100: #effcff;
+  --green-150: #d4f1f4;
+  --green-200: #a6dce2;
 
-  --pink-100: #feefe8;
-  --pink-200: #f2cdce;
-  --pink-300: #eaafb0;
-  --pink-400: #d98a8c;
+  --pink-100: #f9f0ed;
+  --pink-200: #e5482e;
+  --pink-300: #cf3c23;
+  --pink-400: #b5321c;
+
+  /* Deepest brand green, for text on light backgrounds and dark overlays. */
+  --forest: #052e26;
 
   --neutral-1100: #0a0a0a;
   --neutral-900: #414042;
@@ -19,13 +24,32 @@
   --neutral-500: #afadb2;
   --neutral-300: #e1dfe6;
   --neutral-200: #f0edf5;
-  --cream: #fbf9f6;
+  --cream: #f6fbfc;
+
+  /* Page container: content is at most --page-max wide, never closer to the
+     viewport edge than --page-gutter. Use --page-inset as horizontal padding
+     on full-width sections. */
+  --page-max: 90rem;
+  /* Fluid side margin: about 50px on a 1440px screen, never under 20px. */
+  --page-gutter: clamp(1.25rem, 3.5vw, 3.5rem);
+  --page-inset: max(var(--page-gutter), calc((100vw - var(--page-max)) / 2));
+
+  /* Type scale measured on goodwillstaffing.ca: hero 57px, section headings
+     47px, both weight 500 with -0.027em tracking; lead copy 18px/1.75. */
+  --type-h1: clamp(2.5rem, 4vw, 3.5625rem);
+  --type-h2: clamp(2rem, 3.3vw, 2.9375rem);
+  --type-lead: 1.125rem;
+  --heading-weight: 500;
+  --heading-tracking: -0.027em;
+  --heading-leading: 1.2;
 
   --shadow-raised: 0 0.125rem 0.25rem #00000029, 0 0 0 0.0625rem #00000014;
 
-  --font-sans: var(--font-balto), sans-serif;
-  --font-serif: var(--font-spezia), serif;
+  /* Both roles use DM Sans; --font-serif is kept as the display-heading role. */
+  --font-sans: var(--font-dm-sans), sans-serif;
+  --font-serif: var(--font-dm-sans), sans-serif;
 }
+
 
 html {
   box-sizing: border-box;
@@ -98,5 +122,102 @@ button {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+  }
+}
+
+/* Icon motion ---------------------------------------------------------- */
+
+/* Check marks draw themselves like a pen stroke, then hold; stagger with
+   --tick-delay. */
+.draw-tick {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: draw-tick 4s ease-in-out var(--tick-delay, 0s) infinite;
+}
+
+@keyframes draw-tick {
+  0%,
+  8% {
+    stroke-dashoffset: 1;
+  }
+  30%,
+  92% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 1;
+  }
+}
+
+/* Clock hands pivot on the dial centre (32,32 in the 64-unit icon). */
+.clock-minute,
+.clock-hour {
+  transform-box: view-box;
+  transform-origin: 32px 32px;
+}
+
+.clock-minute {
+  animation: clock-turn 4s linear infinite;
+}
+
+.clock-hour {
+  animation: clock-turn 48s linear infinite;
+}
+
+@keyframes clock-turn {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Sonar: the core pulses softly while rings expand from it and fade. */
+.sonar-core,
+.sonar-ring {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.sonar-core {
+  animation: sonar-core 2.4s ease-in-out infinite;
+}
+
+.sonar-ring {
+  opacity: 0;
+  animation: sonar-ring 2.4s ease-out infinite;
+}
+
+.sonar-ring-late {
+  animation-delay: 1.2s;
+}
+
+@keyframes sonar-core {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.86);
+  }
+}
+
+@keyframes sonar-ring {
+  0% {
+    opacity: 0.9;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.9);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sonar-core,
+  .sonar-ring,
+  .draw-tick,
+  .clock-minute,
+  .clock-hour {
+    animation: none;
+    stroke-dashoffset: 0;
   }
 }

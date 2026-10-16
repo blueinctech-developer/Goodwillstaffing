@@ -1,0 +1,49 @@
+{
+  "slug": "goodwill-physician-executive-recruiting",
+  "title": "Goodwill physician executive recruiting",
+  "modified": "2025-10-08T09:47:42",
+  "seo": {
+    "title": "Goodwill Physician Executive Recruiting - Goodwill Staffing",
+    "description": "For physicians aiming to gain valuable work experience in the healthcare field, Goodwill Physician and Executive Search division",
+    "image": {
+      "src": "/media/2025/08/phy-768x556-1.png",
+      "width": 768,
+      "height": 556
+    }
+  },
+  "hero": {
+    "layout": "split",
+    "title": "Goodwill Physician & Executive Recruitment",
+    "ctas": [
+      {
+        "text": "Get more information",
+        "href": "https://goodwillphysician.ca/"
+      }
+    ],
+    "subtitle": "Find suitable work regardless of your location. All you need do is sign up!",
+    "image": {
+      "src": "/media/2025/01/phy.png",
+      "alt": ""
+    }
+  },
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Welcome to Goodwill Physician & Executive Recruitment Division"
+    },
+    {
+      "type": "rich",
+      "html": "<p>We are an incorporated company with expertise in providing staffing services across Canada. For physicians aiming to gain valuable work experience in the healthcare field, Goodwill Physician and Executive Search division, is the absolute place for you. We have worked with over 200 healthcare professionals and partnered with over 100 clients, connecting each party to the appropriate fit. <br />We partner with an immigration consultant to support clients with LMIA-requests, international medical graduates with work permit, and permanent residency processing. Goodwill provides an extremely simplified recruitment process, keeping you involved at each step.</p><p>Visit our physician &amp; executive search website at <b>https://goodwillphysician.ca</b></p>"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Sign up now and get updates on opportunities right for you"
+    },
+    {
+      "type": "form",
+      "formId": 4
+    }
+  ]
+}
