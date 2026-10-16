@@ -26,8 +26,13 @@
   color: var(--neutral-900);
 }
 
-.inner > :is(.h2, .h3, .h4, .prose, .figure, .faq, .video, .form) {
+/* FAQs span the container; reading copy keeps a comfortable measure. */
+.inner > :is(.h2, .h3, .h4, .prose, .figure, .video, .form) {
   max-width: 60rem;
+}
+
+.buttons a {
+  gap: 0.625rem;
 }
 
 .h2 {

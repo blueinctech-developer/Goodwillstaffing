@@ -43,7 +43,7 @@
     },
     {
       "type": "rich",
-      "html": "<i></i>\r\n      Competitive pay &amp; per diems\r\n    \r\n    \r\n      <i></i>\r\n      Travel &amp; housing coverage included\r\n    \r\n    \r\n      <i></i>\r\n      Licensing and onboarding assistance\r\n    \r\n    \r\n      <i></i>\r\n      Job opportunities in urban, rural, and remote communities\r\n    \r\n    \r\n      <i></i>\r\n      24/7 recruiter support and personalized service\r\n    \r\n    \r\n      <i></i>\r\n      Over 1,100 placements completed in 2024"
+      "html": "<p>Competitive pay & per diems. Travel & housing coverage included. Licensing and onboarding assistance. Job opportunities in urban, rural, and remote communities. 24/7 recruiter support and personalized service. Over 1,100 placements completed in 2024.</p>"
     },
     {
       "type": "heading",
@@ -124,9 +124,8 @@
       ]
     },
     {
-      "type": "heading",
-      "level": 6,
-      "text": "Let’s turn your skills into impact. Whether you're ready for your first contract or your fifteenth, we're here to support your journey. We respond to all qualified applicants within 1 business day."
+      "type": "rich",
+      "html": "<p>Let’s turn your skills into impact. Whether you're ready for your first contract or your fifteenth, we're here to support your journey. We respond to all qualified applicants within 1 business day.</p>"
     }
   ]
 }

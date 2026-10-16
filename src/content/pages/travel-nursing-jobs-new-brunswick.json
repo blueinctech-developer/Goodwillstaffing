@@ -37,9 +37,8 @@
       "text": "Why work in New Brunswick?"
     },
     {
-      "type": "heading",
-      "level": 5,
-      "text": "Discover bilingual opportunities, welcoming communities, and a beautiful blend of riverside cities and coastal calm."
+      "type": "rich",
+      "html": "<p>Discover bilingual opportunities, welcoming communities, and a beautiful blend of riverside cities and coastal calm.</p>"
     },
     {
       "type": "heading",
@@ -233,7 +232,7 @@
     },
     {
       "type": "rich",
-      "html": "<i></i>\r\n      Competitive pay and shift premiums\r\n    \r\n    \r\n      <i></i>\r\n      Paid travel and furnished housing\r\n    \r\n    \r\n      <i></i>\r\n      Licensing support for NANB or ANBLPN\r\n    \r\n    \r\n      <i></i>\r\n      Bilingual roles available across urban and rural settings\r\n    \r\n    \r\n      <i></i>\r\n      Competitive pay and 24/7 recruiter guidance\r\n    \r\n    \r\n      <i></i>\r\n      Contracts from 2 weeks to 6+ months"
+      "html": "<p>Competitive pay and shift premiums. Paid travel and furnished housing. Licensing support for NANB or ANBLPN. Bilingual roles available across urban and rural settings. Competitive pay and 24/7 recruiter guidance. Contracts from 2 weeks to 6+ months.</p>"
     },
     {
       "type": "rich",
@@ -369,9 +368,8 @@
       ]
     },
     {
-      "type": "heading",
-      "level": 6,
-      "text": "Tell us where you want to go, and we’ll help you get there. Whether it’s your first bilingual contract or your next big move, we’re with you every step of the way. We respond to all qualified applicants within 1 business day."
+      "type": "rich",
+      "html": "<p>Tell us where you want to go, and we’ll help you get there. Whether it’s your first bilingual contract or your next big move, we’re with you every step of the way. We respond to all qualified applicants within 1 business day.</p>"
     }
   ]
 }

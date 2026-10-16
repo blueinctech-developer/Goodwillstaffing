@@ -34,7 +34,7 @@
     },
     {
       "type": "rich",
-      "html": "<a href=\"/travel-nursing-jobs-by-specialty-in-canada/\">\r\n      <i></i>\r\n      Travel Nursing Jobs by Specialty\r\n    </a>\r\n    <a href=\"/travel-nursing-jobs-by-province/\">\r\n      <i></i>\r\n      Travel Nursing Jobs by Province \r\n    </a>\r\n    <a href=\"/travel-allied-health-jobs-by-specialty-2/\">\r\n      <i></i>\r\n      Travel Allied Health Jobs by Specialty\r\n    </a>\r\n    <a href=\"/travel-allied-health-jobs-by-province/\">\r\n      <i></i>\r\n      Travel Allied Health Jobs by Province\r\n    </a>\r\n    <a href=\"/nursing-jobs-by-specialty/\">\r\n      <i></i>\r\n      Nursing Jobs by Specialty \r\n    </a>\r\n    <a href=\"/nursing-jobs-by-province/\">\r\n      <i></i>\r\n      Nursing Jobs by Province  \r\n    </a>\r\n    <a href=\"/allied-health-jobs-by-specialty/\">\r\n      <i></i>\r\n      Allied Health Jobs by Specialty \r\n    </a>\r\n    <a href=\"/allied-health-jobs-by-province/\">\r\n      <i></i>\r\n      Allied Health Jobs by Province \r\n    </a>\r\n    <a href=\"/non-clinical-healthcare-jobs/\">\r\n      <i></i>\r\n      Non-Clinical Healthcare Jobs  \r\n    </a>"
+      "html": "<p>Travel Nursing Jobs by Specialty. Travel Nursing Jobs by Province. Travel Allied Health Jobs by Specialty. Travel Allied Health Jobs by Province. Nursing Jobs by Specialty. Nursing Jobs by Province. Allied Health Jobs by Specialty. Allied Health Jobs by Province. Non-Clinical Healthcare Jobs.</p>"
     },
     {
       "type": "image",
@@ -150,9 +150,8 @@
       ]
     },
     {
-      "type": "heading",
-      "level": 6,
-      "text": "Let’s turn your skills into impact. Whether you're ready for your first contract or your fifteenth, we're here to support your journey. We respond to all qualified applicants within 1 business day."
+      "type": "rich",
+      "html": "<p>Let’s turn your skills into impact. Whether you're ready for your first contract or your fifteenth, we're here to support your journey. We respond to all qualified applicants within 1 business day.</p>"
     }
   ]
 }

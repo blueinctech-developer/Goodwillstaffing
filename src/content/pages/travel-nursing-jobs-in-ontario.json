@@ -106,9 +106,8 @@
       "text": "Why work in Ontario"
     },
     {
-      "type": "heading",
-      "level": 5,
-      "text": "Enjoy coastal charm, rewarding work, and a slower pace that lets you breathe between shifts. Here are reasons working in Prince Edwards is beneficial to you:"
+      "type": "rich",
+      "html": "<p>Enjoy coastal charm, rewarding work, and a slower pace that lets you breathe between shifts. Here are reasons working in Prince Edwards is beneficial to you:</p>"
     },
     {
       "type": "heading",
@@ -374,7 +373,7 @@
     },
     {
       "type": "rich",
-      "html": "<i></i>\r\n      Competitive rates and shift premiums\r\n    \r\n    \r\n      <i></i>\r\n      Paid travel and furnished housing for all contracts\r\n    \r\n    \r\n      <i></i>\r\n      Licensing support for CRPNPEI and CLPNPEI\r\n    \r\n    \r\n      <i></i>\r\n      Coastal and small-town placements available\r\n    \r\n    \r\n      <i></i>\r\n      Weekly pay and 24/7 recruiter support\r\n    \r\n    \r\n      <i></i>\r\n      Flexible shifts with short- and long-term options"
+      "html": "<p>Competitive rates and shift premiums. Paid travel and furnished housing for all contracts. Licensing support for CRPNPEI and CLPNPEI. Coastal and small-town placements available. Weekly pay and 24/7 recruiter support. Flexible shifts with short- and long-term options.</p>"
     },
     {
       "type": "rich",
@@ -510,9 +509,8 @@
       ]
     },
     {
-      "type": "heading",
-      "level": 6,
-      "text": "Let’s turn your skills into impact. Whether you're ready for your first contract or your fifteenth, we're here to support your journey. We respond to all qualified applicants within 1 business day."
+      "type": "rich",
+      "html": "<p>Let’s turn your skills into impact. Whether you're ready for your first contract or your fifteenth, we're here to support your journey. We respond to all qualified applicants within 1 business day.</p>"
     }
   ]
 }

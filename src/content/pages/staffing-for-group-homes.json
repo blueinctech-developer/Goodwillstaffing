@@ -339,9 +339,8 @@
       ]
     },
     {
-      "type": "heading",
-      "level": 6,
-      "text": "Let’s turn your skills into impact. Whether you're ready for your first contract or your fifteenth, we're here to support your journey. We respond to all qualified applicants within 1 business day."
+      "type": "rich",
+      "html": "<p>Let’s turn your skills into impact. Whether you're ready for your first contract or your fifteenth, we're here to support your journey. We respond to all qualified applicants within 1 business day.</p>"
     }
   ]
 }

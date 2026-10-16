@@ -80,7 +80,7 @@
     },
     {
       "type": "rich",
-      "html": "<i></i>\r\n      Offer flexibility and transparency in your job search\r\n    \r\n    \r\n      <i></i>\r\n      Support you before, during, and after your placement\r\n    \r\n    \r\n      <i></i>\r\n      Align you with employers who respect your specialty\r\n    \r\n    \r\n      <i></i>\r\n      Understand regional credentialing and hiring practices"
+      "html": "<p>Offer flexibility and transparency in your job search. Support you before, during, and after your placement. Align you with employers who respect your specialty. Understand regional credentialing and hiring practices.</p>"
     },
     {
       "type": "heading",
@@ -127,9 +127,8 @@
       ]
     },
     {
-      "type": "heading",
-      "level": 6,
-      "text": "Let’s turn your skills into impact. Whether you're ready for your first contract or your fifteenth, we're here to support your journey. We respond to all qualified applicants within 1 business day."
+      "type": "rich",
+      "html": "<p>Let’s turn your skills into impact. Whether you're ready for your first contract or your fifteenth, we're here to support your journey. We respond to all qualified applicants within 1 business day.</p>"
     }
   ]
 }

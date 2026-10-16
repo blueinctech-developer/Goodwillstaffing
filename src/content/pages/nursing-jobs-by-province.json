@@ -80,7 +80,7 @@
     },
     {
       "type": "rich",
-      "html": "<i></i>\r\n      Help match your skills with available roles\r\n    \r\n    \r\n      <i></i>\r\n      Assist with relocation discussions and employer coordination when needed\r\n    \r\n    \r\n      <i></i>\r\n      Provide interview coaching and onboarding guidance\r\n    \r\n    \r\n      <i></i>\r\n      Understand provincial licensing and employment processes"
+      "html": "<p>Help match your skills with available roles. Assist with relocation discussions and employer coordination when needed. Provide interview coaching and onboarding guidance. Understand provincial licensing and employment processes.</p>"
     },
     {
       "type": "heading",
@@ -127,9 +127,8 @@
       ]
     },
     {
-      "type": "heading",
-      "level": 6,
-      "text": "Let’s turn your skills into impact. Whether you're ready for your first contract or your fifteenth, we're here to support your journey. We respond to all qualified applicants within 1 business day."
+      "type": "rich",
+      "html": "<p>Let’s turn your skills into impact. Whether you're ready for your first contract or your fifteenth, we're here to support your journey. We respond to all qualified applicants within 1 business day.</p>"
     }
   ]
 }

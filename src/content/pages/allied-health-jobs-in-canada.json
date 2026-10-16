@@ -12,7 +12,7 @@
     }
   },
   "hero": {
-    "layout": "cover",
+    "layout": "split",
     "title": "Allied Health Jobs from Coast to Coast",
     "ctas": [
       {
@@ -225,7 +225,7 @@
     },
     {
       "type": "rich",
-      "html": "<i></i>\r\n      Competitive hourly rates or salaried contracts\r\n    \r\n    \r\n      <i></i>\r\n      Paid travel, housing, and licensing support\r\n    \r\n    \r\n      <i></i>\r\n      Flexible contract or permanent opportunities\r\n    \r\n    \r\n      <i></i>\r\n      Opportunities in remote, urban, and specialty settings\r\n    \r\n    \r\n      <i></i>\r\n      24/7 recruiter access and onboarding support\r\n    \r\n    \r\n      <i></i>\r\n      Credentialing assistance for provincial registration"
+      "html": "<p>Competitive hourly rates or salaried contracts. Paid travel, housing, and licensing support. Flexible contract or permanent opportunities. Opportunities in remote, urban, and specialty settings. 24/7 recruiter access and onboarding support. Credentialing assistance for provincial registration.</p>"
     },
     {
       "type": "heading",
@@ -276,9 +276,8 @@
       ]
     },
     {
-      "type": "heading",
-      "level": 6,
-      "text": "Let’s turn your skills into impact. Whether you're ready for your first contract or your fifteenth, we're here to support your journey. We respond to all qualified applicants within 1 business day."
+      "type": "rich",
+      "html": "<p>Let’s turn your skills into impact. Whether you're ready for your first contract or your fifteenth, we're here to support your journey. We respond to all qualified applicants within 1 business day.</p>"
     }
   ]
 }

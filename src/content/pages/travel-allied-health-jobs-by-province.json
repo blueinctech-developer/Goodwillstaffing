@@ -79,7 +79,7 @@
     },
     {
       "type": "rich",
-      "html": "<i></i>\r\n      Offer clear, competitive compensation packages\r\n    \r\n    \r\n      <i></i>\r\n      Support your travel, housing, and onboarding from start to finish\r\n    \r\n    \r\n      <i></i>\r\n      Communicate proactively so you always know what’s next\r\n    \r\n    \r\n      <i></i>\r\n      Help you understand provincial credentialing and job availability"
+      "html": "<p>Offer clear, competitive compensation packages. Support your travel, housing, and onboarding from start to finish. Communicate proactively so you always know what’s next. Help you understand provincial credentialing and job availability.</p>"
     },
     {
       "type": "heading",
@@ -126,9 +126,8 @@
       ]
     },
     {
-      "type": "heading",
-      "level": 6,
-      "text": "Let’s turn your skills into impact. Whether you're ready for your first contract or your fifteenth, we're here to support your journey. We respond to all qualified applicants within 1 business day."
+      "type": "rich",
+      "html": "<p>Let’s turn your skills into impact. Whether you're ready for your first contract or your fifteenth, we're here to support your journey. We respond to all qualified applicants within 1 business day.</p>"
     }
   ]
 }

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ButtonLink } from "@/components/ui/Button";
+import { ArrowIcon } from "@/components/icons";
 import { FormBlock } from "@/components/forms/Form";
 import type { Block } from "@/lib/content";
 import { mediaUrl, rewriteMediaInHtml } from "@/lib/media";
@@ -42,7 +43,7 @@ function BlockView({ block }: { block: Block }) {
         <div className={styles.buttons}>
           {block.items.map((item, i) => (
             <ButtonLink key={item.href + item.text} href={item.href} tall variant={i ? "secondary" : "primary"}>
-              {item.text}
+              {item.text} <ArrowIcon size="1.125rem" />
             </ButtonLink>
           ))}
         </div>

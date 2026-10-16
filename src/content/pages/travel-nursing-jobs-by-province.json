@@ -78,7 +78,7 @@
     },
     {
       "type": "rich",
-      "html": "<i></i>\r\n      Offer competitive pay and clear communication\r\n    \r\n    \r\n      <i></i>\r\n      Help you choose the right province for your goals\r\n    \r\n    \r\n      <i></i>\r\n      Provide licensing and travel assistance\r\n    \r\n    \r\n      <i></i>\r\n      Match your experience with provincial needs"
+      "html": "<p>Offer competitive pay and clear communication. Help you choose the right province for your goals. Provide licensing and travel assistance. Match your experience with provincial needs.</p>"
     },
     {
       "type": "heading",
@@ -125,9 +125,8 @@
       ]
     },
     {
-      "type": "heading",
-      "level": 6,
-      "text": "Let’s turn your skills into impact. Whether you're ready for your first contract or your fifteenth, we're here to support your journey. We respond to all qualified applicants within 1 business day."
+      "type": "rich",
+      "html": "<p>Let’s turn your skills into impact. Whether you're ready for your first contract or your fifteenth, we're here to support your journey. We respond to all qualified applicants within 1 business day.</p>"
     }
   ]
 }

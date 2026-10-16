@@ -193,7 +193,11 @@ function widgetBlock(kind, el) {
       if (!h) return null;
       // Headings can be links ("Apply Today!", "Send your photos to …").
       const href = link(h) ?? (h.closest("a") ? link(h.closest("a")) : undefined);
-      const blocks = [{ type: "heading", level: Number(h.tagName[1]), text: text(h), ...(href && { href }) }];
+      const level = Number(h.tagName[1]);
+      const blocks =
+        level >= 5 && !href
+          ? [{ type: "rich", html: `<p>${text(h)}</p>` }]
+          : [{ type: "heading", level, text: text(h), ...(href && { href }) }];
       const sub = inner.querySelector(".elementskit-section-subtitle, .ekit-heading__subtitle");
       // ElementsKit's description can hold whole sections of copy, not just one <p>.
       const para = inner.querySelector(".ekit-heading__description") || inner.querySelector("p, .ekit-heading--description");
@@ -205,6 +209,12 @@ function widgetBlock(kind, el) {
     case "html":
     case "elementskit-business-hours":
     case "shortcode": {
+      // Candidate pages' custom "trust-section": icon + short phrase per item.
+      const trust = inner.querySelectorAll(".trust-item");
+      if (trust.length) {
+        const sentences = trust.map((t) => text(t).replace(/[.\s]+$/, "")).filter(Boolean);
+        return sentences.length ? { type: "rich", html: `<p>${sentences.map((t) => `${t}.`).join(" ")}</p>` } : null;
+      }
       if (/<script|<style/.test(html) && kind !== "text-editor") {
         const cleaned = sanitize(html);
         return cleaned && parse(cleaned).text.trim() ? { type: "rich", html: cleaned } : null;
@@ -465,6 +475,7 @@ for (const p of load("pages")) {
     const heroBlocks = heroAt >= 0 ? groupBlocks(extractBlocks(sections[heroAt])) : [];
     const bodyBlocks = groupBlocks(sections.filter((_, i) => i !== heroAt).flatMap((s) => extractBlocks(s)));
     ({ hero, blocks } = splitHero(heroBlocks, bodyBlocks, heroMedia[p.slug]));
+    if (/trust-item/.test(html) && hero.image) hero.layout = "split";
   } else {
     // Pages built outside Elementor (policies, the data hub) are plain HTML.
     hero = { layout: "plain", title: "", ctas: [] };

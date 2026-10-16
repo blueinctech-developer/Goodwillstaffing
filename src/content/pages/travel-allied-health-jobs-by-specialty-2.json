@@ -93,7 +93,7 @@
     },
     {
       "type": "rich",
-      "html": "<i></i>\r\n      Provide competitive pay and responsive support\r\n    \r\n    \r\n      <i></i>\r\n      Assist with licensing, onboarding, and travel logistics\r\n    \r\n    \r\n      <i></i>\r\n      Match your specialty and preferences to the right contracts\r\n    \r\n    \r\n      <i></i>\r\n      Stay connected throughout your assignment"
+      "html": "<p>Provide competitive pay and responsive support. Assist with licensing, onboarding, and travel logistics. Match your specialty and preferences to the right contracts. Stay connected throughout your assignment.</p>"
     },
     {
       "type": "heading",
@@ -140,9 +140,8 @@
       ]
     },
     {
-      "type": "heading",
-      "level": 6,
-      "text": "You’ve trained hard to become an expert in your field. Let’s put that to work—where you want, when you want. We respond to all qualified applicants within 1 business day."
+      "type": "rich",
+      "html": "<p>You’ve trained hard to become an expert in your field. Let’s put that to work—where you want, when you want. We respond to all qualified applicants within 1 business day.</p>"
     }
   ]
 }

@@ -194,6 +194,7 @@
 }
 
 .pill {
+  gap: 0.625rem;
   border-radius: 999rem;
 }
 

@@ -12,7 +12,7 @@
     }
   },
   "hero": {
-    "layout": "cover",
+    "layout": "split",
     "title": "Flexible and Rewarding HCA Jobs Nationwide",
     "ctas": [
       {
@@ -169,7 +169,7 @@
     },
     {
       "type": "rich",
-      "html": "<i></i>\r\n      Competitive pay with housing and travel options\r\n    \r\n    \r\n      <i></i>\r\n      Local and travel-based assignments\r\n    \r\n    \r\n      <i></i>\r\n      Opportunities for training and upskilling\r\n    \r\n    \r\n      <i></i>\r\n      Roles in culturally inclusive and supportive workplaces\r\n    \r\n    \r\n      <i></i>\r\n      Supportive recruiters and credentialing team\r\n    \r\n    \r\n      <i></i>\r\n      Inclusive and culturally safe workplaces"
+      "html": "<p>Competitive pay with housing and travel options. Local and travel-based assignments. Opportunities for training and upskilling. Roles in culturally inclusive and supportive workplaces. Supportive recruiters and credentialing team. Inclusive and culturally safe workplaces.</p>"
     },
     {
       "type": "heading",
@@ -220,9 +220,8 @@
       ]
     },
     {
-      "type": "heading",
-      "level": 6,
-      "text": "Let’s turn your skills into impact. Whether you're ready for your first contract or your fifteenth, we're here to support your journey. We respond to all qualified applicants within 1 business day."
+      "type": "rich",
+      "html": "<p>Let’s turn your skills into impact. Whether you're ready for your first contract or your fifteenth, we're here to support your journey. We respond to all qualified applicants within 1 business day.</p>"
     }
   ]
 }

@@ -34,9 +34,8 @@
       "text": "Why work in Newfoundland and Labrador?"
     },
     {
-      "type": "heading",
-      "level": 5,
-      "text": "Discover meaningful work, coastal adventure, and community connection."
+      "type": "rich",
+      "html": "<p>Discover meaningful work, coastal adventure, and community connection.</p>"
     },
     {
       "type": "heading",
@@ -230,7 +229,7 @@
     },
     {
       "type": "rich",
-      "html": "<i></i>\r\n      Paid housing and travel coverage\r\n    \r\n    \r\n      <i></i>\r\n      Coastal and fly-in placements available\r\n    \r\n    \r\n      <i></i>\r\n      Licensing support for CRNNL or CLPNNL\r\n    \r\n    \r\n      <i></i>\r\n      Bilingual roles available across urban and rural settings\r\n    \r\n    \r\n      <i></i>\r\n      24/7 recruiter support and fast onboarding\r\n    \r\n    \r\n      <i></i>\r\n      Flexible contract lengths with competitive rates"
+      "html": "<p>Paid housing and travel coverage. Coastal and fly-in placements available. Licensing support for CRNNL or CLPNNL. Bilingual roles available across urban and rural settings. 24/7 recruiter support and fast onboarding. Flexible contract lengths with competitive rates.</p>"
     },
     {
       "type": "rich",
@@ -370,9 +369,8 @@
       ]
     },
     {
-      "type": "heading",
-      "level": 6,
-      "text": "Tell us where you want to go, and we’ll help you get there. Whether it’s your first rural contract or your next great adventure, we’re with you every step of the way. We respond to all qualified applicants within 1 business day."
+      "type": "rich",
+      "html": "<p>Tell us where you want to go, and we’ll help you get there. Whether it’s your first rural contract or your next great adventure, we’re with you every step of the way. We respond to all qualified applicants within 1 business day.</p>"
     }
   ]
 }

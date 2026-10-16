@@ -34,9 +34,8 @@
       "text": "Why work in Alberta?"
     },
     {
-      "type": "heading",
-      "level": 5,
-      "text": "Discover career flexibility, natural beauty, and excellent compensation."
+      "type": "rich",
+      "html": "<p>Discover career flexibility, natural beauty, and excellent compensation.</p>"
     },
     {
       "type": "heading",
@@ -230,7 +229,7 @@
     },
     {
       "type": "rich",
-      "html": "<i></i>\r\n      Paid travel and housing for all contracts\r\n    \r\n    \r\n      <i></i>\r\n      Diverse urban and remote options across the province\r\n    \r\n    \r\n      <i></i>\r\n      Short and long-term contracts available\r\n    \r\n    \r\n      <i></i>\r\n      Opportunities in remote, urban, and specialty settings\r\n    \r\n    \r\n      <i></i>\r\n      Licensing assistance for CARNA and CLPNA\r\n    \r\n    \r\n      <i></i>\r\n      Recruiter guidance every step of the way"
+      "html": "<p>Paid travel and housing for all contracts. Diverse urban and remote options across the province. Short and long-term contracts available. Opportunities in remote, urban, and specialty settings. Licensing assistance for CARNA and CLPNA. Recruiter guidance every step of the way.</p>"
     },
     {
       "type": "rich",
@@ -370,9 +369,8 @@
       ]
     },
     {
-      "type": "heading",
-      "level": 6,
-      "text": "Let’s turn your skills into impact. Whether you're ready for your first contract or your fifteenth, we're here to support your journey. We respond to all qualified applicants within 1 business day."
+      "type": "rich",
+      "html": "<p>Let’s turn your skills into impact. Whether you're ready for your first contract or your fifteenth, we're here to support your journey. We respond to all qualified applicants within 1 business day.</p>"
     }
   ]
 }

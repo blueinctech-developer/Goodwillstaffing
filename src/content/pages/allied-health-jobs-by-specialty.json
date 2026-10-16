@@ -87,7 +87,7 @@
     },
     {
       "type": "rich",
-      "html": "<i></i>\r\n      Connect you to facilities seeking your exact specialty\r\n    \r\n    \r\n      <i></i>\r\n      Provide onboarding support and relocation coordination where needed\r\n    \r\n    \r\n      <i></i>\r\n      Offer roles that align with your goals—contract or permanent\r\n    \r\n    \r\n      <i></i>\r\n      Assist with licensing, credentialing, and application follow-through"
+      "html": "<p>Connect you to facilities seeking your exact specialty. Provide onboarding support and relocation coordination where needed. Offer roles that align with your goals—contract or permanent. Assist with licensing, credentialing, and application follow-through.</p>"
     },
     {
       "type": "heading",
@@ -134,9 +134,8 @@
       ]
     },
     {
-      "type": "heading",
-      "level": 6,
-      "text": "Let’s turn your skills into impact. Whether you're ready for your first contract or your fifteenth, we're here to support your journey. We respond to all qualified applicants within 1 business day."
+      "type": "rich",
+      "html": "<p>Let’s turn your skills into impact. Whether you're ready for your first contract or your fifteenth, we're here to support your journey. We respond to all qualified applicants within 1 business day.</p>"
     }
   ]
 }

@@ -12,7 +12,7 @@
     }
   },
   "hero": {
-    "layout": "cover",
+    "layout": "split",
     "title": "Travel and Local LPN Roles Available Now",
     "ctas": [
       {
@@ -159,7 +159,7 @@
     },
     {
       "type": "rich",
-      "html": "<i></i>\r\n      Competitive bilingual pay rates\r\n    \r\n    \r\n      <i></i>\r\n      Travel, housing, and per diem coverage\r\n    \r\n    \r\n      <i></i>\r\n      \tInterprovincial licensing support (CLPNs, SALPN, CLPNNL, etc.)\r\n    \r\n    \r\n      <i></i>\r\n      Bilingual placement opportunities available\r\n    \r\n    \r\n      <i></i>\r\n      24/7 recruiter access and onboarding help\r\n    \r\n    \r\n      <i></i>\r\n      Over 1,100 placements completed in 2024"
+      "html": "<p>Competitive bilingual pay rates. Travel, housing, and per diem coverage. Interprovincial licensing support (CLPNs, SALPN, CLPNNL, etc.). Bilingual placement opportunities available. 24/7 recruiter access and onboarding help. Over 1,100 placements completed in 2024.</p>"
     },
     {
       "type": "heading",
@@ -210,9 +210,8 @@
       ]
     },
     {
-      "type": "heading",
-      "level": 6,
-      "text": "Let’s turn your skills into impact. Whether you're ready for your first contract or your fifteenth, we're here to support your journey. We respond to all qualified applicants within 1 business day."
+      "type": "rich",
+      "html": "<p>Let’s turn your skills into impact. Whether you're ready for your first contract or your fifteenth, we're here to support your journey. We respond to all qualified applicants within 1 business day.</p>"
     }
   ]
 }

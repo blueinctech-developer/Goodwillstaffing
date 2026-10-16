@@ -12,7 +12,7 @@
     }
   },
   "hero": {
-    "layout": "cover",
+    "layout": "split",
     "title": "Flexible Physician Contracts, Anywhere in Canada",
     "ctas": [
       {
@@ -200,7 +200,7 @@
     },
     {
       "type": "rich",
-      "html": "<i></i>\r\n      Competitive daily and hourly rates\r\n    \r\n    \r\n      <i></i>\r\n      Paid travel and housing for rural/remote placements\r\n    \r\n    \r\n      <i></i>\r\n      Flexible contract lengths (days to months)\r\n    \r\n    \r\n      <i></i>\r\n      National and interprovincial opportunities\r\n    \r\n    \r\n      <i></i>\r\n      Telehealth setup support for virtual placements\r\n    \r\n    \r\n      <i></i>\r\n      Bilingual physician demand in Ontario, NB, NS"
+      "html": "<p>Competitive daily and hourly rates. Paid travel and housing for rural/remote placements. Flexible contract lengths (days to months). National and interprovincial opportunities. Telehealth setup support for virtual placements. Bilingual physician demand in Ontario, NB, NS.</p>"
     },
     {
       "type": "heading",
@@ -251,9 +251,8 @@
       ]
     },
     {
-      "type": "heading",
-      "level": 6,
-      "text": "Let’s turn your skills into impact. Whether you're ready for your first contract or your fifteenth, we're here to support your journey. We respond to all qualified applicants within 1 business day."
+      "type": "rich",
+      "html": "<p>Let’s turn your skills into impact. Whether you're ready for your first contract or your fifteenth, we're here to support your journey. We respond to all qualified applicants within 1 business day.</p>"
     }
   ]
 }

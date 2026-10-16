@@ -34,9 +34,8 @@
       "text": "Why work in British Columbia?"
     },
     {
-      "type": "heading",
-      "level": 5,
-      "text": "Discover career flexibility, natural beauty, and excellent compensation."
+      "type": "rich",
+      "html": "<p>Discover career flexibility, natural beauty, and excellent compensation.</p>"
     },
     {
       "type": "heading",
@@ -230,7 +229,7 @@
     },
     {
       "type": "rich",
-      "html": "<i></i>\r\n      Travel and housing covered for all contracts\r\n    \r\n    \r\n      <i></i>\r\n      City and nature-based contracts available\r\n    \r\n    \r\n      <i></i>\r\n      Licensing support for BCCNM applicants\r\n    \r\n    \r\n      <i></i>\r\n      Work in hospitals, First Nations clinics, and remote coastal communities\r\n    \r\n    \r\n      <i></i>\r\n      Competitive pay and 24/7 recruiter guidance\r\n    \r\n    \r\n      <i></i>\r\n      Recruiter guidance every step of the way"
+      "html": "<p>Travel and housing covered for all contracts. City and nature-based contracts available. Licensing support for BCCNM applicants. Work in hospitals, First Nations clinics, and remote coastal communities. Competitive pay and 24/7 recruiter guidance. Recruiter guidance every step of the way.</p>"
     },
     {
       "type": "rich",
@@ -366,9 +365,8 @@
       ]
     },
     {
-      "type": "heading",
-      "level": 6,
-      "text": "Tell us where you want to go, and we’ll help you get there. Whether it’s your first West Coast contract or your next rural placement, we’re with you every step of the way. We respond to all qualified applicants within 1 business day."
+      "type": "rich",
+      "html": "<p>Tell us where you want to go, and we’ll help you get there. Whether it’s your first West Coast contract or your next rural placement, we’re with you every step of the way. We respond to all qualified applicants within 1 business day.</p>"
     }
   ]
 }

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ButtonLink } from "@/components/ui/Button";
+import { ArrowIcon } from "@/components/icons";
 import type { Page } from "@/lib/content";
 import { mediaUrl } from "@/lib/media";
 import styles from "./PageHero.module.css";
@@ -50,7 +51,7 @@ function Ctas({ ctas, onDark }: { ctas: Hero["ctas"]; onDark: boolean }) {
           lightFocus={onDark}
           className={styles.pill}
         >
-          {cta.text}
+          {cta.text} <ArrowIcon size="1.125rem" />
         </ButtonLink>
       ))}
     </div>

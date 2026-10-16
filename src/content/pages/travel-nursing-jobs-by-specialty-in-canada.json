@@ -105,7 +105,7 @@
     },
     {
       "type": "rich",
-      "html": "<i></i>\r\n      Offer competitive pay and transparent rates\r\n    \r\n    \r\n      <i></i>\r\n      Provide licensing and travel support\r\n    \r\n    \r\n      <i></i>\r\n      Match you with jobs that suit your background\r\n    \r\n    \r\n      <i></i>\r\n      Available to support you throughout your assignment"
+      "html": "<p>Offer competitive pay and transparent rates. Provide licensing and travel support. Match you with jobs that suit your background. Available to support you throughout your assignment.</p>"
     },
     {
       "type": "heading",
@@ -152,9 +152,8 @@
       ]
     },
     {
-      "type": "heading",
-      "level": 6,
-      "text": "Let’s turn your skills into impact. Whether you're ready for your first contract or your fifteenth, we're here to support your journey. We respond to all qualified applicants within 1 business day."
+      "type": "rich",
+      "html": "<p>Let’s turn your skills into impact. Whether you're ready for your first contract or your fifteenth, we're here to support your journey. We respond to all qualified applicants within 1 business day.</p>"
     }
   ]
 }

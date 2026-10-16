@@ -105,7 +105,7 @@
     },
     {
       "type": "rich",
-      "html": "<i></i>\r\n      Match you with contracts aligned to your credentials\r\n    \r\n    \r\n      <i></i>\r\n      Assist with onboarding, relocation support, and interview preparation\r\n    \r\n    \r\n      <i></i>\r\n      Assist with interprovincial licensing and onboarding\r\n    \r\n    \r\n      <i></i>\r\n      Secure you competitive compensation and 24/7 recruiter access"
+      "html": "<p>Match you with contracts aligned to your credentials. Assist with onboarding, relocation support, and interview preparation. Assist with interprovincial licensing and onboarding. Secure you competitive compensation and 24/7 recruiter access.</p>"
     },
     {
       "type": "heading",
@@ -152,9 +152,8 @@
       ]
     },
     {
-      "type": "heading",
-      "level": 6,
-      "text": "Let’s turn your skills into impact. Whether you're ready for your first contract or your fifteenth, we're here to support your journey. We respond to all qualified applicants within 1 business day."
+      "type": "rich",
+      "html": "<p>Let’s turn your skills into impact. Whether you're ready for your first contract or your fifteenth, we're here to support your journey. We respond to all qualified applicants within 1 business day.</p>"
     }
   ]
 }

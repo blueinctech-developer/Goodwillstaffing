@@ -34,9 +34,8 @@
       "text": "Why work in Saskatchewan?"
     },
     {
-      "type": "heading",
-      "level": 5,
-      "text": "Discover career flexibility, natural beauty, and excellent compensation."
+      "type": "rich",
+      "html": "<p>Discover career flexibility, natural beauty, and excellent compensation.</p>"
     },
     {
       "type": "heading",
@@ -220,7 +219,7 @@
     },
     {
       "type": "rich",
-      "html": "<i></i>\r\n      Paid travel and housing support\r\n    \r\n    \r\n      <i></i>\r\n      Flexible short- and long-term contracts\r\n    \r\n    \r\n      <i></i>\r\n      Licensing assistance for CRNS and SALPN\r\n    \r\n    \r\n      <i></i>\r\n      Experience remote nursing, First Nations care, and cultural immersion\r\n    \r\n    \r\n      <i></i>\r\n      Weekly pay and 24/7 recruiter support\r\n    \r\n    \r\n      <i></i>\r\n      Recruiter guidance every step of the way"
+      "html": "<p>Paid travel and housing support. Flexible short- and long-term contracts. Licensing assistance for CRNS and SALPN. Experience remote nursing, First Nations care, and cultural immersion. Weekly pay and 24/7 recruiter support. Recruiter guidance every step of the way.</p>"
     },
     {
       "type": "rich",
@@ -360,9 +359,8 @@
       ]
     },
     {
-      "type": "heading",
-      "level": 6,
-      "text": "Let’s turn your skills into impact. Whether you're ready for your first contract or your fifteenth, we're here to support your journey. We respond to all qualified applicants within 1 business day."
+      "type": "rich",
+      "html": "<p>Let’s turn your skills into impact. Whether you're ready for your first contract or your fifteenth, we're here to support your journey. We respond to all qualified applicants within 1 business day.</p>"
     }
   ]
 }

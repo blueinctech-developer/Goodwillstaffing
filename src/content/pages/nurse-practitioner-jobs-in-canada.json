@@ -12,7 +12,7 @@
     }
   },
   "hero": {
-    "layout": "cover",
+    "layout": "split",
     "title": "Flexible NP Jobs Nationwide",
     "ctas": [
       {
@@ -204,7 +204,7 @@
     },
     {
       "type": "rich",
-      "html": "<i></i>\r\n      Competitive pay, travel stipends, and housing support\r\n    \r\n    \r\n      <i></i>\r\n      Permanent, contract, and travel roles available\r\n    \r\n    \r\n      <i></i>\r\n      Licensing assistance and cross-provincial credentialing (CNO, BCCNM, CRNA, and more)\r\n    \r\n    \r\n      <i></i>\r\n      Remote and underserved community experience\r\n    \r\n    \r\n      <i></i>\r\n      24/7 recruiter and onboarding team\r\n    \r\n    \r\n      <i></i>\r\n      Full autonomy placements with collaborative teams"
+      "html": "<p>Competitive pay, travel stipends, and housing support. Permanent, contract, and travel roles available. Licensing assistance and cross-provincial credentialing (CNO, BCCNM, CRNA, and more). Remote and underserved community experience. 24/7 recruiter and onboarding team. Full autonomy placements with collaborative teams.</p>"
     },
     {
       "type": "heading",
@@ -255,9 +255,8 @@
       ]
     },
     {
-      "type": "heading",
-      "level": 6,
-      "text": "Let’s turn your skills into impact. Whether you're ready for your first contract or your fifteenth, we're here to support your journey. We respond to all qualified applicants within 1 business day."
+      "type": "rich",
+      "html": "<p>Let’s turn your skills into impact. Whether you're ready for your first contract or your fifteenth, we're here to support your journey. We respond to all qualified applicants within 1 business day.</p>"
     }
   ]
 }

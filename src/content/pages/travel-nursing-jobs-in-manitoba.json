@@ -34,9 +34,8 @@
       "text": "Why work in Manitoba?"
     },
     {
-      "type": "heading",
-      "level": 5,
-      "text": "Discover career flexibility, natural beauty, and excellent compensation."
+      "type": "rich",
+      "html": "<p>Discover career flexibility, natural beauty, and excellent compensation.</p>"
     },
     {
       "type": "heading",
@@ -220,7 +219,7 @@
     },
     {
       "type": "rich",
-      "html": "<i></i>\r\n      Paid travel and furnished housing\r\n    \r\n    \r\n      <i></i>\r\n      Flexible short- and long-term contracts\r\n    \r\n    \r\n      <i></i>\r\n      Full licensing guidance and support for CRNM and CLPNM\r\n    \r\n    \r\n      <i></i>\r\n      Work in bilingual, remote, and culturally diverse environments\r\n    \r\n    \r\n      <i></i>\r\n      Weekly pay and 24/7 recruiter support\r\n    \r\n    \r\n      <i></i>\r\n      Contracts from 2 weeks to 6+ months"
+      "html": "<p>Paid travel and furnished housing. Flexible short- and long-term contracts. Full licensing guidance and support for CRNM and CLPNM. Work in bilingual, remote, and culturally diverse environments. Weekly pay and 24/7 recruiter support. Contracts from 2 weeks to 6+ months.</p>"
     },
     {
       "type": "rich",
@@ -360,9 +359,8 @@
       ]
     },
     {
-      "type": "heading",
-      "level": 6,
-      "text": "Let’s turn your skills into impact. Whether you're ready for your first contract or your fifteenth, we're here to support your journey. We respond to all qualified applicants within 1 business day."
+      "type": "rich",
+      "html": "<p>Let’s turn your skills into impact. Whether you're ready for your first contract or your fifteenth, we're here to support your journey. We respond to all qualified applicants within 1 business day.</p>"
     }
   ]
 }

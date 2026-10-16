@@ -39,7 +39,7 @@
     },
     {
       "type": "rich",
-      "html": "<i></i>\r\n      Focus on long-term placements and culture fit\r\n    \r\n    \r\n      <i></i>\r\n      Understand what healthcare employers need—and what candidates want\r\n    \r\n    \r\n      <i></i>\r\n      Support your resume, interview prep, and onboarding\r\n    \r\n   \r\n    \r\n    \r\n      <i></i>\r\n      Work with hospitals, clinics, private offices, and government agencies"
+      "html": "<p>Focus on long-term placements and culture fit. Understand what healthcare employers need—and what candidates want. Support your resume, interview prep, and onboarding. Work with hospitals, clinics, private offices, and government agencies.</p>"
     },
     {
       "type": "heading",
@@ -86,9 +86,8 @@
       ]
     },
     {
-      "type": "heading",
-      "level": 6,
-      "text": "Let’s turn your skills into impact. Whether you're ready for your first contract or your fifteenth, we're here to support your journey. We respond to all qualified applicants within 1 business day."
+      "type": "rich",
+      "html": "<p>Let’s turn your skills into impact. Whether you're ready for your first contract or your fifteenth, we're here to support your journey. We respond to all qualified applicants within 1 business day.</p>"
     }
   ]
 }
