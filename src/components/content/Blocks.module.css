@@ -434,3 +434,73 @@
     padding: 1.5rem;
   }
 }
+
+/* Copy beside a single photo; the photo side alternates (splitFlip). */
+.split {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: 4rem;
+  align-items: center;
+  width: 100%;
+}
+
+.splitFlip .splitMedia {
+  order: -1;
+}
+
+.splitMedia .figure,
+.splitMedia .image {
+  width: 100%;
+}
+
+.splitMedia .image {
+  max-height: 34rem;
+  object-fit: cover;
+}
+
+@media (max-width: 1023px) {
+  .split {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2.5rem;
+  }
+
+  .splitFlip .splitMedia {
+    order: 0;
+  }
+}
+
+/* Cards beside a photo run two across, and the photo fills the column. */
+.split .cards,
+.split .cards[data-count] {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.split:has(.cards) {
+  align-items: stretch;
+}
+
+.split:has(.cards) .splitMedia .figure,
+.split:has(.cards) .splitMedia .image {
+  height: 100%;
+  max-height: none;
+}
+
+@media (max-width: 767px) {
+  .split .cards,
+  .split .cards[data-count] {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 1023px) {
+  .split:has(.cards) .splitMedia .image {
+    height: auto;
+    max-height: 26rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .split .cards > .card:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+  }
+}

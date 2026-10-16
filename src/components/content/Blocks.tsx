@@ -171,18 +171,50 @@ function toSections(blocks: Block[]): Section[] {
   return sections;
 }
 
+const TEXT_TYPES = new Set<Block["type"]>(["rich", "list", "buttons", "cards", "stats", "faq"]);
+
+// A section with copy and exactly one photo lays out side by side instead of
+// stacking the photo under the text.
+function splitImage(section: Section): { text: Block[]; image: Block } | null {
+  const images = section.blocks.filter((b) => b.type === "image");
+  if (images.length !== 1) return null;
+  const text = section.blocks.filter((b) => b.type !== "image");
+  if (!text.some((b) => TEXT_TYPES.has(b.type))) return null;
+  if (text.some((b) => !TEXT_TYPES.has(b.type) && b.type !== "heading")) return null;
+  return { text, image: images[0] };
+}
+
 export function Blocks({ blocks }: { blocks: Block[] }) {
+  let splits = 0;
   return (
     <>
-      {toSections(blocks).map((section, i) => (
-        <section key={section.key} className={`${styles.section} ${i % 2 ? styles.alt : ""}`}>
-          <div className={styles.inner}>
-            {section.blocks.map((block, j) => (
-              <BlockView key={j} block={block} />
-            ))}
-          </div>
-        </section>
-      ))}
+      {toSections(blocks).map((section, i) => {
+        const split = splitImage(section);
+        // Alternate the photo side from one split section to the next.
+        const flip = split ? splits++ % 2 === 1 : false;
+        return (
+          <section key={section.key} className={`${styles.section} ${i % 2 ? styles.alt : ""}`}>
+            {split ? (
+              <div className={`${styles.split} ${flip ? styles.splitFlip : ""}`}>
+                <div className={styles.inner}>
+                  {split.text.map((block, j) => (
+                    <BlockView key={j} block={block} />
+                  ))}
+                </div>
+                <div className={styles.splitMedia}>
+                  <BlockView block={split.image} />
+                </div>
+              </div>
+            ) : (
+              <div className={styles.inner}>
+                {section.blocks.map((block, j) => (
+                  <BlockView key={j} block={block} />
+                ))}
+              </div>
+            )}
+          </section>
+        );
+      })}
     </>
   );
 }
