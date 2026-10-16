@@ -63,7 +63,8 @@ const IMAGES = {
   why: "/media/2025/01/AdobeStock_1871230232.jpg",
   referral: "/media/2026/03/ref.jpg",
   next: "/images/stock/goodwill-nurse-lake.jpg",
-  closing: "/media/2025/01/with-wanderlust-cliff.jpg",
+  // Pexels photo 33730307: Moraine Lake, Banff (free for commercial use).
+  closing: "/images/stock/pexels-33730307-moraine-lake.jpg",
 };
 
 const POLICY_PDF = "/media/2026/03/Bonus-and-Referral-Program-Policy.pdf";
@@ -172,18 +173,23 @@ export function TravelNursing({ faqs }: { faqs: FaqItem[] }) {
             </ButtonLink>
           </p>
         </div>
-        <div className={styles.faqList}>
-          {faqs.map((item) => (
-            <details key={item.question} className={styles.faqItem}>
-              <summary className={styles.faqQuestion}>{item.question}</summary>
-              <div className={blockStyles.prose} dangerouslySetInnerHTML={{ __html: rewriteMediaInHtml(item.answer) }} />
-            </details>
+        {/* Two columns: first half left, second half right, read top to bottom. */}
+        <div className={styles.faqColumns}>
+          {[faqs.slice(0, Math.ceil(faqs.length / 2)), faqs.slice(Math.ceil(faqs.length / 2))].map((column, i) => (
+            <div key={i} className={styles.faqList}>
+              {column.map((item) => (
+                <details key={item.question} className={styles.faqItem}>
+                  <summary className={styles.faqQuestion}>{item.question}</summary>
+                  <div className={blockStyles.prose} dangerouslySetInnerHTML={{ __html: rewriteMediaInHtml(item.answer) }} />
+                </details>
+              ))}
+            </div>
           ))}
         </div>
       </section>
 
       {/* Closing band */}
-      <section className={styles.closing} style={{ backgroundImage: `url(${mediaUrl(IMAGES.next)})` }}>
+      <section className={styles.closing} style={{ backgroundImage: `url(${mediaUrl(IMAGES.closing)})` }}>
         <div className={styles.closingCopy}>
           <h2 className={styles.closingTitle}>Do you need healthcare staff or healthcare jobs?</h2>
           <p className={styles.closingText}>
