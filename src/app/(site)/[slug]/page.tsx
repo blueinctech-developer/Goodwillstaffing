@@ -15,7 +15,7 @@ import { pageMetadata } from "@/lib/metadata";
 const NO_CLOSING_CTA = new Set(["contact-us", "apply-now", "request-staffing", "careers", "privacy-policy", "terms-and-conditions", "cookie-policy"]);
 
 // Imported pages that a dedicated route renders instead.
-const OWN_ROUTE = new Set(["about-us", "smart-apply", "ai-recruiter"]);
+const OWN_ROUTE = new Set(["about-us", "smart-apply", "ai-recruiter", "travel-nurse-in-canada"]);
 
 export async function generateStaticParams() {
   const [pages, posts] = await Promise.all([listPageSlugs(), listPosts()]);
