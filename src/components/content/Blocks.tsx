@@ -184,6 +184,14 @@ function splitImage(section: Section): { text: Block[]; image: Block } | null {
   return { text, image: images[0] };
 }
 
+// A form with only a heading and short intro sits centred on the page.
+function isFormSection(section: Section): boolean {
+  return (
+    section.blocks.some((b) => b.type === "form") &&
+    section.blocks.every((b) => b.type === "form" || b.type === "heading" || b.type === "rich")
+  );
+}
+
 export function Blocks({ blocks }: { blocks: Block[] }) {
   let splits = 0;
   return (
@@ -206,7 +214,7 @@ export function Blocks({ blocks }: { blocks: Block[] }) {
                 </div>
               </div>
             ) : (
-              <div className={styles.inner}>
+              <div className={`${styles.inner} ${isFormSection(section) ? styles.formSection : ""}`}>
                 {section.blocks.map((block, j) => (
                   <BlockView key={j} block={block} />
                 ))}

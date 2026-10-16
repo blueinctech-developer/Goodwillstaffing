@@ -504,3 +504,19 @@
     grid-column: 1 / -1;
   }
 }
+
+/* Form sections: heading, intro and form share one centred column. */
+.formSection {
+  align-items: center;
+  max-width: 48rem;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.formSection > :is(.h2, .h3, .h4, .prose, .form) {
+  width: 100%;
+}
+
+.formSection > .form {
+  text-align: left;
+}
