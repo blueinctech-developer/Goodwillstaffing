@@ -5,11 +5,14 @@
   color: var(--neutral-900);
   text-decoration: none;
   transition:
+    background-color 0.2s ease,
     transform 0.2s ease,
     box-shadow 0.2s ease;
 }
 
 .card:hover {
+  /* Pale blue, as on the live site. */
+  background-color: #effcff;
   transform: translateY(-2px);
   box-shadow: 0 0.75rem 1.75rem rgb(5 46 38 / 10%);
 }

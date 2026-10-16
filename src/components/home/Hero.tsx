@@ -102,15 +102,6 @@ export function Hero({ jobTypes }: { jobTypes: JobType[] }) {
                   <ChevronRightIcon size="1rem" />
                 </button>
               </div>
-              <p className={styles.note} aria-hidden="true">
-                Real people
-                <br />
-                Real opportunities
-                <svg viewBox="0 0 60 40" className={styles.noteArrow}>
-                  <path d="M52 4C50 22 36 32 10 34" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-                  <path d="M17 28l-7 6 8 3" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-              </p>
             </div>
             <p className={styles.badge}>
               <MapleLeafIcon size="2.25rem" className={styles.leaf} />
