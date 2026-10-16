@@ -1,6 +1,9 @@
 .calculator {
   display: flex;
-  max-width: 60rem;
+  width: 100%;
+  max-width: 48rem;
+  /* Centred in the page; it is the only thing on it. */
+  margin-inline: auto;
   flex-direction: column;
   gap: 1.25rem;
   padding: 2.5rem;
