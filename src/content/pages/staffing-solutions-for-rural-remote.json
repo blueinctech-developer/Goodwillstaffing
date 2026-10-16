@@ -12,7 +12,7 @@
     }
   },
   "hero": {
-    "layout": "cover",
+    "layout": "split",
     "title": "Reliable Healthcare Staffing for Rural and Remote Communities",
     "ctas": [
       {

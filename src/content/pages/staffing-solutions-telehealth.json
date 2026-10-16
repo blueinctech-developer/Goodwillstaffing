@@ -12,7 +12,7 @@
     }
   },
   "hero": {
-    "layout": "cover",
+    "layout": "split",
     "title": "Reliable Healthcare Staffing for Telehealth Services Across Canada",
     "ctas": [
       {

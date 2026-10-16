@@ -12,7 +12,7 @@
     }
   },
   "hero": {
-    "layout": "cover",
+    "layout": "split",
     "title": "Dependable Healthcare Staffing in Ontario",
     "ctas": [
       {

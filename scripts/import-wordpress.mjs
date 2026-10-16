@@ -475,7 +475,10 @@ for (const p of load("pages")) {
     const heroBlocks = heroAt >= 0 ? groupBlocks(extractBlocks(sections[heroAt])) : [];
     const bodyBlocks = groupBlocks(sections.filter((_, i) => i !== heroAt).flatMap((s) => extractBlocks(s)));
     ({ hero, blocks } = splitHero(heroBlocks, bodyBlocks, heroMedia[p.slug]));
-    if (/trust-item/.test(html) && hero.image) hero.layout = "split";
+    // Candidate pages (built with the trust-section) and every Client Solutions
+    // page share one hero: copy beside the photo.
+    const clientPage = hero.breadcrumbs?.some((c) => c.text === "Client Solutions");
+    if ((/trust-item/.test(html) || clientPage) && hero.image) hero.layout = "split";
   } else {
     // Pages built outside Elementor (policies, the data hub) are plain HTML.
     hero = { layout: "plain", title: "", ctas: [] };
